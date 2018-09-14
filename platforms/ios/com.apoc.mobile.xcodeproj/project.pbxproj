@@ -151,6 +151,7 @@
 		5CBD74A9120D407EB52DD08E /* SFUserAccountConstants.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = SFUserAccountConstants.h; path = com.salesforce/salesforce/SFUserAccountConstants.h; sourceTree = "<group>"; };
 		60414310A5D44BC8BBA8662C /* ImageIO.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		60575D9C08F04904A8AAFB21 /* SalesforceSDKCoreDefines.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = SalesforceSDKCoreDefines.h; path = com.salesforce/salesforce/SalesforceSDKCoreDefines.h; sourceTree = "<group>"; };
+		61DFCCE7214B18A00050CEBD /* com.apoc.mobile.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = com.apoc.mobile.entitlements; path = com.apoc.mobile/com.apoc.mobile.entitlements; sourceTree = "<group>"; };
 		63F0CA79A0A54C8C986DB3CC /* SFSDKLoginHostStorage.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = SFSDKLoginHostStorage.h; path = com.salesforce/salesforce/SFSDKLoginHostStorage.h; sourceTree = "<group>"; };
 		650EFC0BC4544459A9187F4F /* UIApplication+SalesforceHybridSDK.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+SalesforceHybridSDK.m"; path = "com.salesforce/UIApplication+SalesforceHybridSDK.m"; sourceTree = "<group>"; };
 		67BD2C8EAF5A41B086EF60B3 /* CDVStatusBar.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVStatusBar.m; path = "cordova-plugin-statusbar/CDVStatusBar.m"; sourceTree = "<group>"; };
@@ -287,6 +288,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				61DFCCE7214B18A00050CEBD /* com.apoc.mobile.entitlements */,
 				EB87FDF41871DAF40020F90C /* config.xml */,
 				EB87FDF31871DA8E0020F90C /* www */,
 				EB87FDF11871DA420020F90C /* Staging */,
@@ -518,7 +520,16 @@
 				LastUpgradeCheck = 510;
 				TargetAttributes = {
 					1D6058900D05DD3D006BFB54 = {
-						DevelopmentTeam = YTR8UHDP7F;
+						DevelopmentTeam = KGZD8BJGRQ;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -651,8 +662,11 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = com.apoc.mobile/com.apoc.mobile.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				DEVELOPMENT_TEAM = YTR8UHDP7F;
+				DEVELOPMENT_TEAM = KGZD8BJGRQ;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -672,7 +686,9 @@
 					"\"$(SRCROOT)/com.apoc.mobile/Plugins/com.salesforce\"",
 					"\"$(SRCROOT)/com.apoc.mobile/Plugins/com.salesforce\"",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sample.apoc;
 				PRODUCT_NAME = com.apoc.mobile;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -686,8 +702,11 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = com.apoc.mobile/com.apoc.mobile.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = YES;
-				DEVELOPMENT_TEAM = YTR8UHDP7F;
+				DEVELOPMENT_TEAM = KGZD8BJGRQ;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "com.apoc.mobile/com.apoc.mobile-Prefix.pch";
 				GCC_THUMB_SUPPORT = NO;
@@ -705,7 +724,9 @@
 					"\"$(SRCROOT)/com.apoc.mobile/Plugins/com.salesforce\"",
 					"\"$(SRCROOT)/com.apoc.mobile/Plugins/com.salesforce\"",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sample.apoc;
 				PRODUCT_NAME = com.apoc.mobile;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
