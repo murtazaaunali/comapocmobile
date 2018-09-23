@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
+import { NgxDatatableModule } from '@swimlane/ngx-datatable';
+
 import { MyApp } from './app.component';
 import { AccountsPage } from '../pages/accounts/accounts';
 import { ActivitiesPage }  from '../pages/activities/activities';
@@ -15,6 +17,11 @@ import { ContactsFilterModalPage } from "../pages/contacts-filter-modal/contacts
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { ContactServiceProvider } from '../providers/contact-service/contact-service';
+import { SmartstoreServiceProvider } from '../providers/smartstore-service/smartstore-service';
+
+import { NamefilterPipe } from '../pipes/namefilter/namefilter';
+
+
 
 @NgModule({
   declarations: [
@@ -25,13 +32,16 @@ import { ContactServiceProvider } from '../providers/contact-service/contact-ser
     ContactsPage,
     DashboardPage,
     OpportunitiesPage,
-    ContactsFilterModalPage
+    ContactsFilterModalPage,
+    NamefilterPipe
   ],
   imports: [
     BrowserModule,
+    NgxDatatableModule,
     IonicModule.forRoot(MyApp),
   ],
   bootstrap: [IonicApp],
+  exports:[NamefilterPipe],
   entryComponents: [
     MyApp,
     AccountsPage,
@@ -46,7 +56,8 @@ import { ContactServiceProvider } from '../providers/contact-service/contact-ser
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    ContactServiceProvider
+    ContactServiceProvider,
+    SmartstoreServiceProvider
   ]
 })
 export class AppModule {}

@@ -120,8 +120,8 @@ ion-app {
     }
     .text-menu-btn {
       position: absolute;
-      top: 24px;
-      left: 60px;
+      top: 20px;
+      left: 55px;
     }
     .profile-section {
       background: #fafafd !important;
@@ -152,4 +152,85 @@ ion-app {
       left: 80px;
       font-size: 14px;
       font-family: "BrandonGrotesque-Medium";
+    }
+    .toolbar-background{
+      border: 1px solid gainsboro!important;
+    }
+    
+    .toolbar-ios{
+      min-height: 75px!important;
+    }
+    
+    .subheader-icon-txt{
+      display: inline-block;
+      vertical-align: super;
+      font-size: 20px;
+      margin-left: 5px;
+    }
+    
+    .contacts-content{
+      padding-left: 10px;
+      font-size: 80%;
+      vertical-align: text-top;
+    }
+    
+    ion-header{
+      top:0px!important;
+    }
+    
+    ion-card {
+      min-height: 180px!important;
+    }
+    
+    
+    .card p {
+      min-height: 15px;
+    }
+    
+    .filter-input{
+      border: 1px solid #009ada!important;
+      border-radius: 10px;
+    }
+    
+    .inline-label {
+      display: inline-block;
+      vertical-align: bottom;
+    }
+    
+    .close-btn{
+      color: #009ada;
+      font-size: x-large;
+    }
+    
+    .search-filter{
+      border-radius: 10px;
+      border: 2px solid gainsboro;
+    }
+    
+    
+    .search-btn {
+      padding: 20px!important;
+      height: 35px!important;
+      font-size: 15px!important;
+    }
+    
+    .center{
+      margin: 0 auto;
+      display: block;
+    }
+
+    .toolbar-background{
+      border: 1px solid gainsboro!important;
+    }
+    
+    .toolbar-ios{
+      min-height: 75px!important;
+    }
+    
+    .subheader-icon-txt{
+      display: inline-block;
+      vertical-align: top;
+      margin-top: 16px;
+      font-size: 20px;
+      margin-left: 5px;
     }

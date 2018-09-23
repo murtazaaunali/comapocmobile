@@ -49,7 +49,7 @@ export class MyApp {
     let oauth = OAuth.createInstance();
     oauth.login("3MVG9Iu66FKeHhINkB1l7xt7kR8czFcCTUhgoA8Ol2Ltf1eYHOU4SqQRSEitYFDUpqRWcoQ2.dBv_a1Dyu5xa")
       .then((oauthData) => {
-      DataService.createInstance(oauthData, {proxyURL: "https://apoc--stage2.cs96.my.salesforce.com/"});
+      DataService.createInstance(oauthData, {proxyURL: "https://apoc--stage.cs15.my.salesforce.com/"});
     });
 
     this.platform.ready().then(() => {
