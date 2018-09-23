@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		06E294C1784146208FA248A1 /* CDVStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 67BD2C8EAF5A41B086EF60B3 /* CDVStatusBar.m */; };
 		07206BF37EE54AEC88A44222 /* InitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 786FBF36F8454B5398733C6A /* InitialViewController.m */; };

@@ -33,7 +33,7 @@ var force = (function () {
 
     // The login URL for the OAuth process
     // To override default, pass loginURL in init(props)
-    var loginURL = 'https://login.salesforce.com',
+    var loginURL = 'https://apoc--stage2.cs96.my.salesforce.com/',
 
     // The Connected App client Id. Default app id provided - Not for production use.
     // This application supports http://localhost:8200/oauthcallback.html as a valid callback URL

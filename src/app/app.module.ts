@@ -10,8 +10,11 @@ import { ContactsPage } from '../pages/contacts/contacts';
 import { DashboardPage } from '../pages/dashboard/dashboard';
 import { OpportunitiesPage } from '../pages/opportunities/opportunities';
 
+import { ContactsFilterModalPage } from "../pages/contacts-filter-modal/contacts-filter-modal";
+
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { ContactServiceProvider } from '../providers/contact-service/contact-service';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     CalendarPage,
     ContactsPage,
     DashboardPage,
-    OpportunitiesPage
+    OpportunitiesPage,
+    ContactsFilterModalPage
   ],
   imports: [
     BrowserModule,
@@ -35,12 +39,14 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     CalendarPage,
     ContactsPage,
     DashboardPage,
-    OpportunitiesPage
+    OpportunitiesPage,
+    ContactsFilterModalPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    ContactServiceProvider
   ]
 })
 export class AppModule {}

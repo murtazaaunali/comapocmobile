@@ -115,9 +115,12 @@ ion-app {
       vertical-align: middle;
       background: transparent !important;
     }
+    .menu-icon img {
+      display: inline-block !important;
+    }
     .text-menu-btn {
       position: absolute;
-      top: 17px;
+      top: 24px;
       left: 60px;
     }
     .profile-section {

@@ -12,6 +12,7 @@ import { ContactsPage } from '../pages/contacts/contacts';
 import { DashboardPage } from '../pages/dashboard/dashboard';
 import { OpportunitiesPage } from '../pages/opportunities/opportunities';
 
+
 @Component({
   templateUrl: 'app.html'
 })

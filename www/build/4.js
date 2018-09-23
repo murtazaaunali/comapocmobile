@@ -1,14 +1,14 @@
 webpackJsonp([4],{
 
-/***/ 275:
+/***/ 686:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ActivitiesPageModule", function() { return ActivitiesPageModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__activities__ = __webpack_require__(100);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ContactsFilterModalPageModule", function() { return ContactsFilterModalPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__contacts_filter_modal__ = __webpack_require__(152);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,23 +18,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var ActivitiesPageModule = /** @class */ (function () {
-    function ActivitiesPageModule() {
+var ContactsFilterModalPageModule = /** @class */ (function () {
+    function ContactsFilterModalPageModule() {
     }
-    ActivitiesPageModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
+    ContactsFilterModalPageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__activities__["a" /* ActivitiesPage */],
+                __WEBPACK_IMPORTED_MODULE_2__contacts_filter_modal__["a" /* ContactsFilterModalPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__activities__["a" /* ActivitiesPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__contacts_filter_modal__["a" /* ContactsFilterModalPage */]),
             ],
         })
-    ], ActivitiesPageModule);
-    return ActivitiesPageModule;
+    ], ContactsFilterModalPageModule);
+    return ContactsFilterModalPageModule;
 }());
 
-//# sourceMappingURL=activities.module.js.map
+//# sourceMappingURL=contacts-filter-modal.module.js.map
 
 /***/ })
 
