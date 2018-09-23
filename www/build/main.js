@@ -266,9 +266,10 @@ var ContactsFilterModalPage = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(25);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_contact_service_contact_service__ = __webpack_require__(112);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__contacts_filter_modal_contacts_filter_modal__ = __webpack_require__(152);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__new_contact_new_contact__ = __webpack_require__(351);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pipes_namefilter_namefilter__ = __webpack_require__(213);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_smartstore_service_smartstore_service__ = __webpack_require__(213);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__contacts_filter_modal_contacts_filter_modal__ = __webpack_require__(152);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__new_contact_new_contact__ = __webpack_require__(352);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pipes_namefilter_namefilter__ = __webpack_require__(214);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -284,14 +285,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var ContactsPage = /** @class */ (function () {
-    function ContactsPage(navCtrl, navParams, contactsService, modalCtrl, loadingCtrl, filterCtrl) {
+    function ContactsPage(navCtrl, navParams, contactsService, modalCtrl, loadingCtrl, filterCtrl, smartStoreService) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
         this.contactsService = contactsService;
         this.modalCtrl = modalCtrl;
         this.loadingCtrl = loadingCtrl;
         this.filterCtrl = filterCtrl;
+        this.smartStoreService = smartStoreService;
         this.searchFilter = '';
         this.contactsSegment = "grid";
         this.loader = this.loadingCtrl.create({
@@ -311,11 +314,11 @@ var ContactsPage = /** @class */ (function () {
         console.log(this.columns);
     }
     ContactsPage.prototype.OpenFiltersModal = function () {
-        var filterModal = this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_3__contacts_filter_modal_contacts_filter_modal__["a" /* ContactsFilterModalPage */], { searchContacts: this.SearchContact.bind(this) });
+        var filterModal = this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_4__contacts_filter_modal_contacts_filter_modal__["a" /* ContactsFilterModalPage */], { searchContacts: this.SearchContact.bind(this) });
         filterModal.present();
     };
     ContactsPage.prototype.AddNewContactModal = function () {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_4__new_contact_new_contact__["a" /* NewContactPage */]);
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_5__new_contact_new_contact__["a" /* NewContactPage */]);
     };
     ContactsPage.prototype.SearchContact = function (filters) {
         var _this = this;
@@ -330,6 +333,8 @@ var ContactsPage = /** @class */ (function () {
         var _this = this;
         console.log('ionViewDidLoad ContactsPage');
         this.loader.present();
+        this.smartStoreService.GetContactsFromSoup().then(function (date) {
+        });
         this.contactsService.loadContacts().then(function (data) {
             _this.contacts = data.records;
             console.log(data.records);
@@ -340,9 +345,9 @@ var ContactsPage = /** @class */ (function () {
     ContactsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'page-contacts',template:/*ion-inline-start:"/private/var/root/Desktop/Hybrid/Salesforce/comapocmobile/src/pages/contacts/contacts.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>CONTACTS</ion-title>\n  </ion-navbar>\n  <ion-toolbar>\n    <ion-row>\n      <ion-col col-2 style="padding-left: 10px">\n        <button block style="background:transparent;" (click)="OpenFiltersModal()">\n          <img src="../../assets/imgs/filter.png" />\n          <div class="subheader-icon-txt">Filters</div>\n        </button>\n      </ion-col>\n      <ion-col col-2 style="padding-left: 10px">\n        <button block style="background:transparent;" (click)="AddNewContactModal()">\n          <img src="../../assets/imgs/new.png" />\n          <div class="subheader-icon-txt">New</div>\n        </button>\n      </ion-col>\n      <ion-col col-2>\n      </ion-col>\n      <ion-col col-4>\n        <ion-item class="item-has-input search-filter">\n          <ion-input clearInput type="text" [(ngModel)]="searchFilter" text-left placeholder="Search Contact"></ion-input>\n          <ion-label item-right class="align-right label-img">\n            <ion-icon name="search"></ion-icon>\n          </ion-label>\n        </ion-item>\n      </ion-col>\n      <ion-col col-2>\n        <div padding>\n          <ion-segment [(ngModel)]="contactsSegment">\n            <ion-segment-button value="grid">\n              Grid\n            </ion-segment-button>\n            <ion-segment-button value="list">\n              List\n            </ion-segment-button>\n          </ion-segment>\n        </div>\n      </ion-col>\n    </ion-row>\n  </ion-toolbar>\n</ion-header>\n\n\n<ion-content padding>\n  <div [ngSwitch]="contactsSegment">\n    <div *ngSwitchCase="\'grid\'">\n      <ion-grid>\n        <ion-row>\n          <ion-col col-md-4 *ngFor="let con of contacts | nameFilter:searchFilter">\n            <ion-card>\n              <ion-card-header>\n                <h2><b>{{con.Name}}</b></h2>\n                <p><span>{{con.Job_Title__c }}</span><span *ngIf="con.Department!=null"> | {{con.Department}}</span></p>\n              </ion-card-header>\n              <ion-card-content>\n                <ion-row>\n                  <ion-col col-12 *ngIf="con.Email!=null">\n                    <ion-icon name="mail"></ion-icon><span class="contacts-content">{{con.Email}}</span>\n                  </ion-col>\n                  <ion-col col-12 *ngIf="con.Email==null">\n                    <ion-icon name="mail"></ion-icon><span class="contacts-content">N/A</span>\n                  </ion-col>\n                </ion-row>\n                <ion-row>\n                  <ion-col col-12 *ngIf="con.Phone!=null">\n                    <ion-icon name="call"></ion-icon><span class="contacts-content">{{con.Phone}}</span>\n                  </ion-col>\n                  <ion-col col-12 *ngIf="con.Phone==null">\n                    <ion-icon name="call"></ion-icon><span class="contacts-content">N/A</span>\n                  </ion-col>\n                </ion-row>\n                <ion-row>\n                  <ion-col col-12 *ngIf="con.MobilePhone!=null">\n                    <ion-icon name="call"></ion-icon><span class="contacts-content">{{con.MobilePhone}}</span>\n                  </ion-col>\n                  <ion-col col-12 *ngIf="con.MobilePhone==null">\n                    <ion-icon name="call"></ion-icon><span class="contacts-content">N/A</span>\n                  </ion-col>\n                </ion-row>\n              </ion-card-content>\n            </ion-card>\n          </ion-col>\n        </ion-row>\n      </ion-grid>\n    </div>\n    <div *ngSwitchCase="\'list\'">\n        <!-- <ngx-datatable\n        class="material"\n        [sortType]="\'multi\'"\n        [headerHeight]="50"\n        [footerHeight]="50"\n        [rowHeight]="50"\n        [rows]="rows"\n        [columns]="columns"\n        [columnMode]="\'flex\'"\n        [limit]="10">\n      </ngx-datatable> -->\n    </div>\n  </div>\n\n</ion-content>'/*ion-inline-end:"/private/var/root/Desktop/Hybrid/Salesforce/comapocmobile/src/pages/contacts/contacts.html"*/,
-            providers: [__WEBPACK_IMPORTED_MODULE_5__pipes_namefilter_namefilter__["a" /* NamefilterPipe */]]
+            providers: [__WEBPACK_IMPORTED_MODULE_6__pipes_namefilter_namefilter__["a" /* NamefilterPipe */]]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers_contact_service_contact_service__["a" /* ContactServiceProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* ModalController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_5__pipes_namefilter_namefilter__["a" /* NamefilterPipe */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers_contact_service_contact_service__["a" /* ContactServiceProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* ModalController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_6__pipes_namefilter_namefilter__["a" /* NamefilterPipe */], __WEBPACK_IMPORTED_MODULE_3__providers_smartstore_service_smartstore_service__["a" /* SmartstoreServiceProvider */]])
     ], ContactsPage);
     return ContactsPage;
 }());
@@ -515,6 +520,125 @@ module.exports = webpackAsyncContext;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SmartstoreServiceProvider; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map__ = __webpack_require__(113);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__contact_service_contact_service__ = __webpack_require__(112);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var SmartstoreServiceProvider = /** @class */ (function () {
+    function SmartstoreServiceProvider(contactsService) {
+        this.contactsService = contactsService;
+        // Soup name predefined
+        // private storeName = 'contactsApp'
+        this.soupName = 'contacts';
+        console.log('constructor');
+        // const storeConfig = {
+        //   storeName: this.storeName,
+        //   isGlobalStore: true
+        // };
+        var contactsIndexSpecs = [
+            { path: "Id", type: "string" },
+            { path: "Name", type: "string" },
+            { path: "Account", type: "string" },
+            { path: "Department", type: "string" },
+            { path: "Role__c", type: "string" },
+            { path: "Role_DLH__c", type: "string" },
+            { path: "Other_Department__c", type: "string" },
+            { path: "Other_Job_Title__c", type: "string" },
+            { path: "Email", type: "string" },
+            { path: "Mobile", type: "string" },
+            { path: "Fax", type: "string" },
+            { path: "Survey__c", type: "string" },
+            { path: "RecordType", type: "string" },
+            { path: "CreatedBy", type: "string" },
+            { path: "Owner", type: "string" },
+            { path: "__local__", type: "string" },
+            { path: "__locally_created__", type: "string" },
+            { path: "__locally_updated__", type: "string" },
+            { path: "__locally_deleted__", type: "string" }
+        ];
+        var success = function (soupName) { return console.log('Soup ${soupName} was successfully created!'); };
+        var failure = function (error) { return console.error('Registering soup fails with error: ${error}'); };
+        if (!this.smartStore().soupExists(this.soupName)) {
+            this.smartStore().registerSoup(this.soupName, contactsIndexSpecs, success, failure);
+        }
+        // Registering Soups
+        if (!this.smartStore().soupExists('contacts')) {
+            console.log('Dev Debug: Contacts Soup Not Found!');
+            console.log('Dev Debug: Registering Contacts Soup');
+            this.RegisterContactSoup('contacts', contactsIndexSpecs);
+            console.log('Dev Debug: Registering Contacts Completed');
+            console.log('Dev Debug: Trying to fill Contacts');
+            this.FillContactsSoups();
+            console.log('Dev Debug: Contacts filled');
+        }
+    }
+    // Initialize Smart Store
+    SmartstoreServiceProvider.prototype.smartStore = function () {
+        return cordova.require("com.salesforce.plugin.smartstore");
+    };
+    SmartstoreServiceProvider.prototype.RegisterContactSoup = function (soupName, indexSpecs) {
+        var success = function (soupName) { return console.log('Dev Debug: Soup ' + soupName + ' was successfully created!'); };
+        var failure = function (error) { return console.error(error, 'Dev Debug: Registering soup fails with error: ' + error); };
+        this.smartStore().registerSoup(this.soupName, indexSpecs, success, failure);
+    };
+    // RegisterAccountSoup(soupName, indexSpecs) {
+    //   let success = (soupName) => console.log('Dev Debug: Soup ' + soupName + ' was successfully created!');
+    //   let failure = (error) => console.error('Dev Debug: Registering soup fails with error: ' + error);
+    //   this.smartStore().registerSoup(this.soupName, indexSpecs, success, failure);
+    // }
+    // RegisterOpportunitiesSoup(soupName, indexSpecs) {
+    //   let success = (soupName) => console.log('Soup ' + soupName + ' was successfully created!');
+    //   let failure = (error) => console.error('Registering soup fails with error: ' + error);
+    //   this.smartStore().registerSoup(this.soupName, indexSpecs, success, failure);
+    // }
+    SmartstoreServiceProvider.prototype.FillContactsSoups = function () {
+        var _this = this;
+        console.log("Dev Debug: Filling Soups");
+        return this.contactsService.loadContacts()
+            .then(function (results) {
+            console.log("Dev Debug: Result:" + results);
+            var success = function (items) { return console.log('Dev Debug: Items upserted to Soup: ' + items); };
+            var failure = function (error) { return console.error('Dev Debug: Soup Upsert Error: ' + error); };
+            console.log("Dev Debug: Upserting entries in Soup");
+            _this.smartStore().upsertSoupEntries('contacts', results.records, success, failure);
+        });
+    };
+    SmartstoreServiceProvider.prototype.GetContactsFromSoup = function () {
+        var _this = this;
+        return new Promise(function (resolve, reject) {
+            var querySpec = navigator.smartstore.buildAllQuerySpec('Name');
+            var success = function (results) { return resolve({ records: results.currentPageOrderedEntries }); };
+            navigator.smartstore.querySoup(_this.soupName, querySpec, success, reject);
+        });
+    };
+    SmartstoreServiceProvider = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__contact_service_contact_service__["a" /* ContactServiceProvider */]])
+    ], SmartstoreServiceProvider);
+    return SmartstoreServiceProvider;
+}());
+
+//# sourceMappingURL=smartstore-service.js.map
+
+/***/ }),
+
+/***/ 214:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NamefilterPipe; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -552,7 +676,7 @@ var NamefilterPipe = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 351:
+/***/ 352:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -597,13 +721,13 @@ var NewContactPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 352:
+/***/ 353:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(353);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(357);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(354);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(358);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -611,7 +735,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 357:
+/***/ 358:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -619,9 +743,9 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(25);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__swimlane_ngx_datatable__ = __webpack_require__(394);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__swimlane_ngx_datatable__ = __webpack_require__(395);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__swimlane_ngx_datatable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__swimlane_ngx_datatable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(678);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(679);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_accounts_accounts__ = __webpack_require__(149);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_activities_activities__ = __webpack_require__(150);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_calendar_calendar__ = __webpack_require__(151);
@@ -629,11 +753,11 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_dashboard_dashboard__ = __webpack_require__(154);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_opportunities_opportunities__ = __webpack_require__(155);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_contacts_filter_modal_contacts_filter_modal__ = __webpack_require__(152);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ionic_native_status_bar__ = __webpack_require__(347);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__ionic_native_splash_screen__ = __webpack_require__(350);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ionic_native_status_bar__ = __webpack_require__(348);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__ionic_native_splash_screen__ = __webpack_require__(351);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__providers_contact_service_contact_service__ = __webpack_require__(112);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__providers_smartstore_service_smartstore_service__ = __webpack_require__(682);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pipes_namefilter_namefilter__ = __webpack_require__(213);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__providers_smartstore_service_smartstore_service__ = __webpack_require__(213);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pipes_namefilter_namefilter__ = __webpack_require__(214);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -717,15 +841,15 @@ var AppModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 678:
+/***/ 679:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(25);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(347);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(350);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(348);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(351);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_forcejs__ = __webpack_require__(212);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_forcejs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_forcejs__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_accounts_accounts__ = __webpack_require__(149);
@@ -808,117 +932,7 @@ var MyApp = /** @class */ (function () {
 
 //# sourceMappingURL=app.component.js.map
 
-/***/ }),
-
-/***/ 682:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SmartstoreServiceProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map__ = __webpack_require__(113);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__contact_service_contact_service__ = __webpack_require__(112);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-var SmartstoreServiceProvider = /** @class */ (function () {
-    function SmartstoreServiceProvider(contactsService) {
-        this.contactsService = contactsService;
-        // Soup name predefined
-        // private storeName = 'contactsApp'
-        this.soupName = 'contacts';
-        console.log('constructor');
-        // const storeConfig = {
-        //   storeName: this.storeName,
-        //   isGlobalStore: true
-        // };
-        var contactsIndexSpecs = [
-            { path: "Id", type: "string" },
-            { path: "Name", type: "string" },
-            { path: "Account", type: "string" },
-            { path: "Department", type: "string" },
-            { path: "Role__c", type: "string" },
-            { path: "Role_DLH__c", type: "string" },
-            { path: "Other_Department__c", type: "string" },
-            { path: "Other_Job_Title__c", type: "string" },
-            { path: "Email", type: "string" },
-            { path: "Mobile", type: "string" },
-            { path: "Fax", type: "string" },
-            { path: "Survey__c", type: "string" },
-            { path: "RecordType", type: "string" },
-            { path: "CreatedBy", type: "string" },
-            { path: "Owner", type: "string" },
-            { path: "__local__", type: "string" },
-            { path: "__locally_created__", type: "string" },
-            { path: "__locally_updated__", type: "string" },
-            { path: "__locally_deleted__", type: "string" }
-        ];
-        var accountsIndexSpecs = [
-            { path: "Id", type: "string" },
-            { path: "Name", type: "string" },
-            { path: "Account", type: "string" },
-            { path: "Department", type: "string" },
-            { path: "Role__c", type: "string" },
-            { path: "Role_DLH__c", type: "string" },
-            { path: "Other_Department__c", type: "string" },
-            { path: "Other_Job_Title__c", type: "string" },
-            { path: "Email", type: "string" },
-            { path: "MobilePhone", type: "string" },
-            { path: "Fax", type: "string" },
-            { path: "Survey__c", type: "string" },
-            { path: "RecordType.Name", type: "string" },
-            { path: "CreatedBy.Name", type: "string" },
-            { path: "CreatedById", type: "string" },
-            { path: "CreatedDate", type: "string" },
-            { path: "Owner.Name", type: "string" },
-            { path: "__local__", type: "string" },
-            { path: "__locally_created__", type: "string" },
-            { path: "__locally_updated__", type: "string" },
-            { path: "__locally_deleted__", type: "string" }
-        ];
-        // let success = (soupName) => console.log('Soup ${soupName} was successfully created!');
-        // let failure = (error) => console.error('Registering soup fails with error: ${error}');
-        // if (!this.smartStore().soupExists(this.soupName)) {
-        //   this.smartStore().registerSoup(this.soupName, indexSpecs, success, failure);
-        // }
-        // Registering Soups
-        // if (!this.smartStore().soupExists('contacts')) {
-        //   console.log('Dev Debug: Contacts Soup Not Found!');
-        //   console.log('Dev Debug: Registering Contacts Soup');
-        //   this.RegisterContactSoup('contacts', contactsIndexSpecs);
-        //   console.log('Dev Debug: Registering Contacts Completed');
-        //   console.log('Dev Debug: Trying to fill Contacts');
-        //   this.FillContactsSoups();
-        //   console.log('Dev Debug: Contacts filled');
-        // }
-        // if (!this.smartStore().soupExists('accounts')) {
-        //   this.RegisterContactSoup('accounts', accountsIndexSpecs);
-        // }
-    }
-    // Initialize Smart Store
-    SmartstoreServiceProvider.prototype.smartStore = function () {
-        return cordova.require("com.salesforce.plugin.smartstore");
-    };
-    SmartstoreServiceProvider = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__contact_service_contact_service__["a" /* ContactServiceProvider */]])
-    ], SmartstoreServiceProvider);
-    return SmartstoreServiceProvider;
-}());
-
-//# sourceMappingURL=smartstore-service.js.map
-
 /***/ })
 
-},[352]);
+},[353]);
 //# sourceMappingURL=main.js.map
