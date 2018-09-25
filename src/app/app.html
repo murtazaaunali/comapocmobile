@@ -1,42 +1,32 @@
 <ion-menu [content]="content">
-<ion-content>
+  <ion-content>
     <ion-list>
-        <ion-item class="profile-section">
-            <img src="assets/imgs/default-profile-inner.png" class="profile-image">
-            <h1 class="username">{{username}}</h1>
-            <h5 class="instance">APOC - Stage</h5>
-          </ion-item>
-          <button ion-item detail-none block menuClose *ngFor="let p of pages" (click)="openPage(p.component)">
-              <ion-img src="assets/imgs/{{p.icon}}" class="menu-icon"></ion-img>
-              <div class="text-menu-btn">{{ p.title }}</div>
-            </button>
+      <ion-item class="profile-section">
+        <img src="assets/imgs/default-profile-inner.png" class="profile-image">
+        <h1 class="username">{{username}}</h1>
+        <h5 class="instance">APOC - Stage</h5>
+      </ion-item>
+      <button ion-item detail-none block menuClose *ngFor="let p of pages" (click)="openPage(p.component)">
+        <ion-img src="assets/imgs/{{p.icon}}" class="menu-icon"></ion-img>
+        <div class="text-menu-btn">{{ p.title }}</div>
+      </button>
     </ion-list>
     <ion-list>
-        <ion-item-group>
+      <ion-item-group>
         <ion-item-divider color="light"></ion-item-divider>
         <button ion-item detail-none block menuClose *ngFor="let s of settings" (click)="openPage(s.component)">
           <ion-img src="assets/imgs/{{s.icon}}" class="menu-icon"></ion-img>
           <div class="text-menu-btn"> {{ s.title }}</div>
         </button>
-        </ion-item-group>
-      </ion-list>
+        <button ion-item detail-none block menuClose (click)="logoutApp()">
+          <ion-img src="assets/imgs/logout-icon.png" class="menu-icon"></ion-img>
+          <div class="text-menu-btn">Log out</div>
+        </button>
+      </ion-item-group>
+    </ion-list>
   </ion-content>
   <ion-footer>
-      <ion-toolbar>
-        <ion-row align-items-center>
-          <ion-col>
-            {{ username }}
-          </ion-col>
-          <ion-col>
-            <button ion-button full clear icon-left (click)="logout()">
-              <ion-icon name="sign-out">
-              </ion-icon>
-              Logout
-            </button>
-          </ion-col>
-        </ion-row>
-      </ion-toolbar>
-    </ion-footer>
+  </ion-footer>
 
 </ion-menu>
 

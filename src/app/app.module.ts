@@ -16,10 +16,13 @@ import { ContactsFilterModalPage } from "../pages/contacts-filter-modal/contacts
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import { ContactServiceProvider } from '../providers/contact-service/contact-service';
-import { SmartstoreServiceProvider } from '../providers/smartstore-service/smartstore-service';
 
 import { NamefilterPipe } from '../pipes/namefilter/namefilter';
+import { SmartstoreServiceProvider } from '../providers/smartstore-service/smartstore-service';
+import { ContactServiceProvider } from '../providers/contact-service/contact-service';
+import { AccountServiceProvider } from '../providers/account-service/account-service';
+import { OpportunitiesServiceProvider } from '../providers/opportunities-service/opportunities-service';
+import { SmartsyncServiceProvider } from '../providers/smartsync-service/smartsync-service';
 
 
 
@@ -57,7 +60,10 @@ import { NamefilterPipe } from '../pipes/namefilter/namefilter';
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     ContactServiceProvider,
-    SmartstoreServiceProvider
+    SmartstoreServiceProvider,
+    AccountServiceProvider,
+    OpportunitiesServiceProvider,
+    SmartsyncServiceProvider
   ]
 })
 export class AppModule {}

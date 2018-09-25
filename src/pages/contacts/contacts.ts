@@ -39,8 +39,6 @@ export class ContactsPage {
       { name: 'Fax' },
       { pipe: 'nameFilter:searchFilter' }
     ];
-
-    console.log(this.columns);
   }
 
   OpenFiltersModal() {
@@ -63,14 +61,10 @@ export class ContactsPage {
 
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad ContactsPage');
     this.loader.present();
-    this.smartStoreService.GetContactsFromSoup().then(date => {
-      
-    });
-    this.contactsService.loadContacts().then(data => {
+    this.smartStoreService.GetContactsFromSoup().then(data => {
+      console.log('Count Records:' + data.records.length);
       this.contacts = data.records;
-      console.log(data.records);
       this.rows = data.records;
       this.loader.dismiss();
     });

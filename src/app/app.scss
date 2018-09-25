@@ -16,8 +16,8 @@
 // automatically applied to the <body> element in the app.
 ion-app {
     font-family: "BrandonGrotesque-Regular";
-    border-top: 10px solid #009ada;
-    border-bottom: 10px solid #009ada;
+    border-top: 20px solid #009ada;
+    border-bottom: 20px solid #009ada;
   }
   .toolbar-background {
     background: transparent !important;
@@ -120,8 +120,8 @@ ion-app {
     }
     .text-menu-btn {
       position: absolute;
-      top: 20px;
-      left: 55px;
+      top: 24px;
+      left: 65px;
     }
     .profile-section {
       background: #fafafd !important;
@@ -233,4 +233,8 @@ ion-app {
       margin-top: 16px;
       font-size: 20px;
       margin-left: 5px;
+    }
+    .button-round-ios {
+      width: 55px;
+      height: 55px;
     }

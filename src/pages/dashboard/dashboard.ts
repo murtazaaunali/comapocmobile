@@ -1,12 +1,8 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, LoadingController } from 'ionic-angular';
 
-/**
- * Generated class for the DashboardPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { SmartsyncServiceProvider } from "../../providers/smartsync-service/smartsync-service";
+
 
 @IonicPage()
 @Component({
@@ -14,8 +10,17 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'dashboard.html',
 })
 export class DashboardPage {
+  loader;
+  constructor(public navCtrl: NavController, public navParams: NavParams, public loadingCtrl: LoadingController, public smartSyncService: SmartsyncServiceProvider) {
+    this.loader = this.loadingCtrl.create({
+      content: "Please wait...",
+    });
+  }
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  SyncData() {
+    this.smartSyncService.SyncContacts().then(response => {
+      console.log("Sync Response:" + response);
+    });
   }
 
   ionViewDidLoad() {

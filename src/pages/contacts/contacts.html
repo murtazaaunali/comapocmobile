@@ -9,13 +9,13 @@
     <ion-row>
       <ion-col col-2 style="padding-left: 10px">
         <button block style="background:transparent;" (click)="OpenFiltersModal()">
-          <img src="../../assets/imgs/filter.png" />
+          <img src="assets/imgs/filter.png" />
           <div class="subheader-icon-txt">Filters</div>
         </button>
       </ion-col>
       <ion-col col-2 style="padding-left: 10px">
         <button block style="background:transparent;" (click)="AddNewContactModal()">
-          <img src="../../assets/imgs/new.png" />
+          <img src="assets/imgs/new.png" />
           <div class="subheader-icon-txt">New</div>
         </button>
       </ion-col>
@@ -89,17 +89,9 @@
       </ion-grid>
     </div>
     <div *ngSwitchCase="'list'">
-        <!-- <ngx-datatable
-        class="material"
-        [sortType]="'multi'"
-        [headerHeight]="50"
-        [footerHeight]="50"
-        [rowHeight]="50"
-        [rows]="rows"
-        [columns]="columns"
-        [columnMode]="'flex'"
-        [limit]="10">
-      </ngx-datatable> -->
+      <ngx-datatable class="material" [sortType]="'multi'" [headerHeight]="50" [footerHeight]="50" [rowHeight]="50"
+        [rows]="rows" [columns]="columns" [columnMode]="'force'" [limit]="10">
+      </ngx-datatable>
     </div>
   </div>
 
