@@ -43,6 +43,45 @@
           { "path": "__locally_updated__", "type": "string"},
           { "path": "__locally_deleted__", "type": "string"}
         ]
+      },
+      {
+        "soupName": "opportunities",
+        "indexes": [
+          { "path": "Id", "type": "string"},
+          { "path": "Name", "type": "string"},
+          { "path": "Owner", "type": "string"},
+          { "path": "Account", "type": "string"},
+          { "path": "Opportunity_Type_ED_or_CC__c", "type": "string"},
+          { "path": "Priority_Opportunity__c", "type": "string"},
+          { "path": "EETerritoryAssigned__c", "type": "string"},
+          { "path": "Departments__c", "type": "string"},
+          { "path": "Competitor__c", "type": "string"},
+          { "path": "CloseDate", "type": "string"},
+          { "path": "Close_Date_Reviewed__c", "type": "string"},
+          { "path": "Projected_Go_Live_Date__c", "type": "string"},
+          { "path": "Actual_Capital_Ship_Date__c", "type": "string"},
+          { "path": "Run_Rate_Achieved_Date__c", "type": "string"},
+          { "path": "Projected_Implementation_Start_Date__c", "type": "string"},
+          { "path": "Self_Implementation__c", "type": "string"},
+          { "path": "Marketing_Program__c", "type": "string"},
+          { "path": "StageName", "type": "string"},
+          { "path": "Probability", "type": "string"},
+          { "path": "Confidence__c", "type": "string"},
+          { "path": "Opportunity_Cartridge_Amount__c", "type": "string"},
+          { "path": "Total_Cartridge_Volume__c", "type": "string"},
+          { "path": "Opportunity_Equipment_Software_Amount__c", "type": "string"},
+          { "path": "Forecast_Dollar_Contribution__c", "type": "string"},
+          { "path": "Cartridges_text__c", "type": "string"},
+          { "path": "i_STATs_Currently_Interfaced__c", "type": "string"},
+          { "path": "RT_Has_Own_CLIA_License__c", "type": "string"},
+          { "path": "Hospital_System__c", "type": "string"},
+          { "path": "GPO__c", "type": "string"},
+          { "path": "RecordType", "type": "string"},
+          { "path": "__local__", "type": "string"},
+          { "path": "__locally_created__", "type": "string"},
+          { "path": "__locally_updated__", "type": "string"},
+          { "path": "__locally_deleted__", "type": "string"}
+        ]
       }
   ]
 }

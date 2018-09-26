@@ -25,22 +25,6 @@ module.exports = [
     ]
   },
   {
-    "id": "cordova-plugin-ionic-webview.IonicWebView",
-    "file": "plugins/cordova-plugin-ionic-webview/src/www/util.js",
-    "pluginId": "cordova-plugin-ionic-webview",
-    "clobbers": [
-      "Ionic.WebView"
-    ]
-  },
-  {
-    "id": "cordova-plugin-ionic-webview.ios-wkwebview-exec",
-    "file": "plugins/cordova-plugin-ionic-webview/src/www/ios/ios-wkwebview-exec.js",
-    "pluginId": "cordova-plugin-ionic-webview",
-    "clobbers": [
-      "cordova.exec"
-    ]
-  },
-  {
     "id": "cordova-plugin-ionic-keyboard.keyboard",
     "file": "plugins/cordova-plugin-ionic-keyboard/www/ios/keyboard.js",
     "pluginId": "cordova-plugin-ionic-keyboard",
@@ -142,6 +126,22 @@ module.exports = [
     "id": "com.salesforce.util.push",
     "file": "plugins/com.salesforce/www/com.salesforce.util.push.js",
     "pluginId": "com.salesforce"
+  },
+  {
+    "id": "cordova-plugin-ionic-webview.IonicWebView",
+    "file": "plugins/cordova-plugin-ionic-webview/src/www/util.js",
+    "pluginId": "cordova-plugin-ionic-webview",
+    "clobbers": [
+      "Ionic.WebView"
+    ]
+  },
+  {
+    "id": "cordova-plugin-ionic-webview.ios-wkwebview-exec",
+    "file": "plugins/cordova-plugin-ionic-webview/src/www/ios/ios-wkwebview-exec.js",
+    "pluginId": "cordova-plugin-ionic-webview",
+    "clobbers": [
+      "cordova.exec"
+    ]
   }
 ];
 module.exports.metadata = 
@@ -151,11 +151,11 @@ module.exports.metadata =
   "cordova-plugin-device": "2.0.2",
   "cordova-plugin-statusbar": "2.4.2",
   "cordova-plugin-splashscreen": "5.0.2",
-  "cordova-plugin-ionic-webview": "2.1.4",
   "cordova-plugin-ionic-keyboard": "2.1.2",
   "phonegap-plugin-push": "1.4.5",
   "cordova-plugin-wkwebview-engine": "1.1.5-dev",
-  "com.salesforce": "6.1.0"
+  "com.salesforce": "6.1.0",
+  "cordova-plugin-ionic-webview": "2.1.4"
 };
 // BOTTOM OF METADATA
 });

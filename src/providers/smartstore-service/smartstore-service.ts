@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import 'rxjs/add/operator/map';
 
+
 declare var cordova: any;
 
 interface sdkNavigator extends Navigator {
@@ -39,8 +40,8 @@ export class SmartstoreServiceProvider {
 
   GetContactsFromSoup(): Promise<any> {
     return new Promise((resolve, reject) => {
-      var querySpec = (navigator as sdkNavigator).smartstore.buildAllQuerySpec('Id');
-      let success = (results) => resolve({ records: results });
+      var querySpec = (navigator as sdkNavigator).smartstore.buildAllQuerySpec('Name', 'ascending', 10000);
+      let success = (results) => resolve({ records: results.currentPageOrderedEntries });
       (navigator as sdkNavigator).smartstore.querySoup(this.soupName, querySpec, success, reject);
     });
   }

@@ -1,19 +1,19 @@
 {
-  "_from": "cordova-plugin-ionic-webview@^2.0.0",
+  "_from": "cordova-plugin-ionic-webview@latest",
   "_id": "cordova-plugin-ionic-webview@2.1.4",
   "_inBundle": false,
   "_integrity": "sha512-+nsqWEI2Ak2CuLJe5KGDlNIRDcaDLyK/UfuCnYnRk1UuUSUZoon4dd5BLEikf3YjbxqY7G0gixkkYzvlJTdkrg==",
   "_location": "/cordova-plugin-ionic-webview",
   "_phantomChildren": {},
   "_requested": {
-    "type": "range",
+    "type": "tag",
     "registry": true,
-    "raw": "cordova-plugin-ionic-webview@^2.0.0",
+    "raw": "cordova-plugin-ionic-webview@latest",
     "name": "cordova-plugin-ionic-webview",
     "escapedName": "cordova-plugin-ionic-webview",
-    "rawSpec": "^2.0.0",
+    "rawSpec": "latest",
     "saveSpec": null,
-    "fetchSpec": "^2.0.0"
+    "fetchSpec": "latest"
   },
   "_requiredBy": [
     "#USER",
@@ -21,7 +21,7 @@
   ],
   "_resolved": "https://registry.npmjs.org/cordova-plugin-ionic-webview/-/cordova-plugin-ionic-webview-2.1.4.tgz",
   "_shasum": "e0c87297157537343b31fa1b79fab658635ff76e",
-  "_spec": "cordova-plugin-ionic-webview@^2.0.0",
+  "_spec": "cordova-plugin-ionic-webview@latest",
   "_where": "/private/var/root/Desktop/Hybrid/Salesforce/comapocmobile",
   "author": {
     "name": "Ionic Team"

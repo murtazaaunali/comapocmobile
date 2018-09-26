@@ -1,4 +1,8 @@
 page-contacts {
+
+  *:not(html) {
+    -webkit-transform: translate3d(0, 0, 0);
+  }
   .datatable-header {
     background: rgba(164, 192, 214,1);
     padding: 1em 0 0 1em;

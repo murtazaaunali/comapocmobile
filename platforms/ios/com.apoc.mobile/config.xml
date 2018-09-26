@@ -30,11 +30,6 @@
         <param name="ios-package" value="CDVSplashScreen" />
         <param name="onload" value="true" />
     </feature>
-    <allow-navigation href="http://localhost:8080/*" />
-    <allow-navigation href="http://127.0.0.1:8080/*" />
-    <feature name="IonicWebView">
-        <param name="ios-package" value="CDVWKWebViewEngine" />
-    </feature>
     <feature name="Keyboard">
         <param name="ios-package" onload="true" value="CDVIonicKeyboard" />
     </feature>
@@ -67,6 +62,11 @@
     </feature>
     <feature name="com.salesforce.smartsync">
         <param name="ios-package" value="SFSmartSyncPlugin" />
+    </feature>
+    <allow-navigation href="http://localhost:8080/*" />
+    <allow-navigation href="http://127.0.0.1:8080/*" />
+    <feature name="IonicWebView">
+        <param name="ios-package" value="CDVWKWebViewEngine" />
     </feature>
     <name>com.apoc.mobile</name>
     <description>

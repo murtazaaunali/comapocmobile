@@ -11,7 +11,7 @@ interface sdkNavigator extends Navigator {
 @Injectable()
 export class SmartsyncServiceProvider {
 
-  public storeName = 'userstore';
+  public storeName = 'usersync';
 
   constructor() {
     const storeConfig = {

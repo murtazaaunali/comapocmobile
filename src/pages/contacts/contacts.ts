@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { IonicPage, NavController, ModalController, LoadingController, NavParams } from 'ionic-angular';
 
 import { ContactServiceProvider } from "../../providers/contact-service/contact-service";
@@ -15,7 +15,7 @@ import { NamefilterPipe } from '../../pipes/namefilter/namefilter';
   templateUrl: 'contacts.html',
   providers: [NamefilterPipe]
 })
-export class ContactsPage {
+export class ContactsPage implements OnInit {
   contacts: any;
   searchFilter = '';
   loader;
@@ -27,18 +27,6 @@ export class ContactsPage {
     this.loader = this.loadingCtrl.create({
       content: "Please wait...",
     });
-
-    this.columns = [
-      { prop: 'Name' },
-      { name: 'Job Title' },
-      { name: 'Department' },
-      { name: 'Account' },
-      { name: 'Email' },
-      { name: 'Mobile' },
-      { name: 'Phone' },
-      { name: 'Fax' },
-      { pipe: 'nameFilter:searchFilter' }
-    ];
   }
 
   OpenFiltersModal() {
@@ -51,7 +39,6 @@ export class ContactsPage {
   }
 
   SearchContact(filters) {
-    console.log(filters);
     this.loader.present();
     this.contactsService.searchFilteredContacts(filters, this.contacts).then(data => {
       this.contacts = data;
@@ -60,12 +47,10 @@ export class ContactsPage {
   }
 
 
-  ionViewDidLoad() {
+  ngOnInit() {
     this.loader.present();
     this.smartStoreService.GetContactsFromSoup().then(data => {
-      console.log('Count Records:' + data.records.length);
       this.contacts = data.records;
-      this.rows = data.records;
       this.loader.dismiss();
     });
   }

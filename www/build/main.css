@@ -25680,8 +25680,8 @@ ion-navbar.toolbar {
 
 ion-app {
   font-family: "BrandonGrotesque-Regular";
-  border-top: 10px solid #009ada;
-  border-bottom: 10px solid #009ada;
+  border-top: 20px solid #009ada;
+  border-bottom: 20px solid #009ada;
 }
 
 .toolbar-background {
@@ -25802,8 +25802,8 @@ ion-item-divider {
 
 .text-menu-btn {
   position: absolute;
-  top: 20px;
-  left: 55px;
+  top: 24px;
+  left: 65px;
 }
 
 .profile-section {
@@ -25917,6 +25917,15 @@ ion-card {
   margin-top: 16px;
   font-size: 20px;
   margin-left: 5px;
+}
+
+.button-round-ios {
+  width: 55px;
+  height: 55px;
+}
+
+page-contacts *:not(html) {
+  -webkit-transform: translate3d(0, 0, 0);
 }
 
 page-contacts .datatable-header {

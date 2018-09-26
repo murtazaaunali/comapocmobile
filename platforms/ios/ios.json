@@ -33,18 +33,6 @@
               "count": 1
             },
             {
-              "xml": "<allow-navigation href=\"http://localhost:8080/*\" />",
-              "count": 1
-            },
-            {
-              "xml": "<allow-navigation href=\"http://127.0.0.1:8080/*\" />",
-              "count": 1
-            },
-            {
-              "xml": "<feature name=\"IonicWebView\"><param name=\"ios-package\" value=\"CDVWKWebViewEngine\" /></feature>",
-              "count": 1
-            },
-            {
               "xml": "<feature name=\"Keyboard\"><param name=\"ios-package\" onload=\"true\" value=\"CDVIonicKeyboard\" /></feature>",
               "count": 1
             },
@@ -111,6 +99,18 @@
             {
               "xml": "<feature name=\"com.salesforce.smartsync\"><param name=\"ios-package\" value=\"SFSmartSyncPlugin\" /></feature>",
               "count": 1
+            },
+            {
+              "xml": "<allow-navigation href=\"http://localhost:8080/*\" />",
+              "count": 1
+            },
+            {
+              "xml": "<allow-navigation href=\"http://127.0.0.1:8080/*\" />",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"IonicWebView\"><param name=\"ios-package\" value=\"CDVWKWebViewEngine\" /></feature>",
+              "count": 1
             }
           ]
         }
@@ -160,9 +160,6 @@
     "cordova-plugin-splashscreen": {
       "PACKAGE_NAME": "com.apoc.mobile"
     },
-    "cordova-plugin-ionic-webview": {
-      "PACKAGE_NAME": "com.apoc.mobile"
-    },
     "cordova-plugin-ionic-keyboard": {
       "PACKAGE_NAME": "com.apoc.mobile"
     },
@@ -173,6 +170,9 @@
       "PACKAGE_NAME": "com.apoc.mobile"
     },
     "com.salesforce": {
+      "PACKAGE_NAME": "com.apoc.mobile"
+    },
+    "cordova-plugin-ionic-webview": {
       "PACKAGE_NAME": "com.apoc.mobile"
     }
   },
@@ -200,22 +200,6 @@
       "pluginId": "cordova-plugin-splashscreen",
       "clobbers": [
         "navigator.splashscreen"
-      ]
-    },
-    {
-      "id": "cordova-plugin-ionic-webview.IonicWebView",
-      "file": "plugins/cordova-plugin-ionic-webview/src/www/util.js",
-      "pluginId": "cordova-plugin-ionic-webview",
-      "clobbers": [
-        "Ionic.WebView"
-      ]
-    },
-    {
-      "id": "cordova-plugin-ionic-webview.ios-wkwebview-exec",
-      "file": "plugins/cordova-plugin-ionic-webview/src/www/ios/ios-wkwebview-exec.js",
-      "pluginId": "cordova-plugin-ionic-webview",
-      "clobbers": [
-        "cordova.exec"
       ]
     },
     {
@@ -320,6 +304,22 @@
       "id": "com.salesforce.util.push",
       "file": "plugins/com.salesforce/www/com.salesforce.util.push.js",
       "pluginId": "com.salesforce"
+    },
+    {
+      "id": "cordova-plugin-ionic-webview.IonicWebView",
+      "file": "plugins/cordova-plugin-ionic-webview/src/www/util.js",
+      "pluginId": "cordova-plugin-ionic-webview",
+      "clobbers": [
+        "Ionic.WebView"
+      ]
+    },
+    {
+      "id": "cordova-plugin-ionic-webview.ios-wkwebview-exec",
+      "file": "plugins/cordova-plugin-ionic-webview/src/www/ios/ios-wkwebview-exec.js",
+      "pluginId": "cordova-plugin-ionic-webview",
+      "clobbers": [
+        "cordova.exec"
+      ]
     }
   ],
   "plugin_metadata": {
@@ -327,10 +327,10 @@
     "cordova-plugin-device": "2.0.2",
     "cordova-plugin-statusbar": "2.4.2",
     "cordova-plugin-splashscreen": "5.0.2",
-    "cordova-plugin-ionic-webview": "2.1.4",
     "cordova-plugin-ionic-keyboard": "2.1.2",
     "phonegap-plugin-push": "1.4.5",
     "cordova-plugin-wkwebview-engine": "1.1.5-dev",
-    "com.salesforce": "6.1.0"
+    "com.salesforce": "6.1.0",
+    "cordova-plugin-ionic-webview": "2.1.4"
   }
 }

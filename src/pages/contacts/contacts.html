@@ -30,16 +30,6 @@
         </ion-item>
       </ion-col>
       <ion-col col-2>
-        <div padding>
-          <ion-segment [(ngModel)]="contactsSegment">
-            <ion-segment-button value="grid">
-              Grid
-            </ion-segment-button>
-            <ion-segment-button value="list">
-              List
-            </ion-segment-button>
-          </ion-segment>
-        </div>
       </ion-col>
     </ion-row>
   </ion-toolbar>
@@ -47,52 +37,33 @@
 
 
 <ion-content padding>
-  <div [ngSwitch]="contactsSegment">
-    <div *ngSwitchCase="'grid'">
-      <ion-grid>
-        <ion-row>
-          <ion-col col-md-4 *ngFor="let con of contacts | nameFilter:searchFilter">
-            <ion-card>
-              <ion-card-header>
-                <h2><b>{{con.Name}}</b></h2>
-                <p><span>{{con.Job_Title__c }}</span><span *ngIf="con.Department!=null"> | {{con.Department}}</span></p>
-              </ion-card-header>
-              <ion-card-content>
-                <ion-row>
-                  <ion-col col-12 *ngIf="con.Email!=null">
-                    <ion-icon name="mail"></ion-icon><span class="contacts-content">{{con.Email}}</span>
-                  </ion-col>
-                  <ion-col col-12 *ngIf="con.Email==null">
-                    <ion-icon name="mail"></ion-icon><span class="contacts-content">N/A</span>
-                  </ion-col>
-                </ion-row>
-                <ion-row>
-                  <ion-col col-12 *ngIf="con.Phone!=null">
-                    <ion-icon name="call"></ion-icon><span class="contacts-content">{{con.Phone}}</span>
-                  </ion-col>
-                  <ion-col col-12 *ngIf="con.Phone==null">
-                    <ion-icon name="call"></ion-icon><span class="contacts-content">N/A</span>
-                  </ion-col>
-                </ion-row>
-                <ion-row>
-                  <ion-col col-12 *ngIf="con.MobilePhone!=null">
-                    <ion-icon name="call"></ion-icon><span class="contacts-content">{{con.MobilePhone}}</span>
-                  </ion-col>
-                  <ion-col col-12 *ngIf="con.MobilePhone==null">
-                    <ion-icon name="call"></ion-icon><span class="contacts-content">N/A</span>
-                  </ion-col>
-                </ion-row>
-              </ion-card-content>
-            </ion-card>
-          </ion-col>
-        </ion-row>
-      </ion-grid>
-    </div>
-    <div *ngSwitchCase="'list'">
-      <ngx-datatable class="material" [sortType]="'multi'" [headerHeight]="50" [footerHeight]="50" [rowHeight]="50"
-        [rows]="rows" [columns]="columns" [columnMode]="'force'" [limit]="10">
-      </ngx-datatable>
-    </div>
-  </div>
-
+  <ion-grid>
+    <ion-row>
+      <ion-col col-md-4 *ngFor="let con of contacts | nameFilter:searchFilter">
+        <ion-card>
+          <ion-card-header>
+            <h2><b>{{con.Name}}</b></h2>
+            <p><span>{{con.Job_Title__c }}</span><span *ngIf="con.Department!=null"> | {{con.Department}}</span></p>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-row *ngIf="con.Email!=null">
+              <ion-col col-12>
+                <ion-icon name="mail"></ion-icon><span class="contacts-content">{{con.Email}}</span>
+              </ion-col>
+            </ion-row>
+            <ion-row *ngIf="con.Phone!=null">
+              <ion-col col-12>
+                <ion-icon name="call"></ion-icon><span class="contacts-content">{{con.Phone}}</span>
+              </ion-col>
+            </ion-row>
+            <ion-row *ngIf="con.MobilePhone!=null">
+              <ion-col col-12>
+                <ion-icon name="call"></ion-icon><span class="contacts-content">{{con.MobilePhone}}</span>
+              </ion-col>
+            </ion-row>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
