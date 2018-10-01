@@ -26,21 +26,19 @@ export class SmartstoreServiceProvider {
     };
   }
 
-  // FillContactsSoups() {
-  //   console.log("Dev Debug: Filling Soups");
-  //   return this.contactsService.loadContacts()
-  //     .then(results => {
-  //       console.log("Dev Debug: Result:" + results);
-  //       let success = (items) => console.log('Dev Debug: Items upserted to Soup: ' + items);
-  //       let failure = (error) => console.error('Dev Debug: Soup Upsert Error: ' + error);
-  //       console.log("Dev Debug: Upserting entries in Soup");
-  //       this.smartStore().upsertSoupEntries('contacts', results.records, success, failure);
-  //     });
-  // }
-
   GetContactsFromSoup(): Promise<any> {
     return new Promise((resolve, reject) => {
       var querySpec = (navigator as sdkNavigator).smartstore.buildAllQuerySpec('Name', 'ascending', 10000);
+      let success = (results) => resolve({ records: results.currentPageOrderedEntries });
+      (navigator as sdkNavigator).smartstore.querySoup(this.soupName, querySpec, success, reject);
+    });
+  }
+
+  GetContactsByFilterFromSoup(filters): Promise<any> {
+    console.log(filters);
+    return new Promise((resolve, reject) => {
+      var querySpec = (navigator as sdkNavigator).smartstore.buildAllQuerySpec(filters, 'ascending', 10000);
+      console.log('QuerySpecs: ' + querySpec);
       let success = (results) => resolve({ records: results.currentPageOrderedEntries });
       (navigator as sdkNavigator).smartstore.querySoup(this.soupName, querySpec, success, reject);
     });

@@ -51,6 +51,7 @@ export class MyApp {
   initializeApp() {
     this.oauth.login("3MVG9Iu66FKeHhINkB1l7xt7kR8czFcCTUhgoA8Ol2Ltf1eYHOU4SqQRSEitYFDUpqRWcoQ2.dBv_a1Dyu5xa")
       .then((oauthData) => {
+        console.log("Oauth Data: " + JSON.parse(oauthData));
         DataService.createInstance(oauthData, { proxyURL: "https://apoc--stage.cs15.my.salesforce.com/" });
       });
 

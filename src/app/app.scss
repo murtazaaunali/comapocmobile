@@ -14,11 +14,17 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+@import '~@swimlane/ngx-datatable/release/index.css';
+@import '~@swimlane/ngx-datatable/release/themes/material.css';
+@import '~@swimlane/ngx-datatable/release/assets/icons.css';
+
 ion-app {
     font-family: "BrandonGrotesque-Regular";
     border-top: 20px solid #009ada;
     border-bottom: 20px solid #009ada;
   }
+  
   .toolbar-background {
     background: transparent !important;
     border: none !important;
@@ -136,6 +142,7 @@ ion-app {
       height: 53px;
       background: transparent;
     }
+    
   
     .username {
       position: absolute;
@@ -210,8 +217,9 @@ ion-app {
     
     .search-btn {
       padding: 20px!important;
-      height: 35px!important;
-      font-size: 15px!important;
+      height: 45px!important;
+  font-size: 16px!important;
+  width: 165px!important;
     }
     
     .center{
@@ -237,4 +245,7 @@ ion-app {
     .button-round-ios {
       width: 55px;
       height: 55px;
+    }
+    .card-header-md {
+      margin-bottom: -10px!important;
     }

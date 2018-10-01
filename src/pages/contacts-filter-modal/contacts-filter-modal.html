@@ -5,11 +5,10 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-
   <ion-navbar>
     <ion-title style="padding-left: 10px">
-        <img src="../../assets/imgs/filter.png"/>
-        <h2 class="inline-label">Filters</h2>
+      <img src="../../assets/imgs/filter.png" />
+      <h2 class="inline-label">Filters</h2>
     </ion-title>
     <ion-buttons end>
       <button class="close-btn" ion-button icon-only (click)="closeModal()">
@@ -17,66 +16,63 @@
       </button>
     </ion-buttons>
   </ion-navbar>
-
 </ion-header>
 
 
 <ion-content padding>
-
   <ion-list>
-
-<ion-row>
-  <ion-col>
-    <ion-item class="item-has-input filter-input">
-      <ion-input clearInput type="text" text-left [(ngModel)]="filter.firstName" placeholder="Search by first name" ></ion-input>
-    </ion-item>
-  </ion-col>
-  <ion-col>
-    <ion-item class="item-has-input filter-input">
-      <ion-input clearInput type="text" text-left [(ngModel)]="filter.lastName" placeholder="Search by last name"></ion-input>
-    </ion-item>
-  </ion-col>
-</ion-row>
-<br>
     <ion-row>
-      <ion-col>
+      <!-- <ion-col>
         <ion-item class="item-has-input filter-input">
-          <ion-input clearInput type="text" text-left [(ngModel)]="filter.jobTitle" placeholder="Search by job title" ></ion-input>
+          <ion-input clearInput type="text" text-left [(ngModel)]="filter.firstName" placeholder="Search by first name"></ion-input>
         </ion-item>
-      </ion-col>
+      </ion-col> -->
       <ion-col>
         <ion-item class="item-has-input filter-input">
-          <ion-input clearInput type="text" text-left [(ngModel)]="filter.department" placeholder="Search by department"></ion-input>
+          <ion-input clearInput type="text" text-left [(ngModel)]="filter.Name" placeholder="Search by Name"></ion-input>
         </ion-item>
       </ion-col>
     </ion-row>
-<br>
+    <br>
     <ion-row>
       <ion-col>
         <ion-item class="item-has-input filter-input">
-          <ion-input clearInput type="text" text-left [(ngModel)]="filter.phone" placeholder="Search by phone number" ></ion-input>
+          <ion-input clearInput type="text" text-left [(ngModel)]="filter.JobTitle__c" placeholder="Search by Job Title"></ion-input>
         </ion-item>
       </ion-col>
       <ion-col>
         <ion-item class="item-has-input filter-input">
-          <ion-input clearInput type="text" text-left [(ngModel)]="filter.mobile" placeholder="Search by mobile number"></ion-input>
+          <ion-input clearInput type="text" text-left [(ngModel)]="filter.Department" placeholder="Search by Department"></ion-input>
         </ion-item>
       </ion-col>
     </ion-row>
-<br>
+    <br>
     <ion-row>
       <ion-col>
         <ion-item class="item-has-input filter-input">
-          <ion-input clearInput type="text" text-left [(ngModel)]="filter.email" placeholder="Search by email" ></ion-input>
+          <ion-input clearInput type="text" text-left [(ngModel)]="filter.Phone" placeholder="Search by Phone Number"></ion-input>
         </ion-item>
       </ion-col>
       <ion-col>
         <ion-item class="item-has-input filter-input">
-          <ion-input clearInput type="text" text-left [(ngModel)]="filter.accountName" placeholder="Search by account name"></ion-input>
+          <ion-input clearInput type="text" text-left [(ngModel)]="filter.MobilePhone" placeholder="Search by Mobile Number"></ion-input>
         </ion-item>
       </ion-col>
     </ion-row>
-<br>
+    <br>
+    <ion-row>
+      <ion-col>
+        <ion-item class="item-has-input filter-input">
+          <ion-input clearInput type="text" text-left [(ngModel)]="filter.Email" placeholder="Search by Email"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col>
+        <ion-item class="item-has-input filter-input">
+          <ion-input clearInput type="text" text-left [(ngModel)]="filter.Account.Name" placeholder="Search by Account Name"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <br>
     <ion-row>
       <ion-col>
         <ion-item>
