@@ -93,7 +93,7 @@
             </ion-card>
           </ion-col>
         </ion-row>
-        <ion-infinite-scroll (ionInfinite)="$event.waitFor(doInfinite($event))" *ngIf="page < totalPages" position="top">
+        <ion-infinite-scroll (ionInfinite)="$event.waitFor(doInfinite($event))" *ngIf="page < totalPages" position="bottom">
           <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="Loading more data..."></ion-infinite-scroll-content>
         </ion-infinite-scroll>
       </ion-grid>
@@ -101,9 +101,9 @@
     <!-- Data Grid -->
     <!-- DataTables -->
     <div *ngSwitchCase="'list'">
-      <ngx-datatable #table [rows]="rows" [limit]="10" [columnMode]="'flex'" [headerHeight]="50" [footerHeight]="50"
-        [rowHeight]="'auto'">
-        <ngx-datatable-column [sortable]="true" name="Name" [flexGrow]="2">
+      <ngx-datatable #table [rows]="rows" [limit]="10" [columnMode]="'force'" [headerHeight]="50" [footerHeight]="50"
+        [rowHeight]="'auto'" [sortType]="'multi'">
+        <ngx-datatable-column [sortable]="true" prop="Name" name="Name" [flexGrow]="2">
           <ng-template let-column="column" let-sort="sortFn" ngx-datatable-header-template>
             <span (click)="sort()">Name</span>
           </ng-template>
