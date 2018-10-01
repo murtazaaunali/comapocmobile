@@ -4,51 +4,6 @@ webpackJsonp([10],{
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AccountsPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-/**
- * Generated class for the AccountsPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var AccountsPage = /** @class */ (function () {
-    function AccountsPage(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-    }
-    AccountsPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad AccountsPage');
-    };
-    AccountsPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-accounts',template:/*ion-inline-start:"/private/var/root/Desktop/Hybrid/Salesforce/comapocmobile/src/pages/accounts/accounts.html"*/'<!--\n  Generated template for the AccountsPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n      <button ion-button menuToggle>\n          <ion-icon name="menu"></ion-icon>\n        </button>\n    <ion-title>accounts</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/private/var/root/Desktop/Hybrid/Salesforce/comapocmobile/src/pages/accounts/accounts.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
-    ], AccountsPage);
-    return AccountsPage;
-}());
-
-//# sourceMappingURL=accounts.js.map
-
-/***/ }),
-
-/***/ 147:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ActivitiesPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
@@ -90,7 +45,97 @@ var ActivitiesPage = /** @class */ (function () {
 
 /***/ }),
 
+/***/ 147:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AccountsPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/**
+ * Generated class for the AccountsPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var AccountsPage = /** @class */ (function () {
+    function AccountsPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    AccountsPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad AccountsPage');
+    };
+    AccountsPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'page-accounts',template:/*ion-inline-start:"/private/var/root/Desktop/Hybrid/Salesforce/comapocmobile/src/pages/accounts/accounts.html"*/'<!--\n  Generated template for the AccountsPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n      <button ion-button menuToggle>\n          <ion-icon name="menu"></ion-icon>\n        </button>\n    <ion-title>accounts</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/private/var/root/Desktop/Hybrid/Salesforce/comapocmobile/src/pages/accounts/accounts.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
+    ], AccountsPage);
+    return AccountsPage;
+}());
+
+//# sourceMappingURL=accounts.js.map
+
+/***/ }),
+
 /***/ 148:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CalendarPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/**
+ * Generated class for the CalendarPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var CalendarPage = /** @class */ (function () {
+    function CalendarPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    CalendarPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad CalendarPage');
+    };
+    CalendarPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'page-calendar',template:/*ion-inline-start:"/private/var/root/Desktop/Hybrid/Salesforce/comapocmobile/src/pages/calendar/calendar.html"*/'<!--\n  Generated template for the CalendarPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n      <button ion-button menuToggle>\n          <ion-icon name="menu"></ion-icon>\n        </button>\n    <ion-title>calendar</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/private/var/root/Desktop/Hybrid/Salesforce/comapocmobile/src/pages/calendar/calendar.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
+    ], CalendarPage);
+    return CalendarPage;
+}());
+
+//# sourceMappingURL=calendar.js.map
+
+/***/ }),
+
+/***/ 149:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -151,7 +196,7 @@ var ContactsFilterModalPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 149:
+/***/ 150:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -160,7 +205,7 @@ var ContactsFilterModalPage = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_contact_service_contact_service__ = __webpack_require__(229);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_smartstore_service_smartstore_service__ = __webpack_require__(230);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__contacts_filter_modal_contacts_filter_modal__ = __webpack_require__(148);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__contacts_filter_modal_contacts_filter_modal__ = __webpack_require__(149);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__new_contact_new_contact__ = __webpack_require__(276);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pipes_namefilter_namefilter__ = __webpack_require__(231);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs__ = __webpack_require__(22);
@@ -230,8 +275,7 @@ var ContactsPage = /** @class */ (function () {
         var _this = this;
         this.loader.present();
         this.smartStoreService.GetContactsFromSoup().then(function (data) {
-            _this.totalPages = Math.round(data.records.length / 9);
-            console.log("Total Pages:" + Math.round(_this.totalPages));
+            _this.totalPages = data.records.length / 9;
             for (var i = 0; i < 9; i++) {
                 _this.contacts.push(data.records[i]);
             }
@@ -253,7 +297,6 @@ var ContactsPage = /** @class */ (function () {
         var _this = this;
         this.smartStoreService.GetContactsFromSoup().then(function (data) {
             var start_num = 9 * _this.page;
-            console.log("Start Num:" + start_num);
             setTimeout(function () {
                 for (var i = 0; i < 9; i++) {
                     _this.contacts.push(data.records[Number(start_num) + i]);
@@ -275,7 +318,7 @@ var ContactsPage = /** @class */ (function () {
     };
     ContactsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-contacts',template:/*ion-inline-start:"/private/var/root/Desktop/Hybrid/Salesforce/comapocmobile/src/pages/contacts/contacts.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>CONTACTS</ion-title>\n  </ion-navbar>\n  <ion-toolbar>\n    <ion-row>\n      <ion-col col-2 style="padding-left: 10px">\n        <button block style="background:transparent;" (click)="OpenFiltersModal()">\n          <img style="vertical-align: bottom" src="assets/imgs/filter.png" />\n          <div class="subheader-icon-txt">Filters</div>\n        </button>\n      </ion-col>\n      <ion-col col-2 style="padding-left: 10px">\n        <button block style="background:transparent;" (click)="AddNewContactModal()">\n          <img style="vertical-align: bottom" src="assets/imgs/new.png" />\n          <div class="subheader-icon-txt">New</div>\n        </button>\n      </ion-col>\n      <ion-col col-2>\n      </ion-col>\n      <ion-col col-4>\n        <ion-item class="item-has-input search-filter" *ngIf="segments==\'grid\'">\n          <ion-input clearInput type="text" [(ngModel)]="searchFilter" text-left placeholder="Search Contact"></ion-input>\n          <ion-label item-right class="align-right label-img">\n            <ion-icon name="search"></ion-icon>\n          </ion-label>\n        </ion-item>\n        <ion-item class="item-has-input search-filter" *ngIf="segments==\'list\'">\n          <ion-input clearInput type="text" (keyup)=\'FilterTableRows($event)\' text-left placeholder="Search Contact"></ion-input>\n          <ion-label item-right class="align-right label-img">\n            <ion-icon name="search"></ion-icon>\n          </ion-label>\n        </ion-item>\n      </ion-col>\n      <ion-col col-2>\n        <div padding>\n          <ion-segment [(ngModel)]="segments" color="primary" (ionChange)="onSegmentChange($event)">\n            <ion-segment-button value="grid">\n              Grid\n            </ion-segment-button>\n            <ion-segment-button value="list">\n              List\n            </ion-segment-button>\n          </ion-segment>\n        </div>\n      </ion-col>\n    </ion-row>\n  </ion-toolbar>\n</ion-header>\n\n\n<ion-content padding>\n  <div [ngSwitch]="segments">\n    <!-- Data Grid -->\n    <div *ngSwitchCase="\'grid\'">\n      <ion-grid>\n        <ion-row>\n          <ion-col col-md-4 *ngFor="let con of contacts| nameFilter:searchFilter" style="margin-top: -15px;">\n            <ion-card style=" min-height: 155px!important;max-height: 155px">\n              <ion-card-header>\n                <h2><b>{{con.Name}}</b></h2>\n              </ion-card-header>\n              <ion-card-content style="margin-top: -10px">\n                <ion-row *ngIf="con.Job_Title__c!=null">\n                  <ion-col col-12>\n                    <ion-icon name="briefcase"></ion-icon><span class="contacts-content">{{con.Job_Title__c}}</span>\n                  </ion-col>\n                </ion-row>\n                <ion-row *ngIf="con.Department!=null">\n                  <ion-col col-12>\n                    <ion-icon name="business"></ion-icon><span class="contacts-content">{{con.Department}}</span>\n                  </ion-col>\n                </ion-row>\n                <ion-row *ngIf="con.Email!=null">\n                  <ion-col col-12>\n                    <ion-icon name="mail"></ion-icon><span class="contacts-content">{{con.Email}}</span>\n                  </ion-col>\n                </ion-row>\n                <ion-row style="margin-top: -10px;" *ngIf="con.Phone!=null">\n                  <ion-col col-12>\n                    <ion-icon name="call"></ion-icon><span class="contacts-content">{{con.Phone}}</span>\n                  </ion-col>\n                </ion-row>\n                <ion-row style="margin-top: -10px;" *ngIf="con.MobilePhone!=null">\n                  <ion-col col-12>\n                    <ion-icon name="phone-portrait"></ion-icon><span class="contacts-content">{{con.MobilePhone}}</span>\n                  </ion-col>\n                </ion-row>\n              </ion-card-content>\n            </ion-card>\n          </ion-col>\n        </ion-row>\n        <ion-infinite-scroll (ionInfinite)="$event.waitFor(doInfinite($event))" *ngIf="page < totalPages" position="bottom">\n          <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="Loading more data..."></ion-infinite-scroll-content>\n        </ion-infinite-scroll>\n      </ion-grid>\n    </div>\n    <!-- Data Grid -->\n    <!-- DataTables -->\n    <div *ngSwitchCase="\'list\'">\n      <ngx-datatable #table [rows]="rows" [limit]="10" [columnMode]="\'force\'" [headerHeight]="50" [footerHeight]="50"\n        [rowHeight]="\'auto\'" [sortType]="\'multi\'">\n        <ngx-datatable-column [sortable]="true" prop="Name" name="Name" [flexGrow]="2">\n          <ng-template let-column="column" let-sort="sortFn" ngx-datatable-header-template>\n            <span (click)="sort()">Name</span>\n          </ng-template>\n          <ng-template let-row="row" ngx-datatable-cell-template>\n            {{row.Name}}\n          </ng-template>\n        </ngx-datatable-column>\n        <ngx-datatable-column [sortable]="true" name="JobTitle" [flexGrow]="2">\n          <ng-template let-column="column" let-sort="sortFn" ngx-datatable-header-template>\n            <span (click)="sort()">Job Title</span>\n          </ng-template>\n          <ng-template let-row="row" ngx-datatable-cell-template>\n            {{row.Job_Title__c}}\n          </ng-template>\n        </ngx-datatable-column>\n        <ngx-datatable-column [sortable]="true" name="Department" [flexGrow]="2">\n          <ng-template let-column="column" let-sort="sortFn" ngx-datatable-header-template>\n            <span (click)="sort()">Department</span>\n          </ng-template>\n          <ng-template let-row="row" ngx-datatable-cell-template>\n            {{row.Department}}\n          </ng-template>\n        </ngx-datatable-column>\n        <!-- <ngx-datatable-column [sortable]="true" name="Account">\n          <ng-template let-column="column" let-sort="sortFn" ngx-datatable-header-template>\n            <span (click)="sort()">Account</span>\n          </ng-template>\n          <ng-template let-row="row" ngx-datatable-cell-template>\n            {{row.Account.Name}}\n          </ng-template>\n        </ngx-datatable-column> -->\n        <ngx-datatable-column [sortable]="true" name="Email" [flexGrow]="3">\n          <ng-template let-column="column" let-sort="sortFn" ngx-datatable-header-template>\n            <span (click)="sort()">Email</span>\n          </ng-template>\n          <ng-template let-row="row" ngx-datatable-cell-template>\n            {{row.Email}}\n          </ng-template>\n        </ngx-datatable-column>\n        <ngx-datatable-column [sortable]="true" name="Mobile" [flexGrow]="2">\n          <ng-template let-column="column" ngx-datatable-header-template>\n            <span>Mobile</span>\n          </ng-template>\n          <ng-template let-row="row" ngx-datatable-cell-template>\n            {{row.MobilePhone}}\n          </ng-template>\n        </ngx-datatable-column>\n        <ngx-datatable-column [sortable]="true" name="Phone" [flexGrow]="2">\n          <ng-template let-column="column" ngx-datatable-header-template>\n            <span>Phone</span>\n          </ng-template>\n          <ng-template let-row="row" ngx-datatable-cell-template>\n            {{row.Phone}}\n          </ng-template>\n        </ngx-datatable-column>\n      </ngx-datatable>\n    </div>\n    <!-- DataTables -->\n  </div>\n</ion-content>'/*ion-inline-end:"/private/var/root/Desktop/Hybrid/Salesforce/comapocmobile/src/pages/contacts/contacts.html"*/,
+            selector: 'page-contacts',template:/*ion-inline-start:"/private/var/root/Desktop/Hybrid/Salesforce/comapocmobile/src/pages/contacts/contacts.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>CONTACTS</ion-title>\n  </ion-navbar>\n  <ion-toolbar>\n    <ion-row>\n      <ion-col col-2 style="padding-left: 10px">\n        <button block style="background:transparent;" (click)="OpenFiltersModal()">\n          <img style="vertical-align: bottom" src="assets/imgs/filter.png" />\n          <div class="subheader-icon-txt">Filters</div>\n        </button>\n      </ion-col>\n      <ion-col col-2 style="padding-left: 10px">\n        <button block style="background:transparent;" (click)="AddNewContactModal()">\n          <img style="vertical-align: bottom" src="assets/imgs/new.png" />\n          <div class="subheader-icon-txt">New</div>\n        </button>\n      </ion-col>\n      <ion-col col-2>\n      </ion-col>\n      <ion-col col-4>\n        <ion-item class="item-has-input search-filter" *ngIf="segments==\'grid\'">\n          <ion-input clearInput type="text" [(ngModel)]="searchFilter" text-left placeholder="Search Contact"></ion-input>\n          <ion-label item-right class="align-right label-img">\n            <ion-icon name="search"></ion-icon>\n          </ion-label>\n        </ion-item>\n        <ion-item class="item-has-input search-filter" *ngIf="segments==\'list\'">\n          <ion-input clearInput type="text" (keyup)=\'FilterTableRows($event)\' text-left placeholder="Search Contact"></ion-input>\n          <ion-label item-right class="align-right label-img">\n            <ion-icon name="search"></ion-icon>\n          </ion-label>\n        </ion-item>\n      </ion-col>\n      <ion-col col-2>\n        <div padding>\n          <ion-segment [(ngModel)]="segments" color="primary" (ionChange)="onSegmentChange($event)">\n            <ion-segment-button value="grid">\n              Grid\n            </ion-segment-button>\n            <ion-segment-button value="list">\n              List\n            </ion-segment-button>\n          </ion-segment>\n        </div>\n      </ion-col>\n    </ion-row>\n  </ion-toolbar>\n</ion-header>\n\n\n<ion-content padding>\n  <div [ngSwitch]="segments">\n    <!-- Data Grid -->\n    <div *ngSwitchCase="\'grid\'">\n      <ion-grid>\n        <ion-row>\n          <ion-col col-md-4 *ngFor="let con of contacts| nameFilter:searchFilter" style="margin-top: -15px;">\n            <ion-card style=" min-height: 155px!important;max-height: 155px">\n              <ion-card-header>\n                <h2><b>{{con.Name}}</b></h2>\n              </ion-card-header>\n              <ion-card-content style="margin-top: -10px">\n                <ion-row *ngIf="con.Job_Title__c!=null">\n                  <ion-col col-12>\n                    <ion-icon name="briefcase"></ion-icon><span class="contacts-content">{{con.Job_Title__c}}</span>\n                  </ion-col>\n                </ion-row>\n                <ion-row *ngIf="con.Department!=null">\n                  <ion-col col-12>\n                    <ion-icon name="business"></ion-icon><span class="contacts-content">{{con.Department}}</span>\n                  </ion-col>\n                </ion-row>\n                <ion-row *ngIf="con.Email!=null">\n                  <ion-col col-12>\n                    <ion-icon name="mail"></ion-icon><span class="contacts-content">{{con.Email}}</span>\n                  </ion-col>\n                </ion-row>\n                <ion-row style="margin-top: -10px;" *ngIf="con.Phone!=null">\n                  <ion-col col-12>\n                    <ion-icon name="call"></ion-icon><span class="contacts-content">{{con.Phone}}</span>\n                  </ion-col>\n                </ion-row>\n                <ion-row style="margin-top: -10px;" *ngIf="con.MobilePhone!=null">\n                  <ion-col col-12>\n                    <ion-icon name="phone-portrait"></ion-icon><span class="contacts-content">{{con.MobilePhone}}</span>\n                  </ion-col>\n                </ion-row>\n              </ion-card-content>\n            </ion-card>\n          </ion-col>\n        </ion-row>\n        <ion-infinite-scroll (ionInfinite)="$event.waitFor(doInfinite($event))" *ngIf="page < totalPages" position="top">\n          <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="Loading more data..."></ion-infinite-scroll-content>\n        </ion-infinite-scroll>\n      </ion-grid>\n    </div>\n    <!-- Data Grid -->\n    <!-- DataTables -->\n    <div *ngSwitchCase="\'list\'">\n      <ngx-datatable #table [rows]="rows" [limit]="10" [columnMode]="\'flex\'" [headerHeight]="50" [footerHeight]="50"\n        [rowHeight]="\'auto\'">\n        <ngx-datatable-column [sortable]="true" name="Name" [flexGrow]="2">\n          <ng-template let-column="column" let-sort="sortFn" ngx-datatable-header-template>\n            <span (click)="sort()">Name</span>\n          </ng-template>\n          <ng-template let-row="row" ngx-datatable-cell-template>\n            {{row.Name}}\n          </ng-template>\n        </ngx-datatable-column>\n        <ngx-datatable-column [sortable]="true" name="JobTitle" [flexGrow]="2">\n          <ng-template let-column="column" let-sort="sortFn" ngx-datatable-header-template>\n            <span (click)="sort()">Job Title</span>\n          </ng-template>\n          <ng-template let-row="row" ngx-datatable-cell-template>\n            {{row.Job_Title__c}}\n          </ng-template>\n        </ngx-datatable-column>\n        <ngx-datatable-column [sortable]="true" name="Department" [flexGrow]="2">\n          <ng-template let-column="column" let-sort="sortFn" ngx-datatable-header-template>\n            <span (click)="sort()">Department</span>\n          </ng-template>\n          <ng-template let-row="row" ngx-datatable-cell-template>\n            {{row.Department}}\n          </ng-template>\n        </ngx-datatable-column>\n        <!-- <ngx-datatable-column [sortable]="true" name="Account">\n          <ng-template let-column="column" let-sort="sortFn" ngx-datatable-header-template>\n            <span (click)="sort()">Account</span>\n          </ng-template>\n          <ng-template let-row="row" ngx-datatable-cell-template>\n            {{row.Account.Name}}\n          </ng-template>\n        </ngx-datatable-column> -->\n        <ngx-datatable-column [sortable]="true" name="Email" [flexGrow]="3">\n          <ng-template let-column="column" let-sort="sortFn" ngx-datatable-header-template>\n            <span (click)="sort()">Email</span>\n          </ng-template>\n          <ng-template let-row="row" ngx-datatable-cell-template>\n            {{row.Email}}\n          </ng-template>\n        </ngx-datatable-column>\n        <ngx-datatable-column [sortable]="true" name="Mobile" [flexGrow]="2">\n          <ng-template let-column="column" ngx-datatable-header-template>\n            <span>Mobile</span>\n          </ng-template>\n          <ng-template let-row="row" ngx-datatable-cell-template>\n            {{row.MobilePhone}}\n          </ng-template>\n        </ngx-datatable-column>\n        <ngx-datatable-column [sortable]="true" name="Phone" [flexGrow]="2">\n          <ng-template let-column="column" ngx-datatable-header-template>\n            <span>Phone</span>\n          </ng-template>\n          <ng-template let-row="row" ngx-datatable-cell-template>\n            {{row.Phone}}\n          </ng-template>\n        </ngx-datatable-column>\n      </ngx-datatable>\n    </div>\n    <!-- DataTables -->\n  </div>\n</ion-content>'/*ion-inline-end:"/private/var/root/Desktop/Hybrid/Salesforce/comapocmobile/src/pages/contacts/contacts.html"*/,
             providers: [__WEBPACK_IMPORTED_MODULE_6__pipes_namefilter_namefilter__["a" /* NamefilterPipe */]]
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers_contact_service_contact_service__["a" /* ContactServiceProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* ModalController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_6__pipes_namefilter_namefilter__["a" /* NamefilterPipe */], __WEBPACK_IMPORTED_MODULE_3__providers_smartstore_service_smartstore_service__["a" /* SmartstoreServiceProvider */]])
@@ -284,51 +327,6 @@ var ContactsPage = /** @class */ (function () {
 }());
 
 //# sourceMappingURL=contacts.js.map
-
-/***/ }),
-
-/***/ 150:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CalendarPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-/**
- * Generated class for the CalendarPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var CalendarPage = /** @class */ (function () {
-    function CalendarPage(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-    }
-    CalendarPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad CalendarPage');
-    };
-    CalendarPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-calendar',template:/*ion-inline-start:"/private/var/root/Desktop/Hybrid/Salesforce/comapocmobile/src/pages/calendar/calendar.html"*/'<!--\n  Generated template for the CalendarPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n      <button ion-button menuToggle>\n          <ion-icon name="menu"></ion-icon>\n        </button>\n    <ion-title>calendar</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/private/var/root/Desktop/Hybrid/Salesforce/comapocmobile/src/pages/calendar/calendar.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
-    ], CalendarPage);
-    return CalendarPage;
-}());
-
-//# sourceMappingURL=calendar.js.map
 
 /***/ }),
 
@@ -450,43 +448,43 @@ webpackEmptyAsyncContext.id = 186;
 
 var map = {
 	"../pages/accounts/accounts.module": [
-		455,
+		456,
 		9
 	],
 	"../pages/activities/activities.module": [
-		456,
+		455,
 		8
 	],
 	"../pages/calendar/calendar.module": [
-		459,
+		457,
 		7
 	],
 	"../pages/contacts-filter-modal/contacts-filter-modal.module": [
-		457,
+		458,
 		6
 	],
 	"../pages/contacts/contacts.module": [
-		458,
+		459,
 		5
 	],
 	"../pages/dashboard/dashboard.module": [
-		460,
+		461,
 		4
 	],
 	"../pages/help/help.module": [
-		461,
+		460,
 		3
 	],
 	"../pages/new-contact/new-contact.module": [
-		462,
+		464,
 		2
 	],
 	"../pages/opportunities/opportunities.module": [
-		463,
+		462,
 		1
 	],
 	"../pages/settings/settings.module": [
-		464,
+		463,
 		0
 	]
 };
@@ -566,19 +564,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 var SmartstoreServiceProvider = /** @class */ (function () {
-    // Initialize Smart Store
-    // private smartStore(): any {
-    //   return cordova.require("com.salesforce.plugin.smartstore");
-    // }
     function SmartstoreServiceProvider() {
         // Soup name predefined
-        // private storeName = 'userstore';
+        this.storeName = 'userstore';
         this.soupName = 'contacts';
-        // const storeConfig = {
-        //   storeName: this.storeName,
-        //   isGlobalStore: true
-        // };
+        var storeConfig = {
+            storeName: this.storeName,
+            isGlobalStore: true
+        };
     }
+    // Initialize Smart Store
+    SmartstoreServiceProvider.prototype.smartStore = function () {
+        return cordova.require("com.salesforce.plugin.smartstore");
+    };
     SmartstoreServiceProvider.prototype.GetContactsFromSoup = function () {
         var _this = this;
         return new Promise(function (resolve, reject) {
@@ -668,16 +666,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-// interface sdkNavigator extends Navigator {
-//   smartsync: any
-// }
 var SmartsyncServiceProvider = /** @class */ (function () {
     function SmartsyncServiceProvider() {
         this.storeName = 'usersync';
-        // const storeConfig = {
-        //   storeName: this.storeName,
-        //   isGlobalStore: true
-        // };
+        var storeConfig = {
+            storeName: this.storeName,
+            isGlobalStore: true
+        };
     }
     // Initialize Smart Sync
     SmartsyncServiceProvider.prototype.smartSync = function () {
@@ -687,6 +682,11 @@ var SmartsyncServiceProvider = /** @class */ (function () {
         var target = { type: "soql", query: "SELECT Id, Name, Account.Name, Department, Role__c, Role_DLH__c, Other_Department__c, Job_Title__c, Other_Job_Title__c, Email, MobilePhone, Fax, Survey__c, RecordType.Name, CreatedBy.Name, CreatedById, CreatedDate, Owner.Name FROM Contact LIMIT 1000" };
         this.smartSync().syncDown(target, "contacts", { mergeMode: 'LEAVE_IF_CHANGED' }, function (response) {
             return response;
+            // if (response.status !== "DONE") {
+            //   console.log("Progress:" + response.progress);
+            // } else {
+            //   console.log("Progress:" + response.progress);
+            // }
         });
     };
     SmartsyncServiceProvider = __decorate([
@@ -860,13 +860,13 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__swimlane_ngx_datatable__ = __webpack_require__(444);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__swimlane_ngx_datatable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__swimlane_ngx_datatable__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(445);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_accounts_accounts__ = __webpack_require__(146);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_activities_activities__ = __webpack_require__(147);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_calendar_calendar__ = __webpack_require__(150);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_contacts_contacts__ = __webpack_require__(149);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_accounts_accounts__ = __webpack_require__(147);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_activities_activities__ = __webpack_require__(146);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_calendar_calendar__ = __webpack_require__(148);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_contacts_contacts__ = __webpack_require__(150);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_dashboard_dashboard__ = __webpack_require__(151);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_opportunities_opportunities__ = __webpack_require__(152);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_contacts_filter_modal_contacts_filter_modal__ = __webpack_require__(148);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_contacts_filter_modal_contacts_filter_modal__ = __webpack_require__(149);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ionic_native_status_bar__ = __webpack_require__(272);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__ionic_native_splash_screen__ = __webpack_require__(275);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pipes_namefilter_namefilter__ = __webpack_require__(231);
@@ -922,16 +922,16 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_3__swimlane_ngx_datatable__["NgxDatatableModule"],
                 __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* MyApp */], {}, {
                     links: [
-                        { loadChildren: '../pages/accounts/accounts.module#AccountsPageModule', name: 'AccountsPage', segment: 'accounts', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/activities/activities.module#ActivitiesPageModule', name: 'ActivitiesPage', segment: 'activities', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/accounts/accounts.module#AccountsPageModule', name: 'AccountsPage', segment: 'accounts', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/calendar/calendar.module#CalendarPageModule', name: 'CalendarPage', segment: 'calendar', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/contacts-filter-modal/contacts-filter-modal.module#ContactsFilterModalPageModule', name: 'ContactsFilterModalPage', segment: 'contacts-filter-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/contacts/contacts.module#ContactsPageModule', name: 'ContactsPage', segment: 'contacts', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/calendar/calendar.module#CalendarPageModule', name: 'CalendarPage', segment: 'calendar', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/dashboard/dashboard.module#DashboardPageModule', name: 'DashboardPage', segment: 'dashboard', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/help/help.module#HelpPageModule', name: 'HelpPage', segment: 'help', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/new-contact/new-contact.module#NewContactPageModule', name: 'NewContactPage', segment: 'new-contact', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/dashboard/dashboard.module#DashboardPageModule', name: 'DashboardPage', segment: 'dashboard', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/opportunities/opportunities.module#OpportunitiesPageModule', name: 'OpportunitiesPage', segment: 'opportunities', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/settings/settings.module#SettingsPageModule', name: 'SettingsPage', segment: 'settings', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/settings/settings.module#SettingsPageModule', name: 'SettingsPage', segment: 'settings', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/new-contact/new-contact.module#NewContactPageModule', name: 'NewContactPage', segment: 'new-contact', priority: 'low', defaultHistory: [] }
                     ]
                 }),
             ],
@@ -977,10 +977,10 @@ var AppModule = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(275);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_forcejs__ = __webpack_require__(79);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_forcejs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_forcejs__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_accounts_accounts__ = __webpack_require__(146);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_activities_activities__ = __webpack_require__(147);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_calendar_calendar__ = __webpack_require__(150);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_contacts_contacts__ = __webpack_require__(149);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_accounts_accounts__ = __webpack_require__(147);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_activities_activities__ = __webpack_require__(146);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_calendar_calendar__ = __webpack_require__(148);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_contacts_contacts__ = __webpack_require__(150);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_dashboard_dashboard__ = __webpack_require__(151);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_settings_settings__ = __webpack_require__(278);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_help_help__ = __webpack_require__(277);

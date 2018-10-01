@@ -65,8 +65,7 @@ export class ContactsPage {
   GetAllContacts() {
     this.loader.present();
     this.smartStoreService.GetContactsFromSoup().then(data => {
-      this.totalPages = Math.round(data.records.length / 9);
-      console.log("Total Pages:" + Math.round(this.totalPages));
+      this.totalPages = data.records.length / 9;
       for (let i = 0; i < 9; i++) {
         this.contacts.push(data.records[i]);
       }
@@ -90,7 +89,6 @@ export class ContactsPage {
   doInfinite(infiniteScroll) {
     this.smartStoreService.GetContactsFromSoup().then(data => {
       var start_num = 9 * this.page;
-      console.log("Start Num:" + start_num);
       setTimeout(() => {
         for (var i = 0; i < 9; i++) {
           this.contacts.push(data.records[Number(start_num) + i]);

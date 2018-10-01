@@ -1,5 +1,5 @@
 {
-  "_from": "git+https://github.com/apache/cordova-plugin-wkwebview-engine.git#master",
+  "_from": "git+https://github.com/apache/cordova-plugin-wkwebview-engine.git",
   "_id": "cordova-plugin-wkwebview-engine@1.2.0-dev",
   "_inBundle": false,
   "_integrity": "",
@@ -7,18 +7,18 @@
   "_phantomChildren": {},
   "_requested": {
     "type": "git",
-    "raw": "https://github.com/apache/cordova-plugin-wkwebview-engine.git#master",
-    "rawSpec": "https://github.com/apache/cordova-plugin-wkwebview-engine.git#master",
-    "saveSpec": "git+https://github.com/apache/cordova-plugin-wkwebview-engine.git#master",
+    "raw": "https://github.com/apache/cordova-plugin-wkwebview-engine",
+    "rawSpec": "https://github.com/apache/cordova-plugin-wkwebview-engine",
+    "saveSpec": "git+https://github.com/apache/cordova-plugin-wkwebview-engine.git",
     "fetchSpec": "https://github.com/apache/cordova-plugin-wkwebview-engine.git",
-    "gitCommittish": "master"
+    "gitCommittish": null
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
   "_resolved": "git+https://github.com/apache/cordova-plugin-wkwebview-engine.git#bf0f23607e894aa5fd49578021d8511df33e3b9a",
-  "_spec": "https://github.com/apache/cordova-plugin-wkwebview-engine.git#master",
+  "_spec": "https://github.com/apache/cordova-plugin-wkwebview-engine",
   "_where": "/private/var/root/Desktop/Hybrid/Salesforce/comapocmobile",
   "author": {
     "name": "Apache Cordova"

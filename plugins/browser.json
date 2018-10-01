@@ -27,13 +27,13 @@
     },
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "com.apoc.mobile"
-    },
-    "cordova-plugin-wkwebview-engine": {
-      "PACKAGE_NAME": "com.apoc.mobile"
     }
   },
   "dependent_plugins": {
     "phonegap-plugin-push": {
+      "PACKAGE_NAME": "com.apoc.mobile"
+    },
+    "cordova-plugin-wkwebview-engine": {
       "PACKAGE_NAME": "com.apoc.mobile"
     }
   }

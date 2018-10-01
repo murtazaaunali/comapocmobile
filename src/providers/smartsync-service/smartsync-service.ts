@@ -4,9 +4,9 @@ import 'rxjs/add/operator/map';
 
 declare var cordova: any;
 
-// interface sdkNavigator extends Navigator {
-//   smartsync: any
-// }
+interface sdkNavigator extends Navigator {
+  smartsync: any
+}
 
 @Injectable()
 export class SmartsyncServiceProvider {
@@ -14,10 +14,10 @@ export class SmartsyncServiceProvider {
   public storeName = 'usersync';
 
   constructor() {
-    // const storeConfig = {
-    //   storeName: this.storeName,
-    //   isGlobalStore: true
-    // };
+    const storeConfig = {
+      storeName: this.storeName,
+      isGlobalStore: true
+    };
   }
 
   // Initialize Smart Sync
@@ -32,6 +32,11 @@ export class SmartsyncServiceProvider {
 
     this.smartSync().syncDown(target, "contacts", { mergeMode: 'LEAVE_IF_CHANGED' }, response => {
       return response;
+      // if (response.status !== "DONE") {
+      //   console.log("Progress:" + response.progress);
+      // } else {
+      //   console.log("Progress:" + response.progress);
+      // }
     });
   }
 }

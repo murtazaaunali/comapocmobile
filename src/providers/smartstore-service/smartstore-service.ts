@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import 'rxjs/add/operator/map';
 
 
-// declare var cordova: any;
+declare var cordova: any;
 
 interface sdkNavigator extends Navigator {
   smartstore: any
@@ -11,19 +11,19 @@ interface sdkNavigator extends Navigator {
 @Injectable()
 export class SmartstoreServiceProvider {
   // Soup name predefined
-  // private storeName = 'userstore';
+  private storeName = 'userstore';
   private soupName = 'contacts';
 
   // Initialize Smart Store
-  // private smartStore(): any {
-  //   return cordova.require("com.salesforce.plugin.smartstore");
-  // }
+  private smartStore(): any {
+    return cordova.require("com.salesforce.plugin.smartstore");
+  }
 
   constructor() {
-    // const storeConfig = {
-    //   storeName: this.storeName,
-    //   isGlobalStore: true
-    // };
+    const storeConfig = {
+      storeName: this.storeName,
+      isGlobalStore: true
+    };
   }
 
   GetContactsFromSoup(): Promise<any> {
