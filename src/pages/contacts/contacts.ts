@@ -85,7 +85,7 @@ export class ContactsPage {
   }
 
   OpenFiltersModal() {
-    let filterModal = this.modalCtrl.create(ContactsFilterModalPage, { searchContacts: this.SearchContact.bind(this) });
+    let filterModal = this.modalCtrl.create(ContactsFilterModalPage);
     filterModal.present();
   }
 

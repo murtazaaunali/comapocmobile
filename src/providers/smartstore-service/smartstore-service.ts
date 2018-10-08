@@ -12,7 +12,6 @@ interface sdkNavigator extends Navigator {
 export class SmartstoreServiceProvider {
   // Soup name predefined
   private storeName = 'userstore';
-  private soupName = 'contacts';
 
   // Initialize Smart Store
   private smartStore(): any {
@@ -30,7 +29,7 @@ export class SmartstoreServiceProvider {
     return new Promise((resolve, reject) => {
       var querySpec = (navigator as sdkNavigator).smartstore.buildAllQuerySpec('Name', 'ascending', 10000);
       let success = (results) => resolve({ records: results.currentPageOrderedEntries });
-      (navigator as sdkNavigator).smartstore.querySoup(this.soupName, querySpec, success, reject);
+      (navigator as sdkNavigator).smartstore.querySoup('contacts', querySpec, success, reject);
     });
   }
 
@@ -40,7 +39,16 @@ export class SmartstoreServiceProvider {
       var querySpec = (navigator as sdkNavigator).smartstore.buildAllQuerySpec(filters, 'ascending', 10000);
       console.log('QuerySpecs: ' + querySpec);
       let success = (results) => resolve({ records: results.currentPageOrderedEntries });
-      (navigator as sdkNavigator).smartstore.querySoup(this.soupName, querySpec, success, reject);
+      (navigator as sdkNavigator).smartstore.querySoup('contacts', querySpec, success, reject);
+    });
+  }
+
+
+  GetOpportunitiesFromSoup(): Promise<any> {
+    return new Promise((resolve, reject) => {
+      var querySpec = (navigator as sdkNavigator).smartstore.buildAllQuerySpec('Name', 'ascending', 10000);
+      let success = (results) => resolve({ records: results.currentPageOrderedEntries });
+      (navigator as sdkNavigator).smartstore.querySoup('opportunities', querySpec, success, reject);
     });
   }
 }

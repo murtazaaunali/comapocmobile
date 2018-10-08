@@ -19,7 +19,10 @@ export class DashboardPage {
 
   SyncData() {
     this.smartSyncService.SyncContacts().then(response => {
-      console.log("Sync Response:" + response.progress);
+      console.log("Contacts Sync Response:" + response.progress);
+      this.smartSyncService.SyncOpportunities().then(response2 => {
+        console.log("Opportinity Sync Response:" + response2.progress); 
+      });
     });
   }
 
