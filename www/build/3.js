@@ -1,14 +1,14 @@
 webpackJsonp([3],{
 
-/***/ 460:
+/***/ 533:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HelpPageModule", function() { return HelpPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NewContactPageModule", function() { return NewContactPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__help__ = __webpack_require__(277);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__new_contact__ = __webpack_require__(294);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,23 +18,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var HelpPageModule = /** @class */ (function () {
-    function HelpPageModule() {
+var NewContactPageModule = /** @class */ (function () {
+    function NewContactPageModule() {
     }
-    HelpPageModule = __decorate([
+    NewContactPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__help__["a" /* HelpPage */],
+                __WEBPACK_IMPORTED_MODULE_2__new_contact__["a" /* NewContactPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__help__["a" /* HelpPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__new_contact__["a" /* NewContactPage */]),
             ],
         })
-    ], HelpPageModule);
-    return HelpPageModule;
+    ], NewContactPageModule);
+    return NewContactPageModule;
 }());
 
-//# sourceMappingURL=help.module.js.map
+//# sourceMappingURL=new-contact.module.js.map
 
 /***/ })
 

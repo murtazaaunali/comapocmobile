@@ -3,10 +3,13 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
+import { Ng2SmartTableModule } from 'ng2-smart-table';
+import { Ng2CompleterModule } from "ng2-completer";
+
 
 import { MyApp } from './app.component';
 import { AccountsPage } from '../pages/accounts/accounts';
-import { ActivitiesPage }  from '../pages/activities/activities';
+import { ActivitiesPage } from '../pages/activities/activities';
 import { CalendarPage } from '../pages/calendar/calendar';
 import { ContactsPage } from '../pages/contacts/contacts';
 import { DashboardPage } from '../pages/dashboard/dashboard';
@@ -24,6 +27,8 @@ import { AccountServiceProvider } from '../providers/account-service/account-ser
 import { OpportunitiesServiceProvider } from '../providers/opportunities-service/opportunities-service';
 import { SmartsyncServiceProvider } from '../providers/smartsync-service/smartsync-service';
 
+import { SkeletonItemComponent } from '../components/skeleton-item/skeleton-item'
+
 
 
 @NgModule({
@@ -36,15 +41,18 @@ import { SmartsyncServiceProvider } from '../providers/smartsync-service/smartsy
     DashboardPage,
     OpportunitiesPage,
     ContactsFilterModalPage,
-    NamefilterPipe
+    NamefilterPipe,
+    SkeletonItemComponent
   ],
   imports: [
     BrowserModule,
     NgxDatatableModule,
-    IonicModule.forRoot(MyApp),
+    Ng2SmartTableModule,
+    Ng2CompleterModule,
+    IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
-  exports:[NamefilterPipe],
+  exports: [NamefilterPipe, SkeletonItemComponent],
   entryComponents: [
     MyApp,
     AccountsPage,
@@ -58,7 +66,7 @@ import { SmartsyncServiceProvider } from '../providers/smartsync-service/smartsy
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    { provide: ErrorHandler, useClass: IonicErrorHandler },
     ContactServiceProvider,
     SmartstoreServiceProvider,
     AccountServiceProvider,
@@ -66,4 +74,4 @@ import { SmartsyncServiceProvider } from '../providers/smartsync-service/smartsy
     SmartsyncServiceProvider
   ]
 })
-export class AppModule {}
+export class AppModule { }

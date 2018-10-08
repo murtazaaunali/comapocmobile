@@ -1,57 +1,12 @@
-webpackJsonp([10],{
+webpackJsonp([11],{
 
-/***/ 146:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ActivitiesPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-/**
- * Generated class for the ActivitiesPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var ActivitiesPage = /** @class */ (function () {
-    function ActivitiesPage(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-    }
-    ActivitiesPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad ActivitiesPage');
-    };
-    ActivitiesPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-activities',template:/*ion-inline-start:"/private/var/root/Desktop/Hybrid/Salesforce/comapocmobile/src/pages/activities/activities.html"*/'<!--\n  Generated template for the ActivitiesPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n      <button ion-button menuToggle>\n          <ion-icon name="menu"></ion-icon>\n        </button>\n    <ion-title>activities</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/private/var/root/Desktop/Hybrid/Salesforce/comapocmobile/src/pages/activities/activities.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
-    ], ActivitiesPage);
-    return ActivitiesPage;
-}());
-
-//# sourceMappingURL=activities.js.map
-
-/***/ }),
-
-/***/ 147:
+/***/ 157:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AccountsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(27);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -90,13 +45,58 @@ var AccountsPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 148:
+/***/ 158:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ActivitiesPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(27);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/**
+ * Generated class for the ActivitiesPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var ActivitiesPage = /** @class */ (function () {
+    function ActivitiesPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    ActivitiesPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad ActivitiesPage');
+    };
+    ActivitiesPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'page-activities',template:/*ion-inline-start:"/private/var/root/Desktop/Hybrid/Salesforce/comapocmobile/src/pages/activities/activities.html"*/'<!--\n  Generated template for the ActivitiesPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n      <button ion-button menuToggle>\n          <ion-icon name="menu"></ion-icon>\n        </button>\n    <ion-title>activities</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/private/var/root/Desktop/Hybrid/Salesforce/comapocmobile/src/pages/activities/activities.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
+    ], ActivitiesPage);
+    return ActivitiesPage;
+}());
+
+//# sourceMappingURL=activities.js.map
+
+/***/ }),
+
+/***/ 159:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CalendarPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(27);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -135,13 +135,13 @@ var CalendarPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 149:
+/***/ 160:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ContactsFilterModalPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(27);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -196,19 +196,14 @@ var ContactsFilterModalPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 150:
+/***/ 161:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ContactsPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DashboardPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_contact_service_contact_service__ = __webpack_require__(229);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_smartstore_service_smartstore_service__ = __webpack_require__(230);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__contacts_filter_modal_contacts_filter_modal__ = __webpack_require__(149);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__new_contact_new_contact__ = __webpack_require__(276);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pipes_namefilter_namefilter__ = __webpack_require__(231);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_smartsync_service_smartsync_service__ = __webpack_require__(242);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -218,6 +213,64 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
+
+
+var DashboardPage = /** @class */ (function () {
+    function DashboardPage(navCtrl, navParams, loadingCtrl, smartSyncService) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.loadingCtrl = loadingCtrl;
+        this.smartSyncService = smartSyncService;
+        this.loader = this.loadingCtrl.create({
+            content: "Please wait...",
+        });
+    }
+    DashboardPage.prototype.SyncData = function () {
+        this.smartSyncService.SyncContacts().then(function (response) {
+            console.log("Sync Response:" + response.progress);
+        });
+    };
+    DashboardPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad DashboardPage');
+    };
+    DashboardPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'page-dashboard',template:/*ion-inline-start:"/private/var/root/Desktop/Hybrid/Salesforce/comapocmobile/src/pages/dashboard/dashboard.html"*/'<!--\n  Generated template for the DashboardPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar>\n    <ion-buttons start>\n      <button ion-button menuToggle>\n        <ion-icon name="menu"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title>Dashboard</ion-title>\n    <ion-buttons end>\n      <button ion-button round item-right (click)="SyncData()">\n        <ion-icon name="sync"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>'/*ion-inline-end:"/private/var/root/Desktop/Hybrid/Salesforce/comapocmobile/src/pages/dashboard/dashboard.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_2__providers_smartsync_service_smartsync_service__["a" /* SmartsyncServiceProvider */]])
+    ], DashboardPage);
+    return DashboardPage;
+}());
+
+//# sourceMappingURL=dashboard.js.map
+
+/***/ }),
+
+/***/ 162:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ContactsPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_contact_service_contact_service__ = __webpack_require__(243);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_smartstore_service_smartstore_service__ = __webpack_require__(244);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__contacts_filter_modal_contacts_filter_modal__ = __webpack_require__(160);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__new_contact_new_contact__ = __webpack_require__(294);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pipes_namefilter_namefilter__ = __webpack_require__(245);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_ng2_smart_table__ = __webpack_require__(246);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs__ = __webpack_require__(15);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
 
 
 
@@ -241,6 +294,48 @@ var ContactsPage = /** @class */ (function () {
         this.segments = "grid";
         this.page = 1;
         this.totalPages = 0;
+        // Settings for Ng2Table
+        this.settings = {
+            pager: {
+                display: true,
+                perPage: 12
+            },
+            columns: {
+                Name: {
+                    title: 'Name',
+                    filter: false
+                },
+                Job_Title__c: {
+                    title: 'Job Title',
+                    filter: false
+                },
+                Department: {
+                    title: 'Department',
+                    filter: false
+                },
+                Email: {
+                    title: 'Email',
+                    sort: false,
+                    filter: false
+                },
+                Phone: {
+                    title: 'Phone',
+                    sort: false,
+                    filter: false
+                },
+                MobilePhone: {
+                    title: 'Mobile',
+                    sort: false,
+                    filter: false
+                }
+            },
+            actions: {
+                add: false,
+                edit: false,
+                delete: false
+            }
+        };
+        this.skeleton = true;
         this.items = [];
         this.loader = this.loadingCtrl.create({
             content: "Please wait...",
@@ -273,23 +368,27 @@ var ContactsPage = /** @class */ (function () {
     };
     ContactsPage.prototype.GetAllContacts = function () {
         var _this = this;
-        this.loader.present();
+        // this.loader.present();
+        this.skeleton = true;
         this.smartStoreService.GetContactsFromSoup().then(function (data) {
             _this.totalPages = data.records.length / 9;
             for (var i = 0; i < 9; i++) {
                 _this.contacts.push(data.records[i]);
             }
-            _this.rows = _this.contacts;
-            _this.temp = _this.rows;
-            _this.loader.dismiss();
+            setTimeout(function () {
+                _this.rows = _this.contacts;
+                _this.temp = _this.rows;
+                _this.skeleton = false;
+            }, 1500);
+            // this.loader.dismiss();
         });
     };
     ContactsPage.prototype.GetAllContactsList = function () {
         var _this = this;
         this.loader.present();
         this.smartStoreService.GetContactsFromSoup().then(function (data) {
-            _this.rows = data.records;
-            _this.temp = _this.rows;
+            _this.rows = new __WEBPACK_IMPORTED_MODULE_7_ng2_smart_table__["a" /* LocalDataSource */](data.records);
+            _this.contact_list = data.records;
             _this.loader.dismiss();
         });
     };
@@ -310,15 +409,50 @@ var ContactsPage = /** @class */ (function () {
     ContactsPage.prototype.FilterTableRows = function (event) {
         var val = event.target.value.toLowerCase();
         // filter our data
-        var temp = this.temp.filter(function (d) {
+        this.temp = this.rows.filter(function (d) {
             return d.name.toLowerCase().indexOf(val) !== -1 || !val;
         });
         // update the rows
-        this.rows = temp;
+        this.rows = this.temp;
+    };
+    ContactsPage.prototype.onSearch = function (query) {
+        if (query === void 0) { query = ''; }
+        if (query == '') {
+            this.rows = new __WEBPACK_IMPORTED_MODULE_7_ng2_smart_table__["a" /* LocalDataSource */](this.contact_list);
+        }
+        else {
+            this.rows.setFilter([
+                // fields we want to include in the search
+                {
+                    field: 'Name',
+                    search: query
+                },
+                {
+                    field: 'Job_Title__c',
+                    search: query
+                },
+                {
+                    field: 'Department',
+                    search: query
+                },
+                {
+                    field: 'Email',
+                    search: query
+                },
+                {
+                    field: 'Phone',
+                    search: query
+                },
+                {
+                    field: 'MobilePhone',
+                    search: query
+                }
+            ], false);
+        }
     };
     ContactsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-contacts',template:/*ion-inline-start:"/private/var/root/Desktop/Hybrid/Salesforce/comapocmobile/src/pages/contacts/contacts.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>CONTACTS</ion-title>\n  </ion-navbar>\n  <ion-toolbar>\n    <ion-row>\n      <ion-col col-2 style="padding-left: 10px">\n        <button block style="background:transparent;" (click)="OpenFiltersModal()">\n          <img style="vertical-align: bottom" src="assets/imgs/filter.png" />\n          <div class="subheader-icon-txt">Filters</div>\n        </button>\n      </ion-col>\n      <ion-col col-2 style="padding-left: 10px">\n        <button block style="background:transparent;" (click)="AddNewContactModal()">\n          <img style="vertical-align: bottom" src="assets/imgs/new.png" />\n          <div class="subheader-icon-txt">New</div>\n        </button>\n      </ion-col>\n      <ion-col col-2>\n      </ion-col>\n      <ion-col col-4>\n        <ion-item class="item-has-input search-filter" *ngIf="segments==\'grid\'">\n          <ion-input clearInput type="text" [(ngModel)]="searchFilter" text-left placeholder="Search Contact"></ion-input>\n          <ion-label item-right class="align-right label-img">\n            <ion-icon name="search"></ion-icon>\n          </ion-label>\n        </ion-item>\n        <ion-item class="item-has-input search-filter" *ngIf="segments==\'list\'">\n          <ion-input clearInput type="text" (keyup)=\'FilterTableRows($event)\' text-left placeholder="Search Contact"></ion-input>\n          <ion-label item-right class="align-right label-img">\n            <ion-icon name="search"></ion-icon>\n          </ion-label>\n        </ion-item>\n      </ion-col>\n      <ion-col col-2>\n        <div padding>\n          <ion-segment [(ngModel)]="segments" color="primary" (ionChange)="onSegmentChange($event)">\n            <ion-segment-button value="grid">\n              Grid\n            </ion-segment-button>\n            <ion-segment-button value="list">\n              List\n            </ion-segment-button>\n          </ion-segment>\n        </div>\n      </ion-col>\n    </ion-row>\n  </ion-toolbar>\n</ion-header>\n\n\n<ion-content padding>\n  <div [ngSwitch]="segments">\n    <!-- Data Grid -->\n    <div *ngSwitchCase="\'grid\'">\n      <ion-grid>\n        <ion-row>\n          <ion-col col-md-4 *ngFor="let con of contacts| nameFilter:searchFilter" style="margin-top: -15px;">\n            <ion-card style=" min-height: 155px!important;max-height: 155px">\n              <ion-card-header>\n                <h2><b>{{con.Name}}</b></h2>\n              </ion-card-header>\n              <ion-card-content style="margin-top: -10px">\n                <ion-row *ngIf="con.Job_Title__c!=null">\n                  <ion-col col-12>\n                    <ion-icon name="briefcase"></ion-icon><span class="contacts-content">{{con.Job_Title__c}}</span>\n                  </ion-col>\n                </ion-row>\n                <ion-row *ngIf="con.Department!=null">\n                  <ion-col col-12>\n                    <ion-icon name="business"></ion-icon><span class="contacts-content">{{con.Department}}</span>\n                  </ion-col>\n                </ion-row>\n                <ion-row *ngIf="con.Email!=null">\n                  <ion-col col-12>\n                    <ion-icon name="mail"></ion-icon><span class="contacts-content">{{con.Email}}</span>\n                  </ion-col>\n                </ion-row>\n                <ion-row style="margin-top: -10px;" *ngIf="con.Phone!=null">\n                  <ion-col col-12>\n                    <ion-icon name="call"></ion-icon><span class="contacts-content">{{con.Phone}}</span>\n                  </ion-col>\n                </ion-row>\n                <ion-row style="margin-top: -10px;" *ngIf="con.MobilePhone!=null">\n                  <ion-col col-12>\n                    <ion-icon name="phone-portrait"></ion-icon><span class="contacts-content">{{con.MobilePhone}}</span>\n                  </ion-col>\n                </ion-row>\n              </ion-card-content>\n            </ion-card>\n          </ion-col>\n        </ion-row>\n        <ion-infinite-scroll (ionInfinite)="$event.waitFor(doInfinite($event))" *ngIf="page < totalPages" position="top">\n          <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="Loading more data..."></ion-infinite-scroll-content>\n        </ion-infinite-scroll>\n      </ion-grid>\n    </div>\n    <!-- Data Grid -->\n    <!-- DataTables -->\n    <div *ngSwitchCase="\'list\'">\n      <ngx-datatable #table [rows]="rows" [limit]="10" [columnMode]="\'flex\'" [headerHeight]="50" [footerHeight]="50"\n        [rowHeight]="\'auto\'">\n        <ngx-datatable-column [sortable]="true" name="Name" [flexGrow]="2">\n          <ng-template let-column="column" let-sort="sortFn" ngx-datatable-header-template>\n            <span (click)="sort()">Name</span>\n          </ng-template>\n          <ng-template let-row="row" ngx-datatable-cell-template>\n            {{row.Name}}\n          </ng-template>\n        </ngx-datatable-column>\n        <ngx-datatable-column [sortable]="true" name="JobTitle" [flexGrow]="2">\n          <ng-template let-column="column" let-sort="sortFn" ngx-datatable-header-template>\n            <span (click)="sort()">Job Title</span>\n          </ng-template>\n          <ng-template let-row="row" ngx-datatable-cell-template>\n            {{row.Job_Title__c}}\n          </ng-template>\n        </ngx-datatable-column>\n        <ngx-datatable-column [sortable]="true" name="Department" [flexGrow]="2">\n          <ng-template let-column="column" let-sort="sortFn" ngx-datatable-header-template>\n            <span (click)="sort()">Department</span>\n          </ng-template>\n          <ng-template let-row="row" ngx-datatable-cell-template>\n            {{row.Department}}\n          </ng-template>\n        </ngx-datatable-column>\n        <!-- <ngx-datatable-column [sortable]="true" name="Account">\n          <ng-template let-column="column" let-sort="sortFn" ngx-datatable-header-template>\n            <span (click)="sort()">Account</span>\n          </ng-template>\n          <ng-template let-row="row" ngx-datatable-cell-template>\n            {{row.Account.Name}}\n          </ng-template>\n        </ngx-datatable-column> -->\n        <ngx-datatable-column [sortable]="true" name="Email" [flexGrow]="3">\n          <ng-template let-column="column" let-sort="sortFn" ngx-datatable-header-template>\n            <span (click)="sort()">Email</span>\n          </ng-template>\n          <ng-template let-row="row" ngx-datatable-cell-template>\n            {{row.Email}}\n          </ng-template>\n        </ngx-datatable-column>\n        <ngx-datatable-column [sortable]="true" name="Mobile" [flexGrow]="2">\n          <ng-template let-column="column" ngx-datatable-header-template>\n            <span>Mobile</span>\n          </ng-template>\n          <ng-template let-row="row" ngx-datatable-cell-template>\n            {{row.MobilePhone}}\n          </ng-template>\n        </ngx-datatable-column>\n        <ngx-datatable-column [sortable]="true" name="Phone" [flexGrow]="2">\n          <ng-template let-column="column" ngx-datatable-header-template>\n            <span>Phone</span>\n          </ng-template>\n          <ng-template let-row="row" ngx-datatable-cell-template>\n            {{row.Phone}}\n          </ng-template>\n        </ngx-datatable-column>\n      </ngx-datatable>\n    </div>\n    <!-- DataTables -->\n  </div>\n</ion-content>'/*ion-inline-end:"/private/var/root/Desktop/Hybrid/Salesforce/comapocmobile/src/pages/contacts/contacts.html"*/,
+            selector: 'page-contacts',template:/*ion-inline-start:"/private/var/root/Desktop/Hybrid/Salesforce/comapocmobile/src/pages/contacts/contacts.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>CONTACTS</ion-title>\n  </ion-navbar>\n  <ion-toolbar>\n    <ion-row>\n      <ion-col col-2 style="padding-left: 10px">\n        <button block style="background:transparent;" (click)="OpenFiltersModal()">\n          <img style="vertical-align: bottom" src="assets/imgs/filter.png" />\n          <div class="subheader-icon-txt">Filters</div>\n        </button>\n      </ion-col>\n      <ion-col col-2 style="padding-left: 10px">\n        <button block style="background:transparent;" (click)="AddNewContactModal()">\n          <img style="vertical-align: bottom" src="assets/imgs/new.png" />\n          <div class="subheader-icon-txt">New</div>\n        </button>\n      </ion-col>\n      <ion-col col-2>\n      </ion-col>\n      <ion-col col-4>\n        <ion-item class="item-has-input search-filter" *ngIf="segments==\'grid\'">\n          <ion-input clearInput type="text" [(ngModel)]="searchFilter" text-left placeholder="Search Contact"></ion-input>\n          <ion-label item-right class="align-right label-img">\n            <ion-icon name="search"></ion-icon>\n          </ion-label>\n        </ion-item>\n        <ion-item class="item-has-input search-filter" *ngIf="segments==\'list\'">\n          <!-- <ion-input clearInput type="text" (keyup)=\'FilterTableRows($event)\' text-left placeholder="Search Contact"></ion-input> -->\n          <ion-input clearInput type="text" [(ngModel)]="searchFilter" (keydown)="onSearch(searchFilter)" text-left\n            placeholder="Search Contact"></ion-input>\n          <ion-label item-right class="align-right label-img">\n            <ion-icon name="search"></ion-icon>\n          </ion-label>\n        </ion-item>\n      </ion-col>\n      <ion-col col-2>\n        <div padding>\n          <ion-segment [(ngModel)]="segments" color="primary" (ionChange)="onSegmentChange($event)">\n            <ion-segment-button value="grid">\n              Grid\n            </ion-segment-button>\n            <ion-segment-button value="list">\n              List\n            </ion-segment-button>\n          </ion-segment>\n        </div>\n      </ion-col>\n    </ion-row>\n  </ion-toolbar>\n</ion-header>\n\n\n<ion-content padding>\n  <div [ngSwitch]="segments">\n    <!-- Data Grid -->\n    <div *ngSwitchCase="\'grid\'">\n      <ion-grid>\n        <ion-row *ngIf="skeleton == true">\n          <ion-col col-md-4>\n            <ion-card style=" min-height: 155px!important;max-height: 155px">\n              <ion-card-header>\n                <skeleton-item height="15px"></skeleton-item>\n              </ion-card-header>\n              <ion-card-content>\n                <ion-row>\n                  <ion-col col-12>\n                    <skeleton-item height="10px"></skeleton-item>\n                  </ion-col>\n                </ion-row>\n                <ion-row>\n                  <ion-col col-12>\n                    <skeleton-item height="10px"></skeleton-item>\n                  </ion-col>\n                </ion-row>\n                <ion-row>\n                  <ion-col col-12>\n                    <skeleton-item height="10px"></skeleton-item>\n                  </ion-col>\n                </ion-row>\n                <ion-row>\n                  <ion-col col-12>\n                    <skeleton-item height="10px"></skeleton-item>\n                  </ion-col>\n                </ion-row>\n                <ion-row>\n                  <ion-col col-12>\n                    <skeleton-item height="10px"></skeleton-item>\n                  </ion-col>\n                </ion-row>\n              </ion-card-content>\n            </ion-card>\n          </ion-col>\n          <ion-col col-md-4>\n            <ion-card style=" min-height: 155px!important;max-height: 155px">\n              <ion-card-header>\n                <skeleton-item height="15px"></skeleton-item>\n              </ion-card-header>\n              <ion-card-content>\n                <ion-row>\n                  <ion-col col-12>\n                    <skeleton-item height="10px"></skeleton-item>\n                  </ion-col>\n                </ion-row>\n                <ion-row>\n                  <ion-col col-12>\n                    <skeleton-item height="10px"></skeleton-item>\n                  </ion-col>\n                </ion-row>\n                <ion-row>\n                  <ion-col col-12>\n                    <skeleton-item height="10px"></skeleton-item>\n                  </ion-col>\n                </ion-row>\n                <ion-row>\n                  <ion-col col-12>\n                    <skeleton-item height="10px"></skeleton-item>\n                  </ion-col>\n                </ion-row>\n                <ion-row>\n                  <ion-col col-12>\n                    <skeleton-item height="10px"></skeleton-item>\n                  </ion-col>\n                </ion-row>\n              </ion-card-content>\n            </ion-card>\n          </ion-col>\n          <ion-col col-md-4>\n            <ion-card style=" min-height: 155px!important;max-height: 155px">\n              <ion-card-header>\n                <skeleton-item height="15px"></skeleton-item>\n              </ion-card-header>\n              <ion-card-content>\n                <ion-row>\n                  <ion-col col-12>\n                    <skeleton-item height="10px"></skeleton-item>\n                  </ion-col>\n                </ion-row>\n                <ion-row>\n                  <ion-col col-12>\n                    <skeleton-item height="10px"></skeleton-item>\n                  </ion-col>\n                </ion-row>\n                <ion-row>\n                  <ion-col col-12>\n                    <skeleton-item height="10px"></skeleton-item>\n                  </ion-col>\n                </ion-row>\n                <ion-row>\n                  <ion-col col-12>\n                    <skeleton-item height="10px"></skeleton-item>\n                  </ion-col>\n                </ion-row>\n                <ion-row>\n                  <ion-col col-12>\n                    <skeleton-item height="10px"></skeleton-item>\n                  </ion-col>\n                </ion-row>\n              </ion-card-content>\n            </ion-card>\n          </ion-col>\n          <ion-col col-md-4>\n            <ion-card style=" min-height: 155px!important;max-height: 155px">\n              <ion-card-header>\n                <skeleton-item height="15px"></skeleton-item>\n              </ion-card-header>\n              <ion-card-content>\n                <ion-row>\n                  <ion-col col-12>\n                    <skeleton-item height="10px"></skeleton-item>\n                  </ion-col>\n                </ion-row>\n                <ion-row>\n                  <ion-col col-12>\n                    <skeleton-item height="10px"></skeleton-item>\n                  </ion-col>\n                </ion-row>\n                <ion-row>\n                  <ion-col col-12>\n                    <skeleton-item height="10px"></skeleton-item>\n                  </ion-col>\n                </ion-row>\n                <ion-row>\n                  <ion-col col-12>\n                    <skeleton-item height="10px"></skeleton-item>\n                  </ion-col>\n                </ion-row>\n                <ion-row>\n                  <ion-col col-12>\n                    <skeleton-item height="10px"></skeleton-item>\n                  </ion-col>\n                </ion-row>\n              </ion-card-content>\n            </ion-card>\n          </ion-col>\n          <ion-col col-md-4>\n            <ion-card style=" min-height: 155px!important;max-height: 155px">\n              <ion-card-header>\n                <skeleton-item height="15px"></skeleton-item>\n              </ion-card-header>\n              <ion-card-content>\n                <ion-row>\n                  <ion-col col-12>\n                    <skeleton-item height="10px"></skeleton-item>\n                  </ion-col>\n                </ion-row>\n                <ion-row>\n                  <ion-col col-12>\n                    <skeleton-item height="10px"></skeleton-item>\n                  </ion-col>\n                </ion-row>\n                <ion-row>\n                  <ion-col col-12>\n                    <skeleton-item height="10px"></skeleton-item>\n                  </ion-col>\n                </ion-row>\n                <ion-row>\n                  <ion-col col-12>\n                    <skeleton-item height="10px"></skeleton-item>\n                  </ion-col>\n                </ion-row>\n                <ion-row>\n                  <ion-col col-12>\n                    <skeleton-item height="10px"></skeleton-item>\n                  </ion-col>\n                </ion-row>\n              </ion-card-content>\n            </ion-card>\n          </ion-col>\n          <ion-col col-md-4>\n            <ion-card style=" min-height: 155px!important;max-height: 155px">\n              <ion-card-header>\n                <skeleton-item height="15px"></skeleton-item>\n              </ion-card-header>\n              <ion-card-content>\n                <ion-row>\n                  <ion-col col-12>\n                    <skeleton-item height="10px"></skeleton-item>\n                  </ion-col>\n                </ion-row>\n                <ion-row>\n                  <ion-col col-12>\n                    <skeleton-item height="10px"></skeleton-item>\n                  </ion-col>\n                </ion-row>\n                <ion-row>\n                  <ion-col col-12>\n                    <skeleton-item height="10px"></skeleton-item>\n                  </ion-col>\n                </ion-row>\n                <ion-row>\n                  <ion-col col-12>\n                    <skeleton-item height="10px"></skeleton-item>\n                  </ion-col>\n                </ion-row>\n                <ion-row>\n                  <ion-col col-12>\n                    <skeleton-item height="10px"></skeleton-item>\n                  </ion-col>\n                </ion-row>\n              </ion-card-content>\n            </ion-card>\n          </ion-col>\n          <ion-col col-md-4>\n            <ion-card style=" min-height: 155px!important;max-height: 155px">\n              <ion-card-header>\n                <skeleton-item height="15px"></skeleton-item>\n              </ion-card-header>\n              <ion-card-content>\n                <ion-row>\n                  <ion-col col-12>\n                    <skeleton-item height="10px"></skeleton-item>\n                  </ion-col>\n                </ion-row>\n                <ion-row>\n                  <ion-col col-12>\n                    <skeleton-item height="10px"></skeleton-item>\n                  </ion-col>\n                </ion-row>\n                <ion-row>\n                  <ion-col col-12>\n                    <skeleton-item height="10px"></skeleton-item>\n                  </ion-col>\n                </ion-row>\n                <ion-row>\n                  <ion-col col-12>\n                    <skeleton-item height="10px"></skeleton-item>\n                  </ion-col>\n                </ion-row>\n                <ion-row>\n                  <ion-col col-12>\n                    <skeleton-item height="10px"></skeleton-item>\n                  </ion-col>\n                </ion-row>\n              </ion-card-content>\n            </ion-card>\n          </ion-col>\n          <ion-col col-md-4>\n            <ion-card style=" min-height: 155px!important;max-height: 155px">\n              <ion-card-header>\n                <skeleton-item height="15px"></skeleton-item>\n              </ion-card-header>\n              <ion-card-content>\n                <ion-row>\n                  <ion-col col-12>\n                    <skeleton-item height="10px"></skeleton-item>\n                  </ion-col>\n                </ion-row>\n                <ion-row>\n                  <ion-col col-12>\n                    <skeleton-item height="10px"></skeleton-item>\n                  </ion-col>\n                </ion-row>\n                <ion-row>\n                  <ion-col col-12>\n                    <skeleton-item height="10px"></skeleton-item>\n                  </ion-col>\n                </ion-row>\n                <ion-row>\n                  <ion-col col-12>\n                    <skeleton-item height="10px"></skeleton-item>\n                  </ion-col>\n                </ion-row>\n                <ion-row>\n                  <ion-col col-12>\n                    <skeleton-item height="10px"></skeleton-item>\n                  </ion-col>\n                </ion-row>\n              </ion-card-content>\n            </ion-card>\n          </ion-col>\n          <ion-col col-md-4>\n            <ion-card style=" min-height: 155px!important;max-height: 155px">\n              <ion-card-header>\n                <skeleton-item height="15px"></skeleton-item>\n              </ion-card-header>\n              <ion-card-content>\n                <ion-row>\n                  <ion-col col-12>\n                    <skeleton-item height="10px"></skeleton-item>\n                  </ion-col>\n                </ion-row>\n                <ion-row>\n                  <ion-col col-12>\n                    <skeleton-item height="10px"></skeleton-item>\n                  </ion-col>\n                </ion-row>\n                <ion-row>\n                  <ion-col col-12>\n                    <skeleton-item height="10px"></skeleton-item>\n                  </ion-col>\n                </ion-row>\n                <ion-row>\n                  <ion-col col-12>\n                    <skeleton-item height="10px"></skeleton-item>\n                  </ion-col>\n                </ion-row>\n                <ion-row>\n                  <ion-col col-12>\n                    <skeleton-item height="10px"></skeleton-item>\n                  </ion-col>\n                </ion-row>\n              </ion-card-content>\n            </ion-card>\n          </ion-col>\n        </ion-row>\n        <ion-row>\n          <ion-col col-md-4 *ngFor="let con of contacts| nameFilter:searchFilter" style="margin-top: -15px;">\n            <ion-card style=" min-height: 155px!important;max-height: 155px">\n              <ion-card-header>\n                <h2 class="contact-name">{{con.Name}}</h2>\n              </ion-card-header>\n              <ion-card-content style="margin-top: -10px">\n                <ion-row>\n                  <ion-col col-12 *ngIf="con.Job_Title__c!=null">\n                    <ion-icon name="briefcase" class="icon-blue"></ion-icon><span class="contacts-content">{{con.Job_Title__c}}</span>\n                  </ion-col>\n                  <ion-col col-12 *ngIf="con.Job_Title__c==null">\n                    <ion-icon name="briefcase" class="icon-blue"></ion-icon><span class="contacts-content">N/A</span>\n                  </ion-col>\n                </ion-row>\n                <ion-row>\n                  <ion-col col-12 *ngIf="con.Department!=null">\n                    <ion-icon name="pin" class="icon-blue"></ion-icon><span class="contacts-content">{{con.Department}}</span>\n                  </ion-col>\n                  <ion-col col-12 *ngIf="con.Department==null">\n                    <ion-icon name="pin" class="icon-blue"></ion-icon><span class="contacts-content">N/A</span>\n                  </ion-col>\n                </ion-row>\n                <ion-row>\n                  <ion-col col-12 *ngIf="con.Email!=null">\n                    <ion-icon name="mail" class="icon-blue"></ion-icon><span class="contacts-content">{{con.Email}}</span>\n                  </ion-col>\n                  <ion-col col-12 *ngIf="con.Email==null">\n                    <ion-icon name="mail" class="icon-blue"></ion-icon><span class="contacts-content">N/A</span>\n                  </ion-col>\n                </ion-row>\n                <ion-row>\n                  <ion-col col-12 *ngIf="con.Phone!=null">\n                    <ion-icon name="call" class="icon-blue"></ion-icon><span class="contacts-content">{{con.Phone}}</span>\n                  </ion-col>\n                  <ion-col col-12 *ngIf="con.Phone==null">\n                    <ion-icon name="call" class="icon-blue"></ion-icon><span class="contacts-content">N/A</span>\n                  </ion-col>\n                </ion-row>\n                <ion-row>\n                  <ion-col col-12 *ngIf="con.MobilePhone!=null">\n                    <ion-icon name="phone-portrait" class="icon-blue"></ion-icon><span class="contacts-content">{{con.MobilePhone}}</span>\n                  </ion-col>\n                  <ion-col col-12 *ngIf="con.MobilePhone==null">\n                    <ion-icon name="phone-portrait" class="icon-blue"></ion-icon><span class="contacts-content">N/A</span>\n                  </ion-col>\n                </ion-row>\n              </ion-card-content>\n            </ion-card>\n          </ion-col>\n        </ion-row>\n        <ion-infinite-scroll (ionInfinite)="$event.waitFor(doInfinite($event))" *ngIf="page < totalPages" position="bottom">\n          <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="Updating..."></ion-infinite-scroll-content>\n        </ion-infinite-scroll>\n      </ion-grid>\n    </div>\n    <!-- Data Grid -->\n    <!-- DataTables -->\n    <div *ngSwitchCase="\'list\'">\n      <div>\n        <ng2-smart-table [settings]="settings" [source]="rows"></ng2-smart-table>\n      </div>\n      <ngx-datatable *ngIf="false" #table [rows]="rows" [limit]="10" [columnMode]="\'flex\'" [headerHeight]="50"\n        [footerHeight]="50" [rowHeight]="\'auto\'">\n        <ngx-datatable-column [sortable]="true" name="Name" [flexGrow]="2">\n          <ng-template let-column="column" let-sort="sortFn" ngx-datatable-header-template>\n            <span (click)="sort()">Name</span>\n          </ng-template>\n          <ng-template let-row="row" ngx-datatable-cell-template>\n            {{row.Name}}\n          </ng-template>\n        </ngx-datatable-column>\n        <ngx-datatable-column [sortable]="true" name="JobTitle" [flexGrow]="2">\n          <ng-template let-column="column" let-sort="sortFn" ngx-datatable-header-template>\n            <span (click)="sort()">Job Title</span>\n          </ng-template>\n          <ng-template let-row="row" ngx-datatable-cell-template>\n            {{row.Job_Title__c}}\n          </ng-template>\n        </ngx-datatable-column>\n        <ngx-datatable-column [sortable]="true" name="Department" [flexGrow]="2">\n          <ng-template let-column="column" let-sort="sortFn" ngx-datatable-header-template>\n            <span (click)="sort()">Department</span>\n          </ng-template>\n          <ng-template let-row="row" ngx-datatable-cell-template>\n            {{row.Department}}\n          </ng-template>\n        </ngx-datatable-column>\n        <!-- <ngx-datatable-column [sortable]="true" name="Account">\n          <ng-template let-column="column" let-sort="sortFn" ngx-datatable-header-template>\n            <span (click)="sort()">Account</span>\n          </ng-template>\n          <ng-template let-row="row" ngx-datatable-cell-template>\n            {{row.Account.Name}}\n          </ng-template>\n        </ngx-datatable-column> -->\n        <ngx-datatable-column [sortable]="true" name="Email" [flexGrow]="3">\n          <ng-template let-column="column" let-sort="sortFn" ngx-datatable-header-template>\n            <span (click)="sort()">Email</span>\n          </ng-template>\n          <ng-template let-row="row" ngx-datatable-cell-template>\n            {{row.Email}}\n          </ng-template>\n        </ngx-datatable-column>\n        <ngx-datatable-column [sortable]="true" name="Mobile" [flexGrow]="2">\n          <ng-template let-column="column" ngx-datatable-header-template>\n            <span>Mobile</span>\n          </ng-template>\n          <ng-template let-row="row" ngx-datatable-cell-template>\n            {{row.MobilePhone}}\n          </ng-template>\n        </ngx-datatable-column>\n        <ngx-datatable-column [sortable]="true" name="Phone" [flexGrow]="2">\n          <ng-template let-column="column" ngx-datatable-header-template>\n            <span>Phone</span>\n          </ng-template>\n          <ng-template let-row="row" ngx-datatable-cell-template>\n            {{row.Phone}}\n          </ng-template>\n        </ngx-datatable-column>\n      </ngx-datatable>\n    </div>\n    <!-- DataTables -->\n  </div>\n</ion-content>'/*ion-inline-end:"/private/var/root/Desktop/Hybrid/Salesforce/comapocmobile/src/pages/contacts/contacts.html"*/,
             providers: [__WEBPACK_IMPORTED_MODULE_6__pipes_namefilter_namefilter__["a" /* NamefilterPipe */]]
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers_contact_service_contact_service__["a" /* ContactServiceProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* ModalController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_6__pipes_namefilter_namefilter__["a" /* NamefilterPipe */], __WEBPACK_IMPORTED_MODULE_3__providers_smartstore_service_smartstore_service__["a" /* SmartstoreServiceProvider */]])
@@ -330,64 +464,13 @@ var ContactsPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 151:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DashboardPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_smartsync_service_smartsync_service__ = __webpack_require__(232);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-var DashboardPage = /** @class */ (function () {
-    function DashboardPage(navCtrl, navParams, loadingCtrl, smartSyncService) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.loadingCtrl = loadingCtrl;
-        this.smartSyncService = smartSyncService;
-        this.loader = this.loadingCtrl.create({
-            content: "Please wait...",
-        });
-    }
-    DashboardPage.prototype.SyncData = function () {
-        this.smartSyncService.SyncContacts().then(function (response) {
-            console.log("Sync Response:" + response);
-        });
-    };
-    DashboardPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad DashboardPage');
-    };
-    DashboardPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-dashboard',template:/*ion-inline-start:"/private/var/root/Desktop/Hybrid/Salesforce/comapocmobile/src/pages/dashboard/dashboard.html"*/'<!--\n  Generated template for the DashboardPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar>\n    <ion-buttons start>\n      <button ion-button menuToggle>\n        <ion-icon name="menu"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title>Dashboard</ion-title>\n    <ion-buttons end>\n      <button ion-button round item-right (click)="SyncData()">\n        <ion-icon name="sync"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>'/*ion-inline-end:"/private/var/root/Desktop/Hybrid/Salesforce/comapocmobile/src/pages/dashboard/dashboard.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_2__providers_smartsync_service_smartsync_service__["a" /* SmartsyncServiceProvider */]])
-    ], DashboardPage);
-    return DashboardPage;
-}());
-
-//# sourceMappingURL=dashboard.js.map
-
-/***/ }),
-
-/***/ 152:
+/***/ 163:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return OpportunitiesPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(27);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -426,7 +509,7 @@ var OpportunitiesPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 186:
+/***/ 198:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -439,53 +522,57 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 186;
+webpackEmptyAsyncContext.id = 198;
 
 /***/ }),
 
-/***/ 228:
+/***/ 241:
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
 	"../pages/accounts/accounts.module": [
-		456,
-		9
+		526,
+		10
 	],
 	"../pages/activities/activities.module": [
-		455,
-		8
+		527,
+		9
 	],
 	"../pages/calendar/calendar.module": [
-		457,
-		7
+		529,
+		8
+	],
+	"../pages/contact/contact.module": [
+		528,
+		0
 	],
 	"../pages/contacts-filter-modal/contacts-filter-modal.module": [
-		458,
-		6
+		530,
+		7
 	],
 	"../pages/contacts/contacts.module": [
-		459,
-		5
+		534,
+		6
 	],
 	"../pages/dashboard/dashboard.module": [
-		461,
-		4
+		531,
+		5
 	],
 	"../pages/help/help.module": [
-		460,
-		3
+		532,
+		4
 	],
 	"../pages/new-contact/new-contact.module": [
-		464,
-		2
+		533,
+		3
 	],
 	"../pages/opportunities/opportunities.module": [
-		462,
-		1
+		536,
+		2
 	],
 	"../pages/settings/settings.module": [
-		463,
-		0
+		535,
+		1
 	]
 };
 function webpackAsyncContext(req) {
@@ -499,20 +586,98 @@ function webpackAsyncContext(req) {
 webpackAsyncContext.keys = function webpackAsyncContextKeys() {
 	return Object.keys(map);
 };
-webpackAsyncContext.id = 228;
+webpackAsyncContext.id = 241;
 module.exports = webpackAsyncContext;
 
 /***/ }),
 
-/***/ 229:
+/***/ 242:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SmartsyncServiceProvider; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map__ = __webpack_require__(71);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map__);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var SmartsyncServiceProvider = /** @class */ (function () {
+    function SmartsyncServiceProvider() {
+        this.storeName = 'usersync';
+        var storeConfig = {
+            storeName: this.storeName,
+            isGlobalStore: true
+        };
+    }
+    // Initialize Smart Sync
+    SmartsyncServiceProvider.prototype.smartSync = function () {
+        return cordova.require("com.salesforce.plugin.smartsync");
+    };
+    // Sync Contacts
+    SmartsyncServiceProvider.prototype.SyncContacts = function () {
+        var _this = this;
+        var target = { type: "soql", query: "SELECT Id, Name, Account.Name, Department, Role__c, Role_DLH__c, Other_Department__c, Job_Title__c, Other_Job_Title__c, Email, MobilePhone, Fax, Survey__c, RecordType.Name, CreatedBy.Name, CreatedById, CreatedDate, Owner.Name FROM Contact LIMIT 1000" };
+        return new Promise(function (resolve, reject) {
+            _this.smartSync().syncDown(target, "contacts", { mergeMode: 'LEAVE_IF_CHANGED' }, function (response) {
+                resolve(response);
+            }, function (error) {
+                reject(error);
+            });
+        });
+    };
+    // Sync Accounts
+    SmartsyncServiceProvider.prototype.SyncAccounts = function () {
+        var _this = this;
+        var target = { type: "soql", query: "SELECT Id, Name, AHA_Number__c, IDN__c, GPO_Name__c, ShippingAddress, Latitude__c, Longitude__c, Record_Type__c, Parent.Name,  Owner.Name, Abbott_Account_ID__c FROM Account LIMIT 1000" };
+        return new Promise(function (resolve, reject) {
+            _this.smartSync().syncDown(target, "accounts", { mergeMode: 'LEAVE_IF_CHANGED' }, function (response) {
+                resolve(response);
+            }, function (error) {
+                reject(error);
+            });
+        });
+    };
+    // Sync Opportunities
+    SmartsyncServiceProvider.prototype.SyncOpportunities = function () {
+        var _this = this;
+        var target = { type: "soql", query: "SELECT Id, Name, Owner.Name, Account.Name, Opportunity_Type_ED_or_CC__c, Priority_Opportunity__c, EETerritoryAssigned__c, Departments__c, Competitor__c, CloseDate, Close_Date_Reviewed__c, Projected_Go_Live_Date__c, Actual_Capital_Ship_Date__c, Run_Rate_Achieved_Date__c, Projected_Implementation_Start_Date__c, Self_Implementation__c, Marketing_Program__c, StageName, Probability, Confidence__c, Opportunity_Cartridge_Amount__c, Total_Cartridge_Volume__c, Opportunity_Equipment_Software_Amount__c, Forecast_Dollar_Contribution__c, Cartridges_text__c, i_STATs_Currently_Interfaced__c, RT_Has_Own_CLIA_License__c, Hospital_System__c, GPO__c, RecordType.Name FROM Opportunity LIMIT 1000" };
+        return new Promise(function (resolve, reject) {
+            _this.smartSync().syncDown(target, "opportunities", { mergeMode: 'LEAVE_IF_CHANGED' }, function (response) {
+                resolve(response);
+            }, function (error) {
+                reject(error);
+            });
+        });
+    };
+    SmartsyncServiceProvider = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
+        __metadata("design:paramtypes", [])
+    ], SmartsyncServiceProvider);
+    return SmartsyncServiceProvider;
+}());
+
+//# sourceMappingURL=smartsync-service.js.map
+
+/***/ }),
+
+/***/ 243:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ContactServiceProvider; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map__ = __webpack_require__(64);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map__ = __webpack_require__(71);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_forcejs__ = __webpack_require__(79);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_forcejs__ = __webpack_require__(88);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_forcejs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_forcejs__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -544,13 +709,13 @@ var ContactServiceProvider = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 230:
+/***/ 244:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SmartstoreServiceProvider; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map__ = __webpack_require__(64);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map__ = __webpack_require__(71);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -606,7 +771,7 @@ var SmartstoreServiceProvider = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 231:
+/***/ 245:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -647,111 +812,13 @@ var NamefilterPipe = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 232:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SmartsyncServiceProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map__ = __webpack_require__(64);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map__);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var SmartsyncServiceProvider = /** @class */ (function () {
-    function SmartsyncServiceProvider() {
-        this.storeName = 'usersync';
-        var storeConfig = {
-            storeName: this.storeName,
-            isGlobalStore: true
-        };
-    }
-    // Initialize Smart Sync
-    SmartsyncServiceProvider.prototype.smartSync = function () {
-        return cordova.require("com.salesforce.plugin.smartsync");
-    };
-    SmartsyncServiceProvider.prototype.SyncContacts = function () {
-        var target = { type: "soql", query: "SELECT Id, Name, Account.Name, Department, Role__c, Role_DLH__c, Other_Department__c, Job_Title__c, Other_Job_Title__c, Email, MobilePhone, Fax, Survey__c, RecordType.Name, CreatedBy.Name, CreatedById, CreatedDate, Owner.Name FROM Contact LIMIT 1000" };
-        this.smartSync().syncDown(target, "contacts", { mergeMode: 'LEAVE_IF_CHANGED' }, function (response) {
-            return response;
-            // if (response.status !== "DONE") {
-            //   console.log("Progress:" + response.progress);
-            // } else {
-            //   console.log("Progress:" + response.progress);
-            // }
-        });
-    };
-    SmartsyncServiceProvider = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-        __metadata("design:paramtypes", [])
-    ], SmartsyncServiceProvider);
-    return SmartsyncServiceProvider;
-}());
-
-//# sourceMappingURL=smartsync-service.js.map
-
-/***/ }),
-
-/***/ 276:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NewContactPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-/**
- * Generated class for the NewContactPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var NewContactPage = /** @class */ (function () {
-    function NewContactPage(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-    }
-    NewContactPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad NewContactPage');
-    };
-    NewContactPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-new-contact',template:/*ion-inline-start:"/private/var/root/Desktop/Hybrid/Salesforce/comapocmobile/src/pages/new-contact/new-contact.html"*/'<!--\n  Generated template for the NewContactPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>newContact</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/private/var/root/Desktop/Hybrid/Salesforce/comapocmobile/src/pages/new-contact/new-contact.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
-    ], NewContactPage);
-    return NewContactPage;
-}());
-
-//# sourceMappingURL=new-contact.js.map
-
-/***/ }),
-
-/***/ 277:
+/***/ 293:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HelpPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(27);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -790,13 +857,58 @@ var HelpPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 278:
+/***/ 294:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NewContactPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(27);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/**
+ * Generated class for the NewContactPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var NewContactPage = /** @class */ (function () {
+    function NewContactPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    NewContactPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad NewContactPage');
+    };
+    NewContactPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'page-new-contact',template:/*ion-inline-start:"/private/var/root/Desktop/Hybrid/Salesforce/comapocmobile/src/pages/new-contact/new-contact.html"*/'<!--\n  Generated template for the NewContactPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>newContact</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/private/var/root/Desktop/Hybrid/Salesforce/comapocmobile/src/pages/new-contact/new-contact.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
+    ], NewContactPage);
+    return NewContactPage;
+}());
+
+//# sourceMappingURL=new-contact.js.map
+
+/***/ }),
+
+/***/ 295:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SettingsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(27);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -835,13 +947,13 @@ var SettingsPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 279:
+/***/ 296:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(280);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(401);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(297);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(417);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -849,32 +961,35 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 401:
+/***/ 417:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(41);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(46);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__swimlane_ngx_datatable__ = __webpack_require__(444);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__swimlane_ngx_datatable__ = __webpack_require__(514);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__swimlane_ngx_datatable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__swimlane_ngx_datatable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(445);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_accounts_accounts__ = __webpack_require__(147);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_activities_activities__ = __webpack_require__(146);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_calendar_calendar__ = __webpack_require__(148);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_contacts_contacts__ = __webpack_require__(150);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_dashboard_dashboard__ = __webpack_require__(151);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_opportunities_opportunities__ = __webpack_require__(152);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_contacts_filter_modal_contacts_filter_modal__ = __webpack_require__(149);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ionic_native_status_bar__ = __webpack_require__(272);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__ionic_native_splash_screen__ = __webpack_require__(275);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pipes_namefilter_namefilter__ = __webpack_require__(231);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__providers_smartstore_service_smartstore_service__ = __webpack_require__(230);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__providers_contact_service_contact_service__ = __webpack_require__(229);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__providers_account_service_account_service__ = __webpack_require__(453);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__providers_opportunities_service_opportunities_service__ = __webpack_require__(454);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__providers_smartsync_service_smartsync_service__ = __webpack_require__(232);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ng2_smart_table__ = __webpack_require__(246);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ng2_completer__ = __webpack_require__(72);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_component__ = __webpack_require__(515);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_accounts_accounts__ = __webpack_require__(157);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_activities_activities__ = __webpack_require__(158);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_calendar_calendar__ = __webpack_require__(159);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_contacts_contacts__ = __webpack_require__(162);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_dashboard_dashboard__ = __webpack_require__(161);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_opportunities_opportunities__ = __webpack_require__(163);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_contacts_filter_modal_contacts_filter_modal__ = __webpack_require__(160);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__ionic_native_status_bar__ = __webpack_require__(289);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__ionic_native_splash_screen__ = __webpack_require__(292);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pipes_namefilter_namefilter__ = __webpack_require__(245);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__providers_smartstore_service_smartstore_service__ = __webpack_require__(244);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__providers_contact_service_contact_service__ = __webpack_require__(243);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__providers_account_service_account_service__ = __webpack_require__(523);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__providers_opportunities_service_opportunities_service__ = __webpack_require__(524);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__providers_smartsync_service_smartsync_service__ = __webpack_require__(242);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__components_skeleton_item_skeleton_item__ = __webpack_require__(525);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -901,61 +1016,68 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
+
+
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* MyApp */],
-                __WEBPACK_IMPORTED_MODULE_5__pages_accounts_accounts__["a" /* AccountsPage */],
-                __WEBPACK_IMPORTED_MODULE_6__pages_activities_activities__["a" /* ActivitiesPage */],
-                __WEBPACK_IMPORTED_MODULE_7__pages_calendar_calendar__["a" /* CalendarPage */],
-                __WEBPACK_IMPORTED_MODULE_8__pages_contacts_contacts__["a" /* ContactsPage */],
-                __WEBPACK_IMPORTED_MODULE_9__pages_dashboard_dashboard__["a" /* DashboardPage */],
-                __WEBPACK_IMPORTED_MODULE_10__pages_opportunities_opportunities__["a" /* OpportunitiesPage */],
-                __WEBPACK_IMPORTED_MODULE_11__pages_contacts_filter_modal_contacts_filter_modal__["a" /* ContactsFilterModalPage */],
-                __WEBPACK_IMPORTED_MODULE_14__pipes_namefilter_namefilter__["a" /* NamefilterPipe */]
+                __WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* MyApp */],
+                __WEBPACK_IMPORTED_MODULE_7__pages_accounts_accounts__["a" /* AccountsPage */],
+                __WEBPACK_IMPORTED_MODULE_8__pages_activities_activities__["a" /* ActivitiesPage */],
+                __WEBPACK_IMPORTED_MODULE_9__pages_calendar_calendar__["a" /* CalendarPage */],
+                __WEBPACK_IMPORTED_MODULE_10__pages_contacts_contacts__["a" /* ContactsPage */],
+                __WEBPACK_IMPORTED_MODULE_11__pages_dashboard_dashboard__["a" /* DashboardPage */],
+                __WEBPACK_IMPORTED_MODULE_12__pages_opportunities_opportunities__["a" /* OpportunitiesPage */],
+                __WEBPACK_IMPORTED_MODULE_13__pages_contacts_filter_modal_contacts_filter_modal__["a" /* ContactsFilterModalPage */],
+                __WEBPACK_IMPORTED_MODULE_16__pipes_namefilter_namefilter__["a" /* NamefilterPipe */],
+                __WEBPACK_IMPORTED_MODULE_22__components_skeleton_item_skeleton_item__["a" /* SkeletonItemComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["BrowserModule"],
                 __WEBPACK_IMPORTED_MODULE_3__swimlane_ngx_datatable__["NgxDatatableModule"],
-                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* MyApp */], {}, {
+                __WEBPACK_IMPORTED_MODULE_4_ng2_smart_table__["b" /* Ng2SmartTableModule */],
+                __WEBPACK_IMPORTED_MODULE_5_ng2_completer__["b" /* Ng2CompleterModule */],
+                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* MyApp */], {}, {
                     links: [
-                        { loadChildren: '../pages/activities/activities.module#ActivitiesPageModule', name: 'ActivitiesPage', segment: 'activities', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/accounts/accounts.module#AccountsPageModule', name: 'AccountsPage', segment: 'accounts', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/activities/activities.module#ActivitiesPageModule', name: 'ActivitiesPage', segment: 'activities', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/contact/contact.module#ContactPageModule', name: 'ContactPage', segment: 'contact', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/calendar/calendar.module#CalendarPageModule', name: 'CalendarPage', segment: 'calendar', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/contacts-filter-modal/contacts-filter-modal.module#ContactsFilterModalPageModule', name: 'ContactsFilterModalPage', segment: 'contacts-filter-modal', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/contacts/contacts.module#ContactsPageModule', name: 'ContactsPage', segment: 'contacts', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/help/help.module#HelpPageModule', name: 'HelpPage', segment: 'help', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/dashboard/dashboard.module#DashboardPageModule', name: 'DashboardPage', segment: 'dashboard', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/opportunities/opportunities.module#OpportunitiesPageModule', name: 'OpportunitiesPage', segment: 'opportunities', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/help/help.module#HelpPageModule', name: 'HelpPage', segment: 'help', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/new-contact/new-contact.module#NewContactPageModule', name: 'NewContactPage', segment: 'new-contact', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/contacts/contacts.module#ContactsPageModule', name: 'ContactsPage', segment: 'contacts', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/settings/settings.module#SettingsPageModule', name: 'SettingsPage', segment: 'settings', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/new-contact/new-contact.module#NewContactPageModule', name: 'NewContactPage', segment: 'new-contact', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/opportunities/opportunities.module#OpportunitiesPageModule', name: 'OpportunitiesPage', segment: 'opportunities', priority: 'low', defaultHistory: [] }
                     ]
-                }),
+                })
             ],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["a" /* IonicApp */]],
-            exports: [__WEBPACK_IMPORTED_MODULE_14__pipes_namefilter_namefilter__["a" /* NamefilterPipe */]],
+            exports: [__WEBPACK_IMPORTED_MODULE_16__pipes_namefilter_namefilter__["a" /* NamefilterPipe */], __WEBPACK_IMPORTED_MODULE_22__components_skeleton_item_skeleton_item__["a" /* SkeletonItemComponent */]],
             entryComponents: [
-                __WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* MyApp */],
-                __WEBPACK_IMPORTED_MODULE_5__pages_accounts_accounts__["a" /* AccountsPage */],
-                __WEBPACK_IMPORTED_MODULE_6__pages_activities_activities__["a" /* ActivitiesPage */],
-                __WEBPACK_IMPORTED_MODULE_7__pages_calendar_calendar__["a" /* CalendarPage */],
-                __WEBPACK_IMPORTED_MODULE_8__pages_contacts_contacts__["a" /* ContactsPage */],
-                __WEBPACK_IMPORTED_MODULE_9__pages_dashboard_dashboard__["a" /* DashboardPage */],
-                __WEBPACK_IMPORTED_MODULE_10__pages_opportunities_opportunities__["a" /* OpportunitiesPage */],
-                __WEBPACK_IMPORTED_MODULE_11__pages_contacts_filter_modal_contacts_filter_modal__["a" /* ContactsFilterModalPage */]
+                __WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* MyApp */],
+                __WEBPACK_IMPORTED_MODULE_7__pages_accounts_accounts__["a" /* AccountsPage */],
+                __WEBPACK_IMPORTED_MODULE_8__pages_activities_activities__["a" /* ActivitiesPage */],
+                __WEBPACK_IMPORTED_MODULE_9__pages_calendar_calendar__["a" /* CalendarPage */],
+                __WEBPACK_IMPORTED_MODULE_10__pages_contacts_contacts__["a" /* ContactsPage */],
+                __WEBPACK_IMPORTED_MODULE_11__pages_dashboard_dashboard__["a" /* DashboardPage */],
+                __WEBPACK_IMPORTED_MODULE_12__pages_opportunities_opportunities__["a" /* OpportunitiesPage */],
+                __WEBPACK_IMPORTED_MODULE_13__pages_contacts_filter_modal_contacts_filter_modal__["a" /* ContactsFilterModalPage */]
             ],
             providers: [
-                __WEBPACK_IMPORTED_MODULE_12__ionic_native_status_bar__["a" /* StatusBar */],
-                __WEBPACK_IMPORTED_MODULE_13__ionic_native_splash_screen__["a" /* SplashScreen */],
+                __WEBPACK_IMPORTED_MODULE_14__ionic_native_status_bar__["a" /* StatusBar */],
+                __WEBPACK_IMPORTED_MODULE_15__ionic_native_splash_screen__["a" /* SplashScreen */],
                 { provide: __WEBPACK_IMPORTED_MODULE_1__angular_core__["ErrorHandler"], useClass: __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["b" /* IonicErrorHandler */] },
-                __WEBPACK_IMPORTED_MODULE_16__providers_contact_service_contact_service__["a" /* ContactServiceProvider */],
-                __WEBPACK_IMPORTED_MODULE_15__providers_smartstore_service_smartstore_service__["a" /* SmartstoreServiceProvider */],
-                __WEBPACK_IMPORTED_MODULE_17__providers_account_service_account_service__["a" /* AccountServiceProvider */],
-                __WEBPACK_IMPORTED_MODULE_18__providers_opportunities_service_opportunities_service__["a" /* OpportunitiesServiceProvider */],
-                __WEBPACK_IMPORTED_MODULE_19__providers_smartsync_service_smartsync_service__["a" /* SmartsyncServiceProvider */]
+                __WEBPACK_IMPORTED_MODULE_18__providers_contact_service_contact_service__["a" /* ContactServiceProvider */],
+                __WEBPACK_IMPORTED_MODULE_17__providers_smartstore_service_smartstore_service__["a" /* SmartstoreServiceProvider */],
+                __WEBPACK_IMPORTED_MODULE_19__providers_account_service_account_service__["a" /* AccountServiceProvider */],
+                __WEBPACK_IMPORTED_MODULE_20__providers_opportunities_service_opportunities_service__["a" /* OpportunitiesServiceProvider */],
+                __WEBPACK_IMPORTED_MODULE_21__providers_smartsync_service_smartsync_service__["a" /* SmartsyncServiceProvider */]
             ]
         })
     ], AppModule);
@@ -966,25 +1088,25 @@ var AppModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 445:
+/***/ 515:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(272);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(275);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_forcejs__ = __webpack_require__(79);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(289);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(292);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_forcejs__ = __webpack_require__(88);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_forcejs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_forcejs__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_accounts_accounts__ = __webpack_require__(147);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_activities_activities__ = __webpack_require__(146);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_calendar_calendar__ = __webpack_require__(148);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_contacts_contacts__ = __webpack_require__(150);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_dashboard_dashboard__ = __webpack_require__(151);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_settings_settings__ = __webpack_require__(278);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_help_help__ = __webpack_require__(277);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_opportunities_opportunities__ = __webpack_require__(152);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_accounts_accounts__ = __webpack_require__(157);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_activities_activities__ = __webpack_require__(158);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_calendar_calendar__ = __webpack_require__(159);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_contacts_contacts__ = __webpack_require__(162);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_dashboard_dashboard__ = __webpack_require__(161);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_settings_settings__ = __webpack_require__(295);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_help_help__ = __webpack_require__(293);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_opportunities_opportunities__ = __webpack_require__(163);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1066,15 +1188,15 @@ var MyApp = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 453:
+/***/ 523:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AccountServiceProvider; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map__ = __webpack_require__(64);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map__ = __webpack_require__(71);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_forcejs__ = __webpack_require__(79);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_forcejs__ = __webpack_require__(88);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_forcejs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_forcejs__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1106,15 +1228,15 @@ var AccountServiceProvider = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 454:
+/***/ 524:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return OpportunitiesServiceProvider; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map__ = __webpack_require__(64);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map__ = __webpack_require__(71);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_forcejs__ = __webpack_require__(79);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_forcejs__ = __webpack_require__(88);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_forcejs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_forcejs__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1150,7 +1272,60 @@ var OpportunitiesServiceProvider = /** @class */ (function () {
 
 //# sourceMappingURL=opportunities-service.js.map
 
+/***/ }),
+
+/***/ 525:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SkeletonItemComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var SkeletonItemComponent = /** @class */ (function () {
+    function SkeletonItemComponent() {
+        this.styles = {};
+    }
+    SkeletonItemComponent.prototype.ngOnInit = function () {
+        this.styles = {
+            width: this.width ? this.width : '100%',
+            height: this.height ? this.height : '16px'
+        };
+        if (typeof this.radius !== 'undefined' && this.radius !== '') {
+            this.styles.borderRadius = this.radius;
+        }
+    };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        __metadata("design:type", Object)
+    ], SkeletonItemComponent.prototype, "width", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        __metadata("design:type", Object)
+    ], SkeletonItemComponent.prototype, "height", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        __metadata("design:type", Object)
+    ], SkeletonItemComponent.prototype, "radius", void 0);
+    SkeletonItemComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'skeleton-item',template:/*ion-inline-start:"/private/var/root/Desktop/Hybrid/Salesforce/comapocmobile/src/components/skeleton-item/skeleton-item.html"*/'<div [ngStyle]="styles"></div>'/*ion-inline-end:"/private/var/root/Desktop/Hybrid/Salesforce/comapocmobile/src/components/skeleton-item/skeleton-item.html"*/
+        })
+    ], SkeletonItemComponent);
+    return SkeletonItemComponent;
+}());
+
+//# sourceMappingURL=skeleton-item.js.map
+
 /***/ })
 
-},[279]);
+},[296]);
 //# sourceMappingURL=main.js.map

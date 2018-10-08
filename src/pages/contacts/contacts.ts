@@ -7,6 +7,9 @@ import { SmartstoreServiceProvider } from "../../providers/smartstore-service/sm
 import { ContactsFilterModalPage } from "../contacts-filter-modal/contacts-filter-modal";
 import { NewContactPage } from "../new-contact/new-contact";
 import { NamefilterPipe } from '../../pipes/namefilter/namefilter';
+
+import { Ng2SmartTableModule, LocalDataSource } from 'ng2-smart-table';
+
 import 'rxjs';
 
 @IonicPage()
@@ -21,10 +24,55 @@ export class ContactsPage {
   loader;
   temp = [];
   segments: string = "grid";
-  public columns: any;
-  public rows: any;
+  columns;
+  rows;
   page = 1;
   totalPages = 0;
+  // Settings for Ng2Table
+  settings = {
+    pager: {
+      display: true,
+      perPage: 12
+
+    },
+    columns: {
+      Name: {
+        title: 'Name',
+        filter: false
+      },
+      Job_Title__c: {
+        title: 'Job Title',
+        filter: false
+      },
+      Department: {
+        title: 'Department',
+        filter: false
+      },
+      Email: {
+        title: 'Email',
+        sort: false,
+        filter: false
+      },
+      Phone: {
+        title: 'Phone',
+        sort: false,
+        filter: false
+      },
+      MobilePhone: {
+        title: 'Mobile',
+        sort: false,
+        filter: false
+      }
+    },
+    actions: {
+      add: false,
+      edit: false,
+      delete: false
+    }
+  };
+  contact_list;
+
+  skeleton = true;
 
   items = [];
 
@@ -61,30 +109,32 @@ export class ContactsPage {
     });
   }
 
-
   GetAllContacts() {
-    this.loader.present();
+    // this.loader.present();
+    this.skeleton = true;
     this.smartStoreService.GetContactsFromSoup().then(data => {
       this.totalPages = data.records.length / 9;
       for (let i = 0; i < 9; i++) {
         this.contacts.push(data.records[i]);
       }
-      this.rows = this.contacts;
-      this.temp = this.rows;
-      this.loader.dismiss();
+      setTimeout(() => {
+        this.rows = this.contacts;
+        this.temp = this.rows;
+        this.skeleton = false;
+      }, 1500)
+
+      // this.loader.dismiss();
     });
   }
 
   GetAllContactsList() {
     this.loader.present();
     this.smartStoreService.GetContactsFromSoup().then(data => {
-      this.rows = data.records;
-      this.temp = this.rows;
+      this.rows = new LocalDataSource(data.records);
+      this.contact_list = data.records;
       this.loader.dismiss();
     });
   }
-
-
 
   doInfinite(infiniteScroll) {
     this.smartStoreService.GetContactsFromSoup().then(data => {
@@ -103,11 +153,47 @@ export class ContactsPage {
   FilterTableRows(event) {
     const val = event.target.value.toLowerCase();
     // filter our data
-    const temp = this.temp.filter(function (d) {
+    this.temp = this.rows.filter(function (d) {
       return d.name.toLowerCase().indexOf(val) !== -1 || !val;
     });
     // update the rows
-    this.rows = temp;
+    this.rows = this.temp;
+  }
+
+  onSearch(query: string = '') {
+    if (query == '') {
+      this.rows = new LocalDataSource(this.contact_list);
+    }
+    else {
+      this.rows.setFilter([
+        // fields we want to include in the search
+        {
+          field: 'Name',
+          search: query
+        },
+        {
+          field: 'Job_Title__c',
+          search: query
+        },
+        {
+          field: 'Department',
+          search: query
+        },
+        {
+          field: 'Email',
+          search: query
+        },
+        {
+          field: 'Phone',
+          search: query
+        },
+        {
+          field: 'MobilePhone',
+          search: query
+        }
+      ], false);
+    }
+
   }
   /* Ali;s Addition */
 }
