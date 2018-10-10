@@ -28,6 +28,19 @@ export class ContactsPage {
   rows;
   page = 1;
   totalPages = 0;
+  showSlider=false;
+  filter={
+    Name:'',
+    Job_Title__c:'',
+    Department:'',
+    Phone:'',
+    MobilePhone:'',
+    Email:'',
+  };
+  
+
+
+
   // Settings for Ng2Table
   settings = {
     pager: {
@@ -84,9 +97,14 @@ export class ContactsPage {
     this.GetAllContacts();
   }
 
-  OpenFiltersModal() {
-    let filterModal = this.modalCtrl.create(ContactsFilterModalPage);
-    filterModal.present();
+  OpenFiltersSlider() {
+    this.showSlider=true;
+    //let filterModal = this.modalCtrl.create(ContactsFilterModalPage);
+    //filterModal.present();
+  }
+
+  CloseFiltersSlider(){
+    this.showSlider=false;
   }
 
   onSegmentChange(ev) {
@@ -145,7 +163,8 @@ export class ContactsPage {
         }
         infiniteScroll.complete();
       }, 500);
-    });
+    }
+    );
     this.page = this.page + 1;
   }
 

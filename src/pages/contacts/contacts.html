@@ -8,7 +8,7 @@
   <ion-toolbar>
     <ion-row>
       <ion-col col-2 style="padding-left: 10px">
-        <button block style="background:transparent;" (click)="OpenFiltersModal()">
+        <button block style="background:transparent;" (click)="OpenFiltersSilder()">
           <img style="vertical-align: bottom" src="assets/imgs/filter.png" />
           <div class="subheader-icon-txt">Filters</div>
         </button>
@@ -50,6 +50,64 @@
         </div>
       </ion-col>
     </ion-row>
+
+    <div *ngIf="showSlider" [@fadeInOut] class="slider">
+
+      <div>
+        <ion-icon name="ios-close-outline" class="close-btn" (click)="CloseFiltersSlider()"></ion-icon>
+
+      </div>
+<div>
+  <ion-list>
+    <ion-row>
+<ion-col>
+<ion-item class="item-has-input filter-input">
+<ion-input clearInput type="text" text-left [(ngModel)]="filter.firstName" placeholder="Search by first name" ></ion-input>
+</ion-item>
+</ion-col>
+<ion-col>
+<ion-item class="item-has-input filter-input">
+<ion-input clearInput type="text" text-left [(ngModel)]="filter.lastName" placeholder="Search by last name"></ion-input>
+</ion-item>
+</ion-col>
+</ion-row>
+
+<ion-row>
+<ion-col>
+<ion-item class="item-has-input filter-input">
+<ion-input clearInput type="text" text-left [(ngModel)]="filter.jobTitle" placeholder="Search by job title" ></ion-input>
+</ion-item>
+</ion-col>
+<ion-col>
+<ion-item class="item-has-input filter-input">
+<ion-input clearInput type="text" text-left [(ngModel)]="filter.department" placeholder="Search by department"></ion-input>
+</ion-item>
+</ion-col>
+</ion-row>
+
+<ion-row>
+<ion-col>
+<ion-item class="item-has-input filter-input">
+<ion-input clearInput type="text" text-left [(ngModel)]="filter.email" placeholder="Search by email" ></ion-input>
+</ion-item>
+</ion-col>
+<ion-col>
+<ion-item class="item-has-input filter-input">
+<ion-input clearInput type="text" text-left [(ngModel)]="filter.accountName" placeholder="Search by account name"></ion-input>
+</ion-item>
+</ion-col>
+</ion-row>
+<ion-row>
+<ion-col>
+  <ion-item>
+    <button ion-button class="btn-login search-btn center" round (click)="FilterContact()">SEARCH</button>
+  </ion-item>
+</ion-col>
+</ion-row>
+  </ion-list>
+
+</div>
+</div>
   </ion-toolbar>
 </ion-header>
 
