@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 import { Ng2SmartTableModule } from 'ng2-smart-table';
@@ -28,6 +29,7 @@ import { OpportunitiesServiceProvider } from '../providers/opportunities-service
 import { SmartsyncServiceProvider } from '../providers/smartsync-service/smartsync-service';
 
 import { SkeletonItemComponent } from '../components/skeleton-item/skeleton-item'
+import { IonicSwipeAllModule } from 'ionic-swipe-all';
 
 
 
@@ -49,6 +51,8 @@ import { SkeletonItemComponent } from '../components/skeleton-item/skeleton-item
     NgxDatatableModule,
     Ng2SmartTableModule,
     Ng2CompleterModule,
+    BrowserAnimationsModule,
+    IonicSwipeAllModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],

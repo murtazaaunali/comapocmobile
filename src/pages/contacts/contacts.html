@@ -51,7 +51,7 @@
       </ion-col>
     </ion-row>
 
-    <div *ngIf="showSlider" [@fadeInOut] class="slider">
+    <div *ngIf="showSlider" swipeAll [@fadeInOut] (swipeup)="CloseSlider()" class="slider">
 
       <div>
         <ion-icon name="ios-close-outline" class="close-btn" (click)="CloseFiltersSlider()"></ion-icon>

@@ -11,12 +11,24 @@ import { NamefilterPipe } from '../../pipes/namefilter/namefilter';
 import { Ng2SmartTableModule, LocalDataSource } from 'ng2-smart-table';
 
 import 'rxjs';
+import {style, state, animate, transition, trigger} from '@angular/animations';
 
 @IonicPage()
 @Component({
   selector: 'page-contacts',
   templateUrl: 'contacts.html',
-  providers: [NamefilterPipe]
+  providers: [NamefilterPipe],
+  animations: [
+    trigger('fadeInOut', [
+      transition(':enter', [   // :enter is alias to 'void => *'
+        style({opacity:0}),
+        animate(300, style({opacity:1})) 
+      ]),
+      transition(':leave', [   // :leave is alias to '* => void'
+        animate(300, style({opacity:0})) 
+      ])
+    ])
+  ]
 })
 export class ContactsPage {
   contacts = [];
@@ -37,8 +49,6 @@ export class ContactsPage {
     MobilePhone:'',
     Email:'',
   };
-  
-
 
 
   // Settings for Ng2Table
