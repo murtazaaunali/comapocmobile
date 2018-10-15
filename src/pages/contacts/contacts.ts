@@ -9,6 +9,7 @@ import { NewContactPage } from "../new-contact/new-contact";
 import { NamefilterPipe } from '../../pipes/namefilter/namefilter';
 
 import { Ng2SmartTableModule, LocalDataSource } from 'ng2-smart-table';
+import { ContactPage } from '../contact/contact';
 
 import 'rxjs';
 import {style, state, animate, transition, trigger} from '@angular/animations';
@@ -135,6 +136,12 @@ export class ContactsPage {
       this.contacts = data;
       this.loader.dismiss();
     });
+  }
+
+  GotoContactDetail(ev){
+    console.log(ev.data);
+    this.navCtrl.push(ContactPage,{ contactId: ev.data.id});
+
   }
 
   GetAllContacts() {

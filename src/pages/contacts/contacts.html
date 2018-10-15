@@ -485,7 +485,7 @@
     <!-- DataTables -->
     <div *ngSwitchCase="'list'">
       <div>
-        <ng2-smart-table [settings]="settings" [source]="rows"></ng2-smart-table>
+        <ng2-smart-table [settings]="settings" [source]="rows" (userRowSelect)="GotoContactDetail($event)"></ng2-smart-table>
       </div>
       <ngx-datatable *ngIf="false" #table [rows]="rows" [limit]="10" [columnMode]="'flex'" [headerHeight]="50"
         [footerHeight]="50" [rowHeight]="'auto'">

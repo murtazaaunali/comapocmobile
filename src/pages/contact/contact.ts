@@ -15,7 +15,11 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class ContactPage {
 
+  private contactId;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.contactId = this.navParams.get("contactId");
+      console.log(this.contactId);
   }
 
   ionViewDidLoad() {
