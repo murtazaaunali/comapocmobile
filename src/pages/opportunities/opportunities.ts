@@ -48,27 +48,32 @@ export class OpportunitiesPage {
         title: 'Name',
         filter: false
       },
-      Job_Title__c: {
-        title: 'Job Title',
+      Opportunity_Type_ED_or_CC__c: {
+        title: 'Opportunity Type',
         filter: false
       },
-      Department: {
-        title: 'Department',
+      AccountName: {
+        title: 'Account Name',
         filter: false
       },
-      Email: {
-        title: 'Email',
-        sort: false,
+      StageName: {
+        title: 'Stage Name',
         filter: false
       },
-      Phone: {
-        title: 'Phone',
-        sort: false,
+      Priority_Opportunity__c: {
+        title: 'Priority Opportunity',
         filter: false
       },
-      MobilePhone: {
-        title: 'Mobile',
-        sort: false,
+      Probability: {
+        title: 'Probability',
+        filter: false
+      },
+      Departments__c: {
+        title: 'Departments',
+        filter: false
+      },
+      CloseDate: {
+        title: 'Close Date',
         filter: false
       }
     },
@@ -144,23 +149,23 @@ export class OpportunitiesPage {
           search: query
         },
         {
-          field: 'Job_Title__c',
+          field: 'Opportunity_Type_ED_or_CC__c',
           search: query
         },
         {
-          field: 'Department',
+          field: 'AccountName',
           search: query
         },
         {
-          field: 'Email',
+          field: 'StageName',
           search: query
         },
         {
-          field: 'Phone',
+          field: 'Priority_Opportunity__c',
           search: query
         },
         {
-          field: 'MobilePhone',
+          field: 'Departments__c',
           search: query
         }
       ], false);

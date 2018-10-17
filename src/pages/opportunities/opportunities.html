@@ -3,27 +3,27 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>CONTACTS</ion-title>
+    <ion-title>OPPORTUNITIES</ion-title>
   </ion-navbar>
   <ion-toolbar>
     <ion-row>
-      <ion-col col-2 style="padding-left: 10px">
+      <!-- <ion-col col-2 style="padding-left: 10px">
         <button block style="background:transparent;" (click)="OpenFiltersModal()">
           <img style="vertical-align: bottom" src="assets/imgs/filter.png" />
           <div class="subheader-icon-txt">Filters</div>
         </button>
-      </ion-col>
-      <ion-col col-2 style="padding-left: 10px">
+      </ion-col> -->
+      <!-- <ion-col col-2 style="padding-left: 10px">
         <button block style="background:transparent;" (click)="AddNewContactModal()">
           <img style="vertical-align: bottom" src="assets/imgs/new.png" />
           <div class="subheader-icon-txt">New</div>
         </button>
-      </ion-col>
-      <ion-col col-2>
-      </ion-col>
+      </ion-col> -->
+      <!-- <ion-col col-2>
+      </ion-col> -->
       <ion-col col-4>
         <ion-item class="item-has-input search-filter" *ngIf="segments=='grid'">
-          <ion-input clearInput type="text" [(ngModel)]="searchFilter" text-left placeholder="Search Contact"></ion-input>
+          <ion-input clearInput type="text" [(ngModel)]="searchFilter" text-left placeholder="Search Opportunity"></ion-input>
           <ion-label item-right class="align-right label-img">
             <ion-icon name="search"></ion-icon>
           </ion-label>
@@ -374,43 +374,51 @@
               </ion-card-header>
               <ion-card-content style="margin-top: -10px">
                 <ion-row>
-                  <ion-col col-12 *ngIf="opp.Job_Title__c!=null">
-                    <ion-icon name="briefcase" class="icon-blue"></ion-icon><span class="contacts-content">{{con.Job_Title__c}}</span>
+                  <ion-col col-12 *ngIf="opp.Opportunity_Type_ED_or_CC__c!=null">
+                    <ion-icon name="paper" class="icon-blue"></ion-icon><span class="contacts-content">{{opp.Opportunity_Type_ED_or_CC__c}}</span>
                   </ion-col>
-                  <ion-col col-12 *ngIf="opp.Job_Title__c==null">
-                    <ion-icon name="briefcase" class="icon-blue"></ion-icon><span class="contacts-content">N/A</span>
+                  <ion-col col-12 *ngIf="opp.Opportunity_Type_ED_or_CC__c==null">
+                    <ion-icon name="paper" class="icon-blue"></ion-icon><span class="contacts-content">N/A</span>
                   </ion-col>
                 </ion-row>
                 <ion-row>
-                  <ion-col col-12 *ngIf="opp.Department!=null">
-                    <ion-icon name="pin" class="icon-blue"></ion-icon><span class="contacts-content">{{con.Department}}</span>
+                  <ion-col col-12 *ngIf="opp.AccountName!=null">
+                    <ion-icon name="person" class="icon-blue"></ion-icon><span class="contacts-content">{{opp.AccountName}}</span>
                   </ion-col>
-                  <ion-col col-12 *ngIf="opp.Department==null">
+                  <ion-col col-12 *ngIf="opp.AccountName==null">
+                    <ion-icon name="person" class="icon-blue"></ion-icon><span class="contacts-content">N/A</span>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col col-12 *ngIf="opp.StageName!=null">
+                    <ion-icon name="trending_up" class="icon-blue"></ion-icon><span class="contacts-content">{{opp.StageName}}</span>
+                  </ion-col>
+                  <ion-col col-12 *ngIf="opp.StageName==null">
+                    <ion-icon name="trending_up" class="icon-blue"></ion-icon><span class="contacts-content">N/A</span>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col col-12 *ngIf="opp.Priority_Opportunity__c!=null">
+                    <ion-icon name="ribbon" class="icon-blue"></ion-icon><span class="contacts-content">{{opp.Priority_Opportunity__c}}</span>
+                  </ion-col>
+                  <ion-col col-12 *ngIf="opp.Priority_Opportunity__c==null">
+                    <ion-icon name="ribbon" class="icon-blue"></ion-icon><span class="contacts-content">N/A</span>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col col-12 *ngIf="opp.Departments__c!=null">
+                    <ion-icon name="pin" class="icon-blue"></ion-icon><span class="contacts-content">{{opp.Departments__c}}</span>
+                  </ion-col>
+                  <ion-col col-12 *ngIf="opp.Departments__c==null">
                     <ion-icon name="pin" class="icon-blue"></ion-icon><span class="contacts-content">N/A</span>
                   </ion-col>
                 </ion-row>
                 <ion-row>
-                  <ion-col col-12 *ngIf="opp.Email!=null">
-                    <ion-icon name="mail" class="icon-blue"></ion-icon><span class="contacts-content">{{con.Email}}</span>
+                  <ion-col col-12 *ngIf="opp.CloseDate!=null">
+                    <ion-icon name="calendar" class="icon-blue"></ion-icon><span class="contacts-content">{{opp.CloseDate}}</span>
                   </ion-col>
-                  <ion-col col-12 *ngIf="opp.Email==null">
-                    <ion-icon name="mail" class="icon-blue"></ion-icon><span class="contacts-content">N/A</span>
-                  </ion-col>
-                </ion-row>
-                <ion-row>
-                  <ion-col col-12 *ngIf="opp.Phone!=null">
-                    <ion-icon name="call" class="icon-blue"></ion-icon><span class="contacts-content">{{con.Phone}}</span>
-                  </ion-col>
-                  <ion-col col-12 *ngIf="opp".Phone==null">
-                    <ion-icon name="call" class="icon-blue"></ion-icon><span class="contacts-content">N/A</span>
-                  </ion-col>
-                </ion-row>
-                <ion-row>
-                  <ion-col col-12 *ngIf="opp.MobilePhone!=null">
-                    <ion-icon name="phone-portrait" class="icon-blue"></ion-icon><span class="contacts-content">{{con.MobilePhone}}</span>
-                  </ion-col>
-                  <ion-col col-12 *ngIf="opp.MobilePhone==null">
-                    <ion-icon name="phone-portrait" class="icon-blue"></ion-icon><span class="contacts-content">N/A</span>
+                  <ion-col col-12 *ngIf="opp.CloseDate==null">
+                    <ion-icon name="calendar" class="icon-blue"></ion-icon><span class="contacts-content">N/A</span>
                   </ion-col>
                 </ion-row>
               </ion-card-content>

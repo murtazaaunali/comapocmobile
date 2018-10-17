@@ -15,6 +15,7 @@ import { CalendarPage } from '../pages/calendar/calendar';
 import { ContactsPage } from '../pages/contacts/contacts';
 import { DashboardPage } from '../pages/dashboard/dashboard';
 import { OpportunitiesPage } from '../pages/opportunities/opportunities';
+import { ContactPage } from '../pages/contact/contact';
 
 import { ContactsFilterModalPage } from "../pages/contacts-filter-modal/contacts-filter-modal";
 
@@ -41,6 +42,7 @@ import { IonicSwipeAllModule } from 'ionic-swipe-all';
     CalendarPage,
     ContactsPage,
     DashboardPage,
+    ContactPage,
     OpportunitiesPage,
     ContactsFilterModalPage,
     NamefilterPipe,
@@ -63,6 +65,7 @@ import { IonicSwipeAllModule } from 'ionic-swipe-all';
     ActivitiesPage,
     CalendarPage,
     ContactsPage,
+    ContactPage,
     DashboardPage,
     OpportunitiesPage,
     ContactsFilterModalPage
