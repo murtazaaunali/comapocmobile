@@ -1,0 +1,46 @@
+<ion-content padding>
+  <div>
+      <button ion-button full outline class="contact-related-btn"  (click)="isHidden1=!isHidden1" >
+          <span class="contact-related-heading">
+              <img class="contact-related-item-icon" src="..AQ/../assets/imgs/contacts-icon.png"/>
+              <h3 style="display:inline-block;text-transform: capitalize;">Contacts</h3>
+            </span>
+          
+          <span class="contact-related-arrows">
+            <ion-icon name="arrow-down" style="font-size: 28px;" *ngIf="isHidden1"></ion-icon>
+            <ion-icon name="arrow-up" style="font-size: 28px;" *ngIf="!isHidden1"></ion-icon>
+          </span>
+  
+      </button>
+      <ion-card [hidden]="isHidden1" style="margin-top: -5px;">
+          <ion-card-content>
+              <!-- Add card content here! -->
+              Just like a normal page, cards can be customized to include headers. To add a header to a card, add the component inside of your card
+            </ion-card-content>
+          </ion-card>
+  </div>
+   
+
+  <div>
+      <button ion-button full outline class="contact-related-btn"  (click)="isHidden2=!isHidden2" >
+          <span class="contact-related-heading">
+              <img class="contact-related-item-icon" src="..AQ/../assets/imgs/opportunities-icon.png"/>
+              <h3 style="display:inline-block;text-transform: capitalize;">Opportunities</h3>
+            </span>
+          
+          <span class="contact-related-arrows">
+            <ion-icon name="arrow-down" style="font-size: 28px;" *ngIf="isHidden2"></ion-icon>
+            <ion-icon name="arrow-up" style="font-size: 28px;" *ngIf="!isHidden2"></ion-icon>
+          </span>
+  
+      </button>
+      <ion-card [hidden]="isHidden2" style="margin-top: -5px;">
+          <ion-card-content>
+              <!-- Add card content here! -->
+              Just like a normal page, cards can be customized to include headers. To add a header to a card, add the component inside of your card
+            </ion-card-content>
+          </ion-card>
+  </div>
+
+  
+</ion-content>

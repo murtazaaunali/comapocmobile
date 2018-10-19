@@ -299,3 +299,49 @@ ion-app {
       background: #f3f8f9;
         border-top: 2px solid #009ada;
     }
+
+    .contact-name-detail{
+      background: #f3f8f9;
+        min-height: 100px;
+        margin-top: 8px;
+    }
+    
+    ion-label[fixed]{
+      min-width: 130px!important;
+    }
+    
+    .contact-name-icon{
+      vertical-align: bottom;
+      width: 70px;
+      margin-top: 5px;
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+    
+    .contact-related-btn{
+      border-left: 1px solid!important;
+      border-right: 1px solid!important;
+      min-height: 60px;
+      margin-bottom: 12px;
+    }
+    
+    .contact-related-item-icon{
+        margin-right: 5px;
+        vertical-align: text-bottom;
+        margin-left: 20px;
+    }
+    
+    .contact-related-heading{
+      position: absolute;
+        left: 0;
+    }
+    
+    .contact-related-arrows{
+      position: absolute;
+        left: 95%;
+    }
+    
+    super-tabs-toolbar > ion-toolbar.toolbar .tab-buttons-container .tab-buttons super-tab-button.title-only .title {
+      line-height: 48px;
+      font-size: 20px;
+    }

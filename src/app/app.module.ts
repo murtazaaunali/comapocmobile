@@ -31,7 +31,7 @@ import { SmartsyncServiceProvider } from '../providers/smartsync-service/smartsy
 
 import { SkeletonItemComponent } from '../components/skeleton-item/skeleton-item'
 import { IonicSwipeAllModule } from 'ionic-swipe-all';
-
+import { SuperTabsModule } from 'ionic2-super-tabs';
 
 
 @NgModule({
@@ -55,6 +55,7 @@ import { IonicSwipeAllModule } from 'ionic-swipe-all';
     Ng2CompleterModule,
     BrowserAnimationsModule,
     IonicSwipeAllModule,
+    SuperTabsModule.forRoot(),
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
