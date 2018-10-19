@@ -345,3 +345,27 @@ ion-app {
       line-height: 48px;
       font-size: 20px;
     }
+
+    table tr td,table tr th {
+      padding: 1em!important;
+      border: 1px solid dimgray!important;
+      font-size:12px!important;
+    }
+    
+    table tr:nth-child(even) {
+      background: #f3f8f9!important;
+    }
+    table tr:nth-child(odd) {
+      background: #FFF!important
+    } 
+    
+    table tr th{
+      font-size: 15px !important;
+      color: #2b73bc;
+      padding: 7px !important
+    }
+    
+    .contact-related-card{
+      background: #f5f5f5!important;
+      margin-top: -12px;
+    }

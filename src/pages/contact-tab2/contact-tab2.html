@@ -12,10 +12,23 @@
           </span>
   
       </button>
-      <ion-card [hidden]="isHidden1" style="margin-top: -5px;">
+      <ion-card [hidden]="isHidden1" class="contact-related-card">
           <ion-card-content>
               <!-- Add card content here! -->
-              Just like a normal page, cards can be customized to include headers. To add a header to a card, add the component inside of your card
+              <ion-card-content>
+                <!-- Add card content here! -->
+                <table style="width:100%">
+                  <tr>
+                    <th>Company</th>
+                    <th>Contact</th>
+                    <th>Country</th>
+                  </tr>
+                  <tr>
+                    <td>Alfreds Futterkiste</td>
+                    <td>Maria Anders</td>
+                    <td>Germany</td>
+                  </tr>
+                </table>
             </ion-card-content>
           </ion-card>
   </div>
@@ -34,7 +47,7 @@
           </span>
   
       </button>
-      <ion-card [hidden]="isHidden2" style="margin-top: -5px;">
+      <ion-card [hidden]="isHidden2" class="contact-related-card">
           <ion-card-content>
               <!-- Add card content here! -->
               Just like a normal page, cards can be customized to include headers. To add a header to a card, add the component inside of your card
