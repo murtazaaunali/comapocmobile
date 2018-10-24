@@ -8,9 +8,8 @@
 
 
 <ion-content padding>
-  <super-tabs height="100%">
+  <super-tabs selectedTabIndex="1" [config]="{ sideMenu: 'left' }" height="100%" width="100%">
     <super-tab [root]="page1"  title="Details">
-      
     </super-tab>
     <super-tab [root]="page2"  title="Related">
     </super-tab>

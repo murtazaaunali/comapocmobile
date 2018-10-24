@@ -427,7 +427,7 @@
         </ion-row>
         <ion-row>
           <ion-col col-md-4 *ngFor="let con of contacts| nameFilter:searchFilter" style="margin-top: -15px;">
-            <ion-card style=" min-height: 155px!important;max-height: 155px">
+            <ion-card (click)="GotoContactDetail($event,con.Id)"  style=" min-height: 155px!important;max-height: 155px">
               <ion-card-header>
                 <h2 class="contact-name">{{con.Name}}</h2>
               </ion-card-header>
@@ -482,70 +482,11 @@
       </ion-grid>
     </div>
     <!-- Data Grid -->
-    <!-- DataTables -->
     <div *ngSwitchCase="'list'">
       <div>
-        <ng2-smart-table [settings]="settings" [source]="rows" (userRowSelect)="GotoContactDetail($event)"></ng2-smart-table>
+        <ng2-smart-table [settings]="settings" [source]="rows" (userRowSelect)="GotoContactDetail($event,'')"></ng2-smart-table>
       </div>
-      <ngx-datatable *ngIf="false" #table [rows]="rows" [limit]="10" [columnMode]="'flex'" [headerHeight]="50"
-        [footerHeight]="50" [rowHeight]="'auto'">
-        <ngx-datatable-column [sortable]="true" name="Name" [flexGrow]="2">
-          <ng-template let-column="column" let-sort="sortFn" ngx-datatable-header-template>
-            <span (click)="sort()">Name</span>
-          </ng-template>
-          <ng-template let-row="row" ngx-datatable-cell-template>
-            {{row.Name}}
-          </ng-template>
-        </ngx-datatable-column>
-        <ngx-datatable-column [sortable]="true" name="JobTitle" [flexGrow]="2">
-          <ng-template let-column="column" let-sort="sortFn" ngx-datatable-header-template>
-            <span (click)="sort()">Job Title</span>
-          </ng-template>
-          <ng-template let-row="row" ngx-datatable-cell-template>
-            {{row.Job_Title__c}}
-          </ng-template>
-        </ngx-datatable-column>
-        <ngx-datatable-column [sortable]="true" name="Department" [flexGrow]="2">
-          <ng-template let-column="column" let-sort="sortFn" ngx-datatable-header-template>
-            <span (click)="sort()">Department</span>
-          </ng-template>
-          <ng-template let-row="row" ngx-datatable-cell-template>
-            {{row.Department}}
-          </ng-template>
-        </ngx-datatable-column>
-        <!-- <ngx-datatable-column [sortable]="true" name="Account">
-          <ng-template let-column="column" let-sort="sortFn" ngx-datatable-header-template>
-            <span (click)="sort()">Account</span>
-          </ng-template>
-          <ng-template let-row="row" ngx-datatable-cell-template>
-            {{row.Account.Name}}
-          </ng-template>
-        </ngx-datatable-column> -->
-        <ngx-datatable-column [sortable]="true" name="Email" [flexGrow]="3">
-          <ng-template let-column="column" let-sort="sortFn" ngx-datatable-header-template>
-            <span (click)="sort()">Email</span>
-          </ng-template>
-          <ng-template let-row="row" ngx-datatable-cell-template>
-            {{row.Email}}
-          </ng-template>
-        </ngx-datatable-column>
-        <ngx-datatable-column [sortable]="true" name="Mobile" [flexGrow]="2">
-          <ng-template let-column="column" ngx-datatable-header-template>
-            <span>Mobile</span>
-          </ng-template>
-          <ng-template let-row="row" ngx-datatable-cell-template>
-            {{row.MobilePhone}}
-          </ng-template>
-        </ngx-datatable-column>
-        <ngx-datatable-column [sortable]="true" name="Phone" [flexGrow]="2">
-          <ng-template let-column="column" ngx-datatable-header-template>
-            <span>Phone</span>
-          </ng-template>
-          <ng-template let-row="row" ngx-datatable-cell-template>
-            {{row.Phone}}
-          </ng-template>
-        </ngx-datatable-column>
-      </ngx-datatable>
+      
     </div>
     <!-- DataTables -->
   </div>

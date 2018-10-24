@@ -138,10 +138,17 @@ export class ContactsPage {
     });
   }
 
-  GotoContactDetail(ev){
-    console.log(ev.data);
-    this.navCtrl.push(ContactPage,{ contactId: ev.data.id});
-
+  GotoContactDetail(ev,id){
+    if (this.segments == 'list') {
+      console.log(ev.data);
+      this.contactsService.setContactId(ev.data.id);
+      this.navCtrl.push(ContactPage);
+    }
+    else{
+      console.log(id);
+      this.contactsService.setContactId(id);
+      this.navCtrl.push(ContactPage);
+    }
   }
 
   GetAllContacts() {
@@ -185,7 +192,7 @@ export class ContactsPage {
     this.page = this.page + 1;
   }
 
-  /* Ali;s Addition */
+
   FilterTableRows(event) {
     const val = event.target.value.toLowerCase();
     // filter our data
@@ -231,5 +238,5 @@ export class ContactsPage {
     }
 
   }
-  /* Ali;s Addition */
+
 }

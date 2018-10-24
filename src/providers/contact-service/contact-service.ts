@@ -6,10 +6,18 @@ import { DataService } from 'forcejs';
 export class ContactServiceProvider {
   service: any;
   responseData: any;
+  contactId:any;
 
   constructor() {
     this.service = DataService.getInstance();
+  }
 
+  setContactId(id){
+    this.contactId=id;
+  }
+
+  getContactId(){
+    return this.contactId;
   }
 
   loadContacts() {

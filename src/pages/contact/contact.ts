@@ -1,4 +1,4 @@
-import { Component,ViewChild } from '@angular/core';
+import { Component,ViewChild} from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { SuperTabsController } from 'ionic2-super-tabs/dist';
 import {SuperTabs} from "Ionic2-super-tabs/dist/components/super-tabs";
@@ -21,9 +21,9 @@ export class ContactPage {
   page2: any = 'ContactTab2Page';
   private contactId;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.contactId = this.navParams.get("contactId");
-      console.log(this.contactId);
+  constructor(public navCtrl: NavController, public navParams: NavParams,private superTabsCtrl: SuperTabsController) {
+    //this.contactId = this.navParams.get("contactId");
+    //  console.log(this.contactId);
   }
 
   ionViewDidLoad() {
