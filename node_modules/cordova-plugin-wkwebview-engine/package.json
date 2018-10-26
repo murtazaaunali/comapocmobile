@@ -1,24 +1,27 @@
 {
-  "_from": "git+https://github.com/apache/cordova-plugin-wkwebview-engine.git#master",
-  "_id": "cordova-plugin-wkwebview-engine@1.2.0-dev",
+  "_from": "cordova-plugin-wkwebview-engine",
+  "_id": "cordova-plugin-wkwebview-engine@1.1.4",
   "_inBundle": false,
-  "_integrity": "",
+  "_integrity": "sha1-EbnPoRTsBSXFxj5nok6rQVcDQGA=",
   "_location": "/cordova-plugin-wkwebview-engine",
   "_phantomChildren": {},
   "_requested": {
-    "type": "git",
-    "raw": "https://github.com/apache/cordova-plugin-wkwebview-engine.git#master",
-    "rawSpec": "https://github.com/apache/cordova-plugin-wkwebview-engine.git#master",
-    "saveSpec": "git+https://github.com/apache/cordova-plugin-wkwebview-engine.git#master",
-    "fetchSpec": "https://github.com/apache/cordova-plugin-wkwebview-engine.git",
-    "gitCommittish": "master"
+    "type": "tag",
+    "registry": true,
+    "raw": "cordova-plugin-wkwebview-engine",
+    "name": "cordova-plugin-wkwebview-engine",
+    "escapedName": "cordova-plugin-wkwebview-engine",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "git+https://github.com/apache/cordova-plugin-wkwebview-engine.git#bf0f23607e894aa5fd49578021d8511df33e3b9a",
-  "_spec": "https://github.com/apache/cordova-plugin-wkwebview-engine.git#master",
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-wkwebview-engine/-/cordova-plugin-wkwebview-engine-1.1.4.tgz",
+  "_shasum": "11b9cfa114ec0525c5c63e67a24eab4157034060",
+  "_spec": "cordova-plugin-wkwebview-engine",
   "_where": "/private/var/root/Desktop/Hybrid/Salesforce/comapocmobile",
   "author": {
     "name": "Apache Cordova"
@@ -48,8 +51,7 @@
   "homepage": "https://github.com/apache/cordova-plugin-wkwebview-engine#readme",
   "keywords": [
     "cordova",
-    "wkwebview",
-    "cordova-ios"
+    "wkwebview"
   ],
   "license": "Apache-2.0",
   "main": "index.js",
@@ -64,5 +66,5 @@
     "preobjc-tests": "cd tests/ios && npm install",
     "test": "npm run eslint && npm run objc-tests"
   },
-  "version": "1.2.0-dev"
+  "version": "1.1.4"
 }

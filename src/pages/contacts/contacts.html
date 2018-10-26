@@ -8,7 +8,7 @@
   <ion-toolbar>
     <ion-row>
       <ion-col col-2 style="padding-left: 10px">
-        <button block style="background:transparent;" (click)="OpenFiltersModal()">
+        <button block style="background:transparent;" (click)="OpenFiltersSilder()">
           <img style="vertical-align: bottom" src="assets/imgs/filter.png" />
           <div class="subheader-icon-txt">Filters</div>
         </button>
@@ -29,7 +29,9 @@
           </ion-label>
         </ion-item>
         <ion-item class="item-has-input search-filter" *ngIf="segments=='list'">
-          <ion-input clearInput type="text" (keyup)='FilterTableRows($event)' text-left placeholder="Search Contact"></ion-input>
+          <!-- <ion-input clearInput type="text" (keyup)='FilterTableRows($event)' text-left placeholder="Search Contact"></ion-input> -->
+          <ion-input clearInput type="text" [(ngModel)]="searchFilter" (keydown)="onSearch(searchFilter)" text-left
+            placeholder="Search Contact"></ion-input>
           <ion-label item-right class="align-right label-img">
             <ion-icon name="search"></ion-icon>
           </ion-label>
@@ -48,6 +50,64 @@
         </div>
       </ion-col>
     </ion-row>
+
+    <div *ngIf="showSlider" swipeAll [@fadeInOut] (swipeup)="CloseSlider()" class="slider">
+
+      <div>
+        <ion-icon name="ios-close-outline" class="close-btn" (click)="CloseFiltersSlider()"></ion-icon>
+
+      </div>
+<div>
+  <ion-list>
+    <ion-row>
+<ion-col>
+<ion-item class="item-has-input filter-input">
+<ion-input clearInput type="text" text-left [(ngModel)]="filter.firstName" placeholder="Search by first name" ></ion-input>
+</ion-item>
+</ion-col>
+<ion-col>
+<ion-item class="item-has-input filter-input">
+<ion-input clearInput type="text" text-left [(ngModel)]="filter.lastName" placeholder="Search by last name"></ion-input>
+</ion-item>
+</ion-col>
+</ion-row>
+
+<ion-row>
+<ion-col>
+<ion-item class="item-has-input filter-input">
+<ion-input clearInput type="text" text-left [(ngModel)]="filter.jobTitle" placeholder="Search by job title" ></ion-input>
+</ion-item>
+</ion-col>
+<ion-col>
+<ion-item class="item-has-input filter-input">
+<ion-input clearInput type="text" text-left [(ngModel)]="filter.department" placeholder="Search by department"></ion-input>
+</ion-item>
+</ion-col>
+</ion-row>
+
+<ion-row>
+<ion-col>
+<ion-item class="item-has-input filter-input">
+<ion-input clearInput type="text" text-left [(ngModel)]="filter.email" placeholder="Search by email" ></ion-input>
+</ion-item>
+</ion-col>
+<ion-col>
+<ion-item class="item-has-input filter-input">
+<ion-input clearInput type="text" text-left [(ngModel)]="filter.accountName" placeholder="Search by account name"></ion-input>
+</ion-item>
+</ion-col>
+</ion-row>
+<ion-row>
+<ion-col>
+  <ion-item>
+    <button ion-button class="btn-login search-btn center" round (click)="FilterContact()">SEARCH</button>
+  </ion-item>
+</ion-col>
+</ion-row>
+  </ion-list>
+
+</div>
+</div>
   </ion-toolbar>
 </ion-header>
 
@@ -57,36 +117,359 @@
     <!-- Data Grid -->
     <div *ngSwitchCase="'grid'">
       <ion-grid>
-        <ion-row>
-          <ion-col col-md-4 *ngFor="let con of contacts| nameFilter:searchFilter" style="margin-top: -15px;">
+        <ion-row *ngIf="skeleton == true">
+          <ion-col col-md-4>
             <ion-card style=" min-height: 155px!important;max-height: 155px">
               <ion-card-header>
-                <h2><b>{{con.Name}}</b></h2>
+                <skeleton-item height="15px"></skeleton-item>
+              </ion-card-header>
+              <ion-card-content>
+                <ion-row>
+                  <ion-col col-12>
+                    <skeleton-item height="10px"></skeleton-item>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col col-12>
+                    <skeleton-item height="10px"></skeleton-item>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col col-12>
+                    <skeleton-item height="10px"></skeleton-item>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col col-12>
+                    <skeleton-item height="10px"></skeleton-item>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col col-12>
+                    <skeleton-item height="10px"></skeleton-item>
+                  </ion-col>
+                </ion-row>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+          <ion-col col-md-4>
+            <ion-card style=" min-height: 155px!important;max-height: 155px">
+              <ion-card-header>
+                <skeleton-item height="15px"></skeleton-item>
+              </ion-card-header>
+              <ion-card-content>
+                <ion-row>
+                  <ion-col col-12>
+                    <skeleton-item height="10px"></skeleton-item>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col col-12>
+                    <skeleton-item height="10px"></skeleton-item>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col col-12>
+                    <skeleton-item height="10px"></skeleton-item>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col col-12>
+                    <skeleton-item height="10px"></skeleton-item>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col col-12>
+                    <skeleton-item height="10px"></skeleton-item>
+                  </ion-col>
+                </ion-row>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+          <ion-col col-md-4>
+            <ion-card style=" min-height: 155px!important;max-height: 155px">
+              <ion-card-header>
+                <skeleton-item height="15px"></skeleton-item>
+              </ion-card-header>
+              <ion-card-content>
+                <ion-row>
+                  <ion-col col-12>
+                    <skeleton-item height="10px"></skeleton-item>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col col-12>
+                    <skeleton-item height="10px"></skeleton-item>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col col-12>
+                    <skeleton-item height="10px"></skeleton-item>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col col-12>
+                    <skeleton-item height="10px"></skeleton-item>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col col-12>
+                    <skeleton-item height="10px"></skeleton-item>
+                  </ion-col>
+                </ion-row>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+          <ion-col col-md-4>
+            <ion-card style=" min-height: 155px!important;max-height: 155px">
+              <ion-card-header>
+                <skeleton-item height="15px"></skeleton-item>
+              </ion-card-header>
+              <ion-card-content>
+                <ion-row>
+                  <ion-col col-12>
+                    <skeleton-item height="10px"></skeleton-item>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col col-12>
+                    <skeleton-item height="10px"></skeleton-item>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col col-12>
+                    <skeleton-item height="10px"></skeleton-item>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col col-12>
+                    <skeleton-item height="10px"></skeleton-item>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col col-12>
+                    <skeleton-item height="10px"></skeleton-item>
+                  </ion-col>
+                </ion-row>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+          <ion-col col-md-4>
+            <ion-card style=" min-height: 155px!important;max-height: 155px">
+              <ion-card-header>
+                <skeleton-item height="15px"></skeleton-item>
+              </ion-card-header>
+              <ion-card-content>
+                <ion-row>
+                  <ion-col col-12>
+                    <skeleton-item height="10px"></skeleton-item>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col col-12>
+                    <skeleton-item height="10px"></skeleton-item>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col col-12>
+                    <skeleton-item height="10px"></skeleton-item>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col col-12>
+                    <skeleton-item height="10px"></skeleton-item>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col col-12>
+                    <skeleton-item height="10px"></skeleton-item>
+                  </ion-col>
+                </ion-row>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+          <ion-col col-md-4>
+            <ion-card style=" min-height: 155px!important;max-height: 155px">
+              <ion-card-header>
+                <skeleton-item height="15px"></skeleton-item>
+              </ion-card-header>
+              <ion-card-content>
+                <ion-row>
+                  <ion-col col-12>
+                    <skeleton-item height="10px"></skeleton-item>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col col-12>
+                    <skeleton-item height="10px"></skeleton-item>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col col-12>
+                    <skeleton-item height="10px"></skeleton-item>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col col-12>
+                    <skeleton-item height="10px"></skeleton-item>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col col-12>
+                    <skeleton-item height="10px"></skeleton-item>
+                  </ion-col>
+                </ion-row>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+          <ion-col col-md-4>
+            <ion-card style=" min-height: 155px!important;max-height: 155px">
+              <ion-card-header>
+                <skeleton-item height="15px"></skeleton-item>
+              </ion-card-header>
+              <ion-card-content>
+                <ion-row>
+                  <ion-col col-12>
+                    <skeleton-item height="10px"></skeleton-item>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col col-12>
+                    <skeleton-item height="10px"></skeleton-item>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col col-12>
+                    <skeleton-item height="10px"></skeleton-item>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col col-12>
+                    <skeleton-item height="10px"></skeleton-item>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col col-12>
+                    <skeleton-item height="10px"></skeleton-item>
+                  </ion-col>
+                </ion-row>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+          <ion-col col-md-4>
+            <ion-card style=" min-height: 155px!important;max-height: 155px">
+              <ion-card-header>
+                <skeleton-item height="15px"></skeleton-item>
+              </ion-card-header>
+              <ion-card-content>
+                <ion-row>
+                  <ion-col col-12>
+                    <skeleton-item height="10px"></skeleton-item>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col col-12>
+                    <skeleton-item height="10px"></skeleton-item>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col col-12>
+                    <skeleton-item height="10px"></skeleton-item>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col col-12>
+                    <skeleton-item height="10px"></skeleton-item>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col col-12>
+                    <skeleton-item height="10px"></skeleton-item>
+                  </ion-col>
+                </ion-row>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+          <ion-col col-md-4>
+            <ion-card style=" min-height: 155px!important;max-height: 155px">
+              <ion-card-header>
+                <skeleton-item height="15px"></skeleton-item>
+              </ion-card-header>
+              <ion-card-content>
+                <ion-row>
+                  <ion-col col-12>
+                    <skeleton-item height="10px"></skeleton-item>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col col-12>
+                    <skeleton-item height="10px"></skeleton-item>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col col-12>
+                    <skeleton-item height="10px"></skeleton-item>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col col-12>
+                    <skeleton-item height="10px"></skeleton-item>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col col-12>
+                    <skeleton-item height="10px"></skeleton-item>
+                  </ion-col>
+                </ion-row>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col col-md-4 *ngFor="let con of contacts| nameFilter:searchFilter" style="margin-top: -15px;">
+            <ion-card (click)="GotoContactDetail($event,con.Id)"  style=" min-height: 155px!important;max-height: 155px">
+              <ion-card-header>
+                <h2 class="contact-name">{{con.Name}}</h2>
               </ion-card-header>
               <ion-card-content style="margin-top: -10px">
-                <ion-row *ngIf="con.Job_Title__c!=null">
-                  <ion-col col-12>
-                    <ion-icon name="briefcase"></ion-icon><span class="contacts-content">{{con.Job_Title__c}}</span>
+                <ion-row>
+                  <ion-col col-12 *ngIf="con.Job_Title__c!=null">
+                    <ion-icon name="briefcase" class="icon-blue"></ion-icon><span class="contacts-content">{{con.Job_Title__c}}</span>
+                  </ion-col>
+                  <ion-col col-12 *ngIf="con.Job_Title__c==null">
+                    <ion-icon name="briefcase" class="icon-blue"></ion-icon><span class="contacts-content">N/A</span>
                   </ion-col>
                 </ion-row>
-                <ion-row *ngIf="con.Department!=null">
-                  <ion-col col-12>
-                    <ion-icon name="business"></ion-icon><span class="contacts-content">{{con.Department}}</span>
+                <ion-row>
+                  <ion-col col-12 *ngIf="con.Department!=null">
+                    <ion-icon name="pin" class="icon-blue"></ion-icon><span class="contacts-content">{{con.Department}}</span>
+                  </ion-col>
+                  <ion-col col-12 *ngIf="con.Department==null">
+                    <ion-icon name="pin" class="icon-blue"></ion-icon><span class="contacts-content">N/A</span>
                   </ion-col>
                 </ion-row>
-                <ion-row *ngIf="con.Email!=null">
-                  <ion-col col-12>
-                    <ion-icon name="mail"></ion-icon><span class="contacts-content">{{con.Email}}</span>
+                <ion-row>
+                  <ion-col col-12 *ngIf="con.Email!=null">
+                    <ion-icon name="mail" class="icon-blue"></ion-icon><span class="contacts-content">{{con.Email}}</span>
+                  </ion-col>
+                  <ion-col col-12 *ngIf="con.Email==null">
+                    <ion-icon name="mail" class="icon-blue"></ion-icon><span class="contacts-content">N/A</span>
                   </ion-col>
                 </ion-row>
-                <ion-row style="margin-top: -10px;" *ngIf="con.Phone!=null">
-                  <ion-col col-12>
-                    <ion-icon name="call"></ion-icon><span class="contacts-content">{{con.Phone}}</span>
+                <ion-row>
+                  <ion-col col-12 *ngIf="con.Phone!=null">
+                    <ion-icon name="call" class="icon-blue"></ion-icon><span class="contacts-content">{{con.Phone}}</span>
+                  </ion-col>
+                  <ion-col col-12 *ngIf="con.Phone==null">
+                    <ion-icon name="call" class="icon-blue"></ion-icon><span class="contacts-content">N/A</span>
                   </ion-col>
                 </ion-row>
-                <ion-row style="margin-top: -10px;" *ngIf="con.MobilePhone!=null">
-                  <ion-col col-12>
-                    <ion-icon name="phone-portrait"></ion-icon><span class="contacts-content">{{con.MobilePhone}}</span>
+                <ion-row>
+                  <ion-col col-12 *ngIf="con.MobilePhone!=null">
+                    <ion-icon name="phone-portrait" class="icon-blue"></ion-icon><span class="contacts-content">{{con.MobilePhone}}</span>
+                  </ion-col>
+                  <ion-col col-12 *ngIf="con.MobilePhone==null">
+                    <ion-icon name="phone-portrait" class="icon-blue"></ion-icon><span class="contacts-content">N/A</span>
                   </ion-col>
                 </ion-row>
               </ion-card-content>
@@ -94,72 +477,16 @@
           </ion-col>
         </ion-row>
         <ion-infinite-scroll (ionInfinite)="$event.waitFor(doInfinite($event))" *ngIf="page < totalPages" position="bottom">
-          <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="Loading more data..."></ion-infinite-scroll-content>
+          <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="Updating..."></ion-infinite-scroll-content>
         </ion-infinite-scroll>
       </ion-grid>
     </div>
     <!-- Data Grid -->
-    <!-- DataTables -->
     <div *ngSwitchCase="'list'">
-      <ngx-datatable #table [rows]="rows" [limit]="10" [columnMode]="'force'" [headerHeight]="50" [footerHeight]="50"
-        [rowHeight]="'auto'" [sortType]="'multi'">
-        <ngx-datatable-column [sortable]="true" prop="Name" name="Name" [flexGrow]="2">
-          <ng-template let-column="column" let-sort="sortFn" ngx-datatable-header-template>
-            <span (click)="sort()">Name</span>
-          </ng-template>
-          <ng-template let-row="row" ngx-datatable-cell-template>
-            {{row.Name}}
-          </ng-template>
-        </ngx-datatable-column>
-        <ngx-datatable-column [sortable]="true" name="JobTitle" [flexGrow]="2">
-          <ng-template let-column="column" let-sort="sortFn" ngx-datatable-header-template>
-            <span (click)="sort()">Job Title</span>
-          </ng-template>
-          <ng-template let-row="row" ngx-datatable-cell-template>
-            {{row.Job_Title__c}}
-          </ng-template>
-        </ngx-datatable-column>
-        <ngx-datatable-column [sortable]="true" name="Department" [flexGrow]="2">
-          <ng-template let-column="column" let-sort="sortFn" ngx-datatable-header-template>
-            <span (click)="sort()">Department</span>
-          </ng-template>
-          <ng-template let-row="row" ngx-datatable-cell-template>
-            {{row.Department}}
-          </ng-template>
-        </ngx-datatable-column>
-        <!-- <ngx-datatable-column [sortable]="true" name="Account">
-          <ng-template let-column="column" let-sort="sortFn" ngx-datatable-header-template>
-            <span (click)="sort()">Account</span>
-          </ng-template>
-          <ng-template let-row="row" ngx-datatable-cell-template>
-            {{row.Account.Name}}
-          </ng-template>
-        </ngx-datatable-column> -->
-        <ngx-datatable-column [sortable]="true" name="Email" [flexGrow]="3">
-          <ng-template let-column="column" let-sort="sortFn" ngx-datatable-header-template>
-            <span (click)="sort()">Email</span>
-          </ng-template>
-          <ng-template let-row="row" ngx-datatable-cell-template>
-            {{row.Email}}
-          </ng-template>
-        </ngx-datatable-column>
-        <ngx-datatable-column [sortable]="true" name="Mobile" [flexGrow]="2">
-          <ng-template let-column="column" ngx-datatable-header-template>
-            <span>Mobile</span>
-          </ng-template>
-          <ng-template let-row="row" ngx-datatable-cell-template>
-            {{row.MobilePhone}}
-          </ng-template>
-        </ngx-datatable-column>
-        <ngx-datatable-column [sortable]="true" name="Phone" [flexGrow]="2">
-          <ng-template let-column="column" ngx-datatable-header-template>
-            <span>Phone</span>
-          </ng-template>
-          <ng-template let-row="row" ngx-datatable-cell-template>
-            {{row.Phone}}
-          </ng-template>
-        </ngx-datatable-column>
-      </ngx-datatable>
+      <div>
+        <ng2-smart-table [settings]="settings" [source]="rows" (userRowSelect)="GotoContactDetail($event,'')"></ng2-smart-table>
+      </div>
+      
     </div>
     <!-- DataTables -->
   </div>

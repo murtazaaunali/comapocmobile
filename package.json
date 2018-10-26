@@ -1,7 +1,7 @@
 {
     "name": "com.apoc.mobile",
-    "displayName": "com.apoc.mobile",
-    "version": "1.0.0",
+    "displayName": "APOC Mobile",
+    "version": "0.0.1",
     "description": "A sample Apache Cordova application that responds to the deviceready event.",
     "main": "index.js",
     "scripts": {
@@ -14,7 +14,7 @@
     "author": "Apache Cordova Team",
     "license": "Apache-2.0",
     "dependencies": {
-        "@angular/animations": "5.2.11",
+        "@angular/animations": "^5.2.11",
         "@angular/common": "5.2.11",
         "@angular/compiler": "5.2.11",
         "@angular/compiler-cli": "5.2.11",
@@ -30,18 +30,20 @@
         "@swimlane/ngx-datatable": "^13.1.0",
         "SalesforceMobileSDK-CordovaPlugin": "git+https://github.com/forcedotcom/SalesforceMobileSDK-CordovaPlugin.git#v6.1.0",
         "com.salesforce": "https://github.com/forcedotcom/SalesforceMobileSDK-CordovaPlugin#v6.1.0",
-        "cordova-browser": "^5.0.4",
-        "cordova-ios": "^4.5.4",
+        "cordova-ios": "4.5.4",
         "cordova-plugin-device": "^2.0.2",
         "cordova-plugin-ionic-keyboard": "^2.1.2",
-        "cordova-plugin-ionic-webview": "^2.1.4",
         "cordova-plugin-splashscreen": "^5.0.2",
         "cordova-plugin-statusbar": "^2.4.2",
         "cordova-plugin-whitelist": "^1.3.3",
-        "cordova-plugin-wkwebview-engine": "git+https://github.com/apache/cordova-plugin-wkwebview-engine.git#master",
+        "cordova-plugin-wkwebview-engine": "^1.1.4",
         "forcejs": "^2.2.1",
         "ionic-angular": "3.9.2",
-        "ionicons": "3.0.0",
+        "ionic-swipe-all": "^1.2.0",
+        "ionic2-super-tabs": "^5.0.2",
+        "ionicons": "^4.4.4",
+        "ng2-completer": "^2.0.8",
+        "ng2-smart-table": "^1.3.5",
         "phonegap-plugin-push": "^1.4.5",
         "rxjs": "^6.0.0",
         "rxjs-compat": "^6.0.0",
@@ -62,12 +64,10 @@
             "cordova-plugin-splashscreen": {},
             "cordova-plugin-ionic-keyboard": {},
             "com.salesforce": {},
-            "cordova-plugin-ionic-webview": {},
             "cordova-plugin-wkwebview-engine": {}
         },
         "platforms": [
-            "ios",
-            "browser"
+            "ios"
         ]
     }
 }

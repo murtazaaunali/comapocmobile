@@ -13,13 +13,19 @@ export class DashboardPage {
   loader;
   constructor(public navCtrl: NavController, public navParams: NavParams, public loadingCtrl: LoadingController, public smartSyncService: SmartsyncServiceProvider) {
     this.loader = this.loadingCtrl.create({
-      content: "Please wait...",
+      content: "<div><h2>Syncing...</h2><p>Please wait, it will take few seconds to sync your whole data</p></div>",
     });
+    
   }
 
   SyncData() {
+    this.loader.present();
     this.smartSyncService.SyncContacts().then(response => {
-      console.log("Sync Response:" + response);
+      console.log("Contacts Sync Response:" + response.progress);
+      this.smartSyncService.SyncOpportunities().then(response2 => {
+        console.log("Opportinity Sync Response:" + response2.progress); 
+        this.loader.dismiss();
+      });
     });
   }
 
