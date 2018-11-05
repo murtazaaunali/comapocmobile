@@ -173,7 +173,14 @@ ion-app {
       display: inline-block;
       vertical-align: super;
       font-size: 20px;
-      margin-left: 5px;
+      margin-top: 5px;
+    }
+
+    .total-txt-heading{
+      margin-top: 10px;
+     border: 1px solid #6969694d;
+     width: 190px;
+     padding: 6px;
     }
 
     .contact-name {

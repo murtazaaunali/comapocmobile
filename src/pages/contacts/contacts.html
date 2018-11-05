@@ -7,19 +7,20 @@
   </ion-navbar>
   <ion-toolbar>
     <ion-row>
-      <ion-col col-2 style="padding-left: 10px">
+      <ion-col col-1 style="padding-left: 10px">
         <button block style="background:transparent;" (click)="OpenFiltersSilder()">
           <img style="vertical-align: bottom" src="assets/imgs/filter.png" />
           <div class="subheader-icon-txt">Filters</div>
         </button>
       </ion-col>
-      <ion-col col-2 style="padding-left: 10px">
+      <ion-col col-1 style="padding-left: 10px">
         <button block style="background:transparent;" (click)="AddNewContactModal()">
           <img style="vertical-align: bottom" src="assets/imgs/new.png" />
           <div class="subheader-icon-txt">New</div>
         </button>
       </ion-col>
-      <ion-col col-2>
+      <ion-col col-3>
+          <h4 class="total-txt-heading"  *ngIf="(contacts)?.length!==0">Total: <span>{{contacts.length}} Contacts</span></b>
       </ion-col>
       <ion-col col-4>
         <ion-item class="item-has-input search-filter" *ngIf="segments=='grid'">

@@ -19,7 +19,9 @@
             <div class="subheader-icon-txt">New</div>
           </button>
         </ion-col> -->
-    
+        <ion-col col-6>
+                <h4 class="total-txt-heading"  *ngIf="(accounts)?.length!==0">Total: <span>{{accounts.length}} Accounts</span></b>
+            </ion-col>
         <ion-col col-4>
           <ion-item class="item-has-input search-filter" *ngIf="segments=='grid'">
             <ion-input clearInput type="text" [(ngModel)]="searchFilter" text-left placeholder="Search Contact"></ion-input>
@@ -35,8 +37,6 @@
               <ion-icon name="search"></ion-icon>
             </ion-label>
           </ion-item>
-        </ion-col>
-        <ion-col col-6>
         </ion-col>
         <ion-col col-2>
           <div padding>
