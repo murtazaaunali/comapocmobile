@@ -60,4 +60,22 @@ export class SmartstoreServiceProvider {
       (navigator as sdkNavigator).smartstore.querySoup('opportunities', querySpec, success, reject);
     });
   }
+
+  GetAccountsFromSoup(): Promise<any> {
+    return new Promise((resolve, reject) => {
+      var querySpec = (navigator as sdkNavigator).smartstore.buildAllQuerySpec('Name', 'ascending', 10000);
+      let success = (results) => resolve({ records: results.currentPageOrderedEntries });
+      (navigator as sdkNavigator).smartstore.querySoup('accounts', querySpec, success, reject);
+    });
+  }
+
+  GetAccountsByFilterFromSoup(filters): Promise<any> {
+    console.log(filters);
+    return new Promise((resolve, reject) => {
+      var querySpec = (navigator as sdkNavigator).smartstore.buildAllQuerySpec(filters, 'ascending', 10000);
+      console.log('QuerySpecs: ' + querySpec);
+      let success = (results) => resolve({ records: results.currentPageOrderedEntries });
+      (navigator as sdkNavigator).smartstore.querySoup('accounts', querySpec, success, reject);
+    });
+  }
 }

@@ -28,6 +28,7 @@ export class OpportunitiesPage {
   page = 1;
   totalPages = 0;
   skeleton = true;
+  opportunities_list;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public loadingCtrl: LoadingController, public filterCtrl: NamefilterPipe, public smartStoreService: SmartstoreServiceProvider) {
     this.loader = this.loadingCtrl.create({
@@ -53,8 +54,8 @@ export class OpportunitiesPage {
         title: 'Opportunity Type',
         filter: false
       },
-      AccountName: {
-        title: 'Account Name',
+      Confidence__c: {
+        title: 'Confidence (%)',
         filter: false
       },
       StageName: {
@@ -62,15 +63,15 @@ export class OpportunitiesPage {
         filter: false
       },
       Priority_Opportunity__c: {
-        title: 'Priority Opportunity',
+        title: 'High Priority',
         filter: false
       },
       Probability: {
-        title: 'Probability',
+        title: 'Probability (%)',
         filter: false
       },
       Departments__c: {
-        title: 'Departments',
+        title: 'Department',
         filter: false
       },
       CloseDate: {
@@ -84,11 +85,6 @@ export class OpportunitiesPage {
       delete: false
     }
   };
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad OpportunitiesPage');
-
-  }
 
   onSegmentChange(ev) {
     if (this.segments == 'list') {
@@ -121,6 +117,7 @@ export class OpportunitiesPage {
     this.loader.present();
     this.smartStoreService.GetOpportunitiesFromSoup().then(data => {
       this.rows = new LocalDataSource(data.records);
+      this.opportunities_list=data.records;
       this.loader.dismiss();
     });
   }
@@ -140,7 +137,7 @@ export class OpportunitiesPage {
 
   onSearch(query: string = '') {
     if (query == '') {
-      this.rows = new LocalDataSource(this.opportunities);
+      this.rows = new LocalDataSource(this.opportunities_list);
     }
     else {
       this.rows.setFilter([
@@ -154,7 +151,7 @@ export class OpportunitiesPage {
           search: query
         },
         {
-          field: 'AccountName',
+          field: 'Confidence__c',
           search: query
         },
         {

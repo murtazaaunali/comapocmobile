@@ -36,6 +36,8 @@
           </ion-label>
         </ion-item>
       </ion-col>
+      <ion-col col-6>
+      </ion-col>
       <ion-col col-2>
         <div padding>
           <ion-segment [(ngModel)]="segments" color="primary" (ionChange)="onSegmentChange($event)">
@@ -264,7 +266,7 @@
             </ion-card>
           </ion-col>
           <ion-col col-md-4>
-            <ion-card style=" min-height: 155px!important;max-height: 155px">
+            <ion-card style=" min-height: 155px!important;max-height: 175px">
               <ion-card-header>
                 <skeleton-item height="15px"></skeleton-item>
               </ion-card-header>
@@ -298,7 +300,7 @@
             </ion-card>
           </ion-col>
           <ion-col col-md-4>
-            <ion-card style=" min-height: 155px!important;max-height: 155px">
+            <ion-card style=" min-height: 155px!important;max-height: 175px">
               <ion-card-header>
                 <skeleton-item height="15px"></skeleton-item>
               </ion-card-header>
@@ -368,9 +370,9 @@
         </ion-row>
         <ion-row>
           <ion-col col-md-4 *ngFor="let opp of opportunities| nameFilter:searchFilter" style="margin-top: -15px;">
-            <ion-card style=" min-height: 155px!important;max-height: 155px">
+            <ion-card style=" min-height: 155px!important;max-height: 185px;">
               <ion-card-header>
-                <h2 class="contact-name">{{opp.Name}}</h2>
+                <h2 class="contact-name" style="white-space: pre-line;">{{opp.Name}}</h2>
               </ion-card-header>
               <ion-card-content style="margin-top: -10px">
                 <ion-row>
@@ -382,29 +384,14 @@
                   </ion-col>
                 </ion-row>
                 <ion-row>
-                  <ion-col col-12 *ngIf="opp.AccountName!=null">
-                    <ion-icon name="person" class="icon-blue"></ion-icon><span class="contacts-content">{{opp.AccountName}}</span>
-                  </ion-col>
-                  <ion-col col-12 *ngIf="opp.AccountName==null">
-                    <ion-icon name="person" class="icon-blue"></ion-icon><span class="contacts-content">N/A</span>
-                  </ion-col>
-                </ion-row>
-                <ion-row>
                   <ion-col col-12 *ngIf="opp.StageName!=null">
-                    <ion-icon name="trending_up" class="icon-blue"></ion-icon><span class="contacts-content">{{opp.StageName}}</span>
+                    <ion-icon name="ios-trending-up" class="icon-blue"></ion-icon><span class="contacts-content">{{opp.StageName}}</span>
                   </ion-col>
                   <ion-col col-12 *ngIf="opp.StageName==null">
-                    <ion-icon name="trending_up" class="icon-blue"></ion-icon><span class="contacts-content">N/A</span>
+                    <ion-icon name="ios-trending-up" class="icon-blue"></ion-icon><span class="contacts-content">N/A</span>
                   </ion-col>
                 </ion-row>
-                <ion-row>
-                  <ion-col col-12 *ngIf="opp.Priority_Opportunity__c!=null">
-                    <ion-icon name="ribbon" class="icon-blue"></ion-icon><span class="contacts-content">{{opp.Priority_Opportunity__c}}</span>
-                  </ion-col>
-                  <ion-col col-12 *ngIf="opp.Priority_Opportunity__c==null">
-                    <ion-icon name="ribbon" class="icon-blue"></ion-icon><span class="contacts-content">N/A</span>
-                  </ion-col>
-                </ion-row>
+    
                 <ion-row>
                   <ion-col col-12 *ngIf="opp.Departments__c!=null">
                     <ion-icon name="pin" class="icon-blue"></ion-icon><span class="contacts-content">{{opp.Departments__c}}</span>
@@ -419,6 +406,26 @@
                   </ion-col>
                   <ion-col col-12 *ngIf="opp.CloseDate==null">
                     <ion-icon name="calendar" class="icon-blue"></ion-icon><span class="contacts-content">N/A</span>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col col-4 *ngIf="opp.Priority_Opportunity__c!=null && opp.Priority_Opportunity__c==true">
+                    <ion-icon name="md-git-pull-request" class="icon-blue"></ion-icon><span class="contacts-content">Priority - (High)</span>
+                  </ion-col>
+                  <ion-col col-4 *ngIf="opp.Priority_Opportunity__c==null && opp.Priority_Opportunity__c==false">
+                    <ion-icon name="md-git-pull-request" class="icon-blue"></ion-icon><span class="contacts-content">Priority - (Low)</span>
+                  </ion-col>
+                  <ion-col col-4 *ngIf="opp.Confidence__c!=null">
+                    <ion-icon name="md-thumbs-up" class="icon-blue"></ion-icon><span class="contacts-content">Confidence - ({{opp.opp.Confidence__c}}%)</span>
+                  </ion-col>
+                  <ion-col col-4 *ngIf="opp.Confidence__c==null">
+                    <ion-icon name="md-thumbs-up" class="icon-blue"></ion-icon><span class="contacts-content">Confidence - (N/A)</span>
+                  </ion-col>
+                  <ion-col col-4 *ngIf="opp.Probability!=null">
+                    <ion-icon name="md-basketball" class="icon-blue"></ion-icon><span class="contacts-content">Probability - ({{opp.opp.Probability}}%)</span>
+                  </ion-col>
+                  <ion-col col-4 *ngIf="opp.Probability==null">
+                    <ion-icon name="md-basketball" class="icon-blue"></ion-icon><span class="contacts-content">Probability - (N/A)</span>
                   </ion-col>
                 </ion-row>
               </ion-card-content>
